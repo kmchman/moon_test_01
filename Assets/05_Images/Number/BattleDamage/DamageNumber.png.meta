@@ -1,0 +1,385 @@
+fileFormatVersion: 2
+guid: de50836a1f39542a09a362ff16e04972
+timeCreated: 1434525503
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: DamageNumber_0
+    21300002: DamageNumber_1
+    21300004: DamageNumber_2
+    21300006: DamageNumber_3
+    21300008: DamageNumber_4
+    21300010: DamageNumber_5
+    21300012: DamageNumber_6
+    21300014: DamageNumber_7
+    21300016: DamageNumber_8
+    21300018: DamageNumber_9
+    21300020: DamageNumber_10
+    21300022: DamageNumber_11
+    21300024: DamageNumber_12
+    21300026: DamageNumber_13
+    21300028: DamageNumber_14
+    21300030: DamageNumber_15
+    21300032: DamageNumber_16
+    21300034: DamageNumber_17
+    21300036: DamageNumber_18
+    21300038: DamageNumber_19
+    21300040: DamageNumber_20
+    21300042: DamageNumber_21
+    21300044: DamageNumber_22
+    21300046: DamageNumber_23
+    21300048: DamageNumber_24
+    21300050: DamageNumber_25
+    21300052: DamageNumber_26
+    21300054: DamageNumber_27
+    21300056: DamageNumber_28
+    21300058: DamageNumber_29
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: DamageNumber_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 162
+        width: 72
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DamageNumber_1
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 163
+        width: 35
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DamageNumber_2
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 162
+        width: 62
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DamageNumber_3
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 162
+        width: 58
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DamageNumber_4
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 163
+        width: 64
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DamageNumber_5
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 162
+        width: 59
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DamageNumber_6
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 162
+        width: 64
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DamageNumber_7
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 161
+        width: 58
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DamageNumber_8
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 162
+        width: 59
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DamageNumber_9
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 162
+        width: 65
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DamageNumber_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 82
+        width: 72
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DamageNumber_11
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 83
+        width: 35
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DamageNumber_12
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 82
+        width: 62
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DamageNumber_13
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 82
+        width: 58
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DamageNumber_14
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 83
+        width: 64
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DamageNumber_15
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 82
+        width: 59
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DamageNumber_16
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 82
+        width: 64
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DamageNumber_17
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 81
+        width: 58
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DamageNumber_18
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 82
+        width: 59
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DamageNumber_19
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 82
+        width: 65
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DamageNumber_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 72
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DamageNumber_21
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 3
+        width: 35
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DamageNumber_22
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 2
+        width: 62
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DamageNumber_23
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 2
+        width: 58
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DamageNumber_24
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 3
+        width: 64
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DamageNumber_25
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 2
+        width: 59
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DamageNumber_26
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 2
+        width: 64
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DamageNumber_27
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 1
+        width: 58
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DamageNumber_28
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 2
+        width: 59
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: DamageNumber_29
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 2
+        width: 65
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
