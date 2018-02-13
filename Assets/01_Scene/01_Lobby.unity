@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.3731316, g: 0.38074896, b: 0.3587254, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -1363,6 +1363,8 @@ MonoBehaviour:
   m_TestPopup01Prefab: {fileID: 114000010279949122, guid: 75b07245b7a124c9fb0f2e74d5b6b0c2,
     type: 2}
   m_TestPopup02Prefab: {fileID: 114000013974062804, guid: b4dd68be7b57b416e84ebc1008a93b89,
+    type: 2}
+  m_HerosPopupPrefab: {fileID: 114697216165873320, guid: 17e2fee79e2584478926a893dde85e2f,
     type: 2}
   m_TestInputField: {fileID: 0}
 --- !u!1 &1320640828
