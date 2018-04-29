@@ -8,6 +8,13 @@ using Excel;
 using Newtonsoft.Json;
 using System.Text.RegularExpressions;
 
+namespace System.Runtime.CompilerServices
+{
+
+	public class ExtensionAttribute : Attribute { }
+
+}
+	
 public class ExcelToJsonConverter 
 {	
 	public delegate void ConversionToJsonSuccessfullHandler();
