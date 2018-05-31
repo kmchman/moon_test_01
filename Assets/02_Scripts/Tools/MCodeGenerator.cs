@@ -4,5 +4,8 @@ using UnityEngine;
 
 public class MCodeGenerator {
 
-
+	public static void GenerateDatatable()
+	{
+		
+	}
 }
