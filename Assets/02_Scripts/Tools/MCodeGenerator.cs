@@ -49,9 +49,8 @@ public class MCodeGenerator {
 
 	static void GenTableCode(StringBuilder sb, string dtName, IDictionary dic) {
 
-		string keyType = GetKeyType(dic);	
+		string dtKeyType = GetKeyType(dic);	
 
-//		string keyType = (string)types[keyName];
 		sb.AppendFormat("\tpublic class {0} {{\n", dtName);
 		var enumerator = dic.GetEnumerator();
 		while (enumerator.MoveNext()) 
@@ -60,7 +59,7 @@ public class MCodeGenerator {
 		}
 		sb.AppendFormat("\t}};\n");
 
-		sb.AppendFormat("\tpublic Dictionary<{1}, {0}> dt{0} = new Dictionary<{1}, {0}>();\n", dtName, keyType);
+		sb.AppendFormat("\tpublic Dictionary<{1}, {0}> dt{0} = new Dictionary<{1}, {0}>();\n", dtName, dtKeyType);
 
 		sb.AppendFormat("\tpublic void Load{0}s(IDictionary dic) {{\n", dtName);
 		sb.Append("\t\tvar enumerator = dic.GetEnumerator();\n");
@@ -73,6 +72,16 @@ public class MCodeGenerator {
 //		sb.AppendFormat("\t\t{0} k;\n", keyType);
 		sb.AppendFormat("\t\tIDictionary v = (IDictionary)value;\n\n");
 		sb.AppendFormat("\t\t{0} i = new {0}();\n", dtName);
+
+		enumerator = dic.GetEnumerator();
+		while (enumerator.MoveNext()) 
+		{
+			string dataKey = (string)enumerator.Key;
+			dataKey = dataKey.Replace("*", string.Empty);
+			sb.AppendFormat("\ti.{0} = {1}.Parse((string)v[\"{0}\"]);\n", dataKey, enumerator.Value);
+		}
+
+		sb.AppendFormat("\tdtCharData.Add(i.{0}, i);\n", dtKeyType);
 //		sb.AppendFormat("\t\tdt{0}[k] = i;\n", dtName);
 		sb.Append("\t}\n");
 	}
@@ -97,13 +106,25 @@ public class MCodeGenerator {
 		}
 	}
 
+//	static string GetKeyType(IDictionary dic)
+//	{
+//		var enumerator = dic.GetEnumerator();
+//		while(enumerator.MoveNext())
+//		{
+//			if (enumerator.Value.ToString().Contains("*"))
+//				return enumerator.Value.ToString().Replace("*", string.Empty);
+//		}
+//		Debug.LogError("key not found");
+//		return string.Empty;
+//	}
+
 	static string GetKeyType(IDictionary dic)
 	{
 		var enumerator = dic.GetEnumerator();
 		while(enumerator.MoveNext())
 		{
 			if (enumerator.Value.ToString().Contains("*"))
-				return enumerator.Value.ToString().Replace("*", string.Empty);
+				return (string)enumerator.Key;
 		}
 		Debug.LogError("key not found");
 		return string.Empty;
