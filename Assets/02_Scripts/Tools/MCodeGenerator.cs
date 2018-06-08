@@ -48,9 +48,13 @@ public class MCodeGenerator {
 
 
 	static void GenTableCode(StringBuilder sb, string dtName, IDictionary dic) {
-
+		
 		string dtKeyType = GetKeyType(dic);	
+		string dtKeyName = GetKeyName(dic);
 
+		Debug.Log("dtName : " + dtName);
+		Debug.Log("dtKeyType : " + dtKeyType);
+		Debug.Log("dic[dtKeyType] : " + dic[dtKeyType]);
 		sb.AppendFormat("\tpublic class {0} {{\n", dtName);
 		var enumerator = dic.GetEnumerator();
 		while (enumerator.MoveNext()) 
@@ -59,7 +63,7 @@ public class MCodeGenerator {
 		}
 		sb.AppendFormat("\t}};\n");
 
-		sb.AppendFormat("\tpublic Dictionary<{1}, {0}> dt{0} = new Dictionary<{1}, {0}>();\n", dtName, dtKeyType);
+		sb.AppendFormat("\tpublic Dictionary<{0}, {1}> dt{1} = new Dictionary<{0}, {1}>();\n", dtKeyType, dtName);
 
 		sb.AppendFormat("\tpublic void Load{0}s(IDictionary dic) {{\n", dtName);
 		sb.Append("\t\tvar enumerator = dic.GetEnumerator();\n");
@@ -76,12 +80,10 @@ public class MCodeGenerator {
 		enumerator = dic.GetEnumerator();
 		while (enumerator.MoveNext()) 
 		{
-			string dataKey = (string)enumerator.Key;
-			dataKey = dataKey.Replace("*", string.Empty);
-			sb.AppendFormat("\ti.{0} = {1}.Parse((string)v[\"{0}\"]);\n", dataKey, enumerator.Value);
+			GenVariableCode2(sb, (string)enumerator.Key, (string)enumerator.Value);
 		}
 
-		sb.AppendFormat("\tdtCharData.Add(i.{0}, i);\n", dtKeyType);
+		sb.AppendFormat("\t\tdtCharData.Add(i.{0}, i);\n", dtKeyName);
 //		sb.AppendFormat("\t\tdt{0}[k] = i;\n", dtName);
 		sb.Append("\t}\n");
 	}
@@ -92,33 +94,43 @@ public class MCodeGenerator {
 			type = type.Replace("*", string.Empty);
 		}
 
-		if (type.Equals("mtext")) {
-//			string mlName = name.Replace('_', '.');
-//			sb.AppendFormat("\t\tpublic virtual string {0} {{ get {{ return Datatable.Inst.GetML(GetType(), \"{1}\", {2}.ToString()); }} }}\n", name, mlName, key);
-			sb.AppendFormat("\t\tpublic string {0};\n", name);
-		} 
-		else if(type.Equals("String"))
-		{
-			sb.AppendFormat("\t\tpublic string {0};\n", name);
-		}
-		else { 
+		if (type.Equals("int")) {
 			sb.AppendFormat("\t\tpublic {0} {1};\n", type, name);
+		} 
+		else { 
+			sb.AppendFormat("\t\tpublic string {0};\n", name);	
 		}
 	}
 
-//	static string GetKeyType(IDictionary dic)
-//	{
-//		var enumerator = dic.GetEnumerator();
-//		while(enumerator.MoveNext())
-//		{
-//			if (enumerator.Value.ToString().Contains("*"))
-//				return enumerator.Value.ToString().Replace("*", string.Empty);
-//		}
-//		Debug.LogError("key not found");
-//		return string.Empty;
-//	}
+	static void GenVariableCode2(StringBuilder sb, string name, string type) 
+	{
+		if (type.Contains("*")) {
+			type = type.Replace("*", string.Empty);
+		}
+
+		if (type.Equals("int")) {
+			sb.AppendFormat("\t\ti.{0} = int.Parse((string)v[\"{0}\"]);\n", name);
+		} 
+		else { 
+			sb.AppendFormat("\t\ti.{0} = (string)v[\"{0}\"];\n", name);
+		}
+	}
 
 	static string GetKeyType(IDictionary dic)
+	{
+		var enumerator = dic.GetEnumerator();
+		while(enumerator.MoveNext())
+		{
+			if (enumerator.Value.ToString().Contains("*")) 
+			{
+				return ((string)enumerator.Value).Replace("*", string.Empty);
+			}
+		}
+		Debug.LogError("key not found");
+		return string.Empty;
+	}
+
+	static string GetKeyName(IDictionary dic)
 	{
 		var enumerator = dic.GetEnumerator();
 		while(enumerator.MoveNext())

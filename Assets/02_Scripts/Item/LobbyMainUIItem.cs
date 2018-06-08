@@ -24,25 +24,26 @@ public class LobbyMainUIItem : MonoBehaviour {
 
 	public void OnClickBtn_GameSetting()
 	{
-//		Debug.Log("OnClickBtn_GameSetting : " + TestManager.ALL_VERSION);
-//		MoonGlobalPopupManager.Inst.ShowPopup(m_GameSettingPrefab);
-//		LobbyMainUIItem.ShowNetworkInterfaces();
-		Debug.Log("OnClickBtn_GameSetting");
+		string data = (Resources.Load("DT/CharData") as TextAsset).text;
+		IList dataList = (IList)Util.JsonDecode(data);
 
-		TouchScreenKeyboard.Open("test", TouchScreenKeyboardType.NamePhonePad);
-			
+		for (int i = 1; i < dataList.Count; i++) {
+			IDictionary dic = (IDictionary)dataList[i];	
+			Datatable.Inst.LoadDt(dic);
+		}
+
+		Debug.Log("Datatable.Inst.dtCharData.Count" + Datatable.Inst.dtCharData.Count);
 	}
 
 	public void OnClickBtn_Test01()
 	{
-		MoonGlobalPopupManager.Inst.ShowPopup(m_TestPopup01Prefab);
-		LobbyMainUIItem.ShowNetworkInterfaces();
+		
+//		MoonGlobalPopupManager.Inst.ShowPopup(m_TestPopup01Prefab);
 	}
 
 	public void OnClickBtn_Test02()
 	{
 		MoonGlobalPopupManager.Inst.ShowPopup(m_HerosPopupPrefab);
-		LobbyMainUIItem.ShowNetworkInterfaces();
 	}
 
 	public static void ShowNetworkInterfaces()
