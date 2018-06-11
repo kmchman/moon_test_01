@@ -28,8 +28,12 @@ public class Global {
 	private static Global _inst = new Global();
 	public static Global Inst { get { return _inst; } }
 
-	public static Config cfg = Config.LoadResource("global", "config/global");
+//	public static Config cfg = Config.LoadResource("global", "config/global");
 
+	public void Start()
+	{
+		Debug.Log("public void Start()");
+	}
 
 	// FastRunTask, RunTask, LateRunTask 중 새로운 Task가 등록되는 경우를 위해 tempTaskList를 번갈아가면서 사용한다.
 	private List<Action> tempTaskList = new List<Action>();
@@ -150,7 +154,6 @@ public class Global {
 		}
 	}
 
-
 	void Initialize()
 	{
 
@@ -158,7 +161,7 @@ public class Global {
 
 	void InitResourceData(Action initSuccess)
 	{
-
+		
 	}
 
 //	IEnumerator DoInitResourceData(Action InitSuccess, Action InitFailure, bool isReload)
@@ -185,6 +188,10 @@ public class GlobalManager : MonoBehaviour {
 	void Awake()
 	{
 		_inst = this;
+	}
+
+	public void Start() {
+		Global.Inst.Start();
 	}
 }
 

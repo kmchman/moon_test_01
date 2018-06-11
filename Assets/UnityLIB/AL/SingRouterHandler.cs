@@ -19,7 +19,7 @@ namespace AL
 
 		private SingRouterHandler()
 		{
-			this.setURL(Global.cfg.GetString("singrouterURL", ""));
+//			this.setURL(Global.cfg.GetString("singrouterURL", ""));
 		}
 
 		public void setURL(string url)
