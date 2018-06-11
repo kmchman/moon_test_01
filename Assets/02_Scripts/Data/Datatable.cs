@@ -12,7 +12,7 @@ public partial class Datatable : _Datatable
 
 	public void LoadDt(IDictionary dic)
 	{
-		LoadCharDatas(dic);
+		LoadCharData(null, dic);
 	}
 
 }

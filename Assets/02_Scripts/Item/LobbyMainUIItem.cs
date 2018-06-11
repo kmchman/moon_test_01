@@ -37,7 +37,11 @@ public class LobbyMainUIItem : MonoBehaviour {
 
 	public void OnClickBtn_Test01()
 	{
-		
+		var enumerator = Datatable.Inst.dtCharData.GetEnumerator();
+		while (enumerator.MoveNext()) {
+			Debug.Log("ID : " + enumerator.Current.Key.ToString());
+			Debug.Log(enumerator.Current.ToString());
+		}
 //		MoonGlobalPopupManager.Inst.ShowPopup(m_TestPopup01Prefab);
 	}
 

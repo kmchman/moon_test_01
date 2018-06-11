@@ -6,15 +6,34 @@ using System.Text;
 using System.Linq;
 
 public class MCodeGenerator {
-	
+
+	static string[] dtList = new string[] {
+		"CharData", 
+		"HeroData",
+	};
+
 	static string DATATABLE_DEF_PATH = "Assets/02_Scripts/Data/_Datatable.cs";
 
 	public static void GenerateDatatable()
 	{
-		string data = (Resources.Load("DT/CharData") as TextAsset).text;
-		IList dataList = (IList)Util.JsonDecode(data);
-		IDictionary dic = (IDictionary)dataList[0];
-		GenDatatableCode(dic);
+		StringBuilder sb = new StringBuilder();
+
+		sb.Append("#pragma warning disable 114\n");
+		sb.Append("using UnityEngine;\n");
+		sb.Append("using System.Collections;\n");
+		sb.Append("using System.Collections.Generic;\n");
+		sb.Append("public class _Datatable {\n");
+
+		foreach (var value in dtList) {
+			string data = (Resources.Load("DT/" + value) as TextAsset).text;
+			IList dataList = (IList)Util.JsonDecode(data);
+			IDictionary dic = (IDictionary)dataList[0];
+			GenTableCode(sb, value, dic);	
+		}
+		sb.Append("}");
+		CreateDtFile(DATATABLE_DEF_PATH, sb.ToString());
+
+		Debug.Log("Complete GenDatatableCode");
 	}
 
 	private static void CreateDtFile(string filePath, string contents)
@@ -28,24 +47,6 @@ public class MCodeGenerator {
 			}
 		}
 	}
-
-	private static void GenDatatableCode(IDictionary dic)
-	{
-		StringBuilder sb = new StringBuilder();
-
-		sb.Append("#pragma warning disable 114\n");
-		sb.Append("using UnityEngine;\n");
-		sb.Append("using System.Collections;\n");
-		sb.Append("using System.Collections.Generic;\n");
-		sb.Append("public class _Datatable {\n");
-
-		GenTableCode(sb, "CharData", dic);
-		sb.Append("}");
-		CreateDtFile(DATATABLE_DEF_PATH, sb.ToString());
-
-		Debug.Log("Complete GenDatatableCode");
-	}
-
 
 	static void GenTableCode(StringBuilder sb, string dtName, IDictionary dic) {
 		
@@ -73,7 +74,6 @@ public class MCodeGenerator {
 		sb.Append("\t}\n");
 
 		sb.AppendFormat("\tpublic void Load{0}(object key, object value) {{\n", dtName);
-//		sb.AppendFormat("\t\t{0} k;\n", keyType);
 		sb.AppendFormat("\t\tIDictionary v = (IDictionary)value;\n\n");
 		sb.AppendFormat("\t\t{0} i = new {0}();\n", dtName);
 
@@ -83,36 +83,33 @@ public class MCodeGenerator {
 			GenVariableCode2(sb, (string)enumerator.Key, (string)enumerator.Value);
 		}
 
-		sb.AppendFormat("\t\tdtCharData.Add(i.{0}, i);\n", dtKeyName);
-//		sb.AppendFormat("\t\tdt{0}[k] = i;\n", dtName);
+		sb.AppendFormat("\t\tdt{0}.Add(i.{1}, i);\n", dtName, dtKeyName);
 		sb.Append("\t}\n");
 	}
 
 	static void GenVariableCode(StringBuilder sb, string name, string type) 
 	{
-		if (type.Contains("*")) {
-			type = type.Replace("*", string.Empty);
-		}
+		type = type.Replace("*", string.Empty).ToLower();
+		name = name.Replace(".", "_");
 
-		if (type.Equals("int")) {
-			sb.AppendFormat("\t\tpublic {0} {1};\n", type, name);
-		} 
-		else { 
-			sb.AppendFormat("\t\tpublic string {0};\n", name);	
-		}
+		if (type.Equals("mtext")) 
+			type = "string";
+		sb.AppendFormat("\t\tpublic {0} {1};\n", type, name);
 	}
 
 	static void GenVariableCode2(StringBuilder sb, string name, string type) 
 	{
-		if (type.Contains("*")) {
-			type = type.Replace("*", string.Empty);
-		}
+		type = type.Replace("*", string.Empty).ToLower();
+		name = name.Replace(".", "_");
 
-		if (type.Equals("int")) {
-			sb.AppendFormat("\t\ti.{0} = int.Parse((string)v[\"{0}\"]);\n", name);
+		if (type.Equals("mtext")) 
+			type = "string";
+		
+		if (type.Equals("string")) {
+			sb.AppendFormat("\t\ti.{0} = (string)v[\"{0}\"];\n", name);
 		} 
 		else { 
-			sb.AppendFormat("\t\ti.{0} = (string)v[\"{0}\"];\n", name);
+			sb.AppendFormat("\t\ti.{0} = {1}.Parse((string)v[\"{0}\"]);\n", name, type);
 		}
 	}
 
