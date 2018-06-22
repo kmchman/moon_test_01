@@ -97,4 +97,9 @@ public class _Datatable {
 		i.InscriptionID_2 = int.Parse((string)v["InscriptionID_2"]);
 		dtHeroData.Add(i.HeroID, i);
 	}
+	public void LoadDatatable()
+	{
+//	CharData
+//	HeroData
+	}
 }

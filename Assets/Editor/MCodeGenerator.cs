@@ -7,11 +7,6 @@ using System.Linq;
 
 public class MCodeGenerator {
 
-	static string[] dtList = new string[] {
-		"CharData", 
-		"HeroData",
-	};
-
 	static string DATATABLE_DEF_PATH = "Assets/02_Scripts/Data/_Datatable.cs";
 
 	public static void GenerateDatatable()
@@ -24,12 +19,13 @@ public class MCodeGenerator {
 		sb.Append("using System.Collections.Generic;\n");
 		sb.Append("public class _Datatable {\n");
 
-		foreach (var value in dtList) {
+		foreach (var value in Global.dtList) {
 			string data = (Resources.Load("DT/" + value) as TextAsset).text;
 			IList dataList = (IList)Util.JsonDecode(data);
 			IDictionary dic = (IDictionary)dataList[0];
 			GenTableCode(sb, value, dic);	
 		}
+		GenLoadCode(sb);
 		sb.Append("}");
 		CreateDtFile(DATATABLE_DEF_PATH, sb.ToString());
 
@@ -46,6 +42,18 @@ public class MCodeGenerator {
 				Debug.Log("exception");
 			}
 		}
+	}
+
+	static void GenLoadCode(StringBuilder sb)
+	{
+		sb.Append("\tpublic void LoadDatatable()\n");
+		sb.Append("\t{\n");
+		foreach (string value in Global.dtList) {
+			Debug.Log("LoadCharData(null, dic);" + value);
+//			sb.AppendFormat("\tLoad{0}\n", value);
+			sb.AppendFormat("\tLoad{0}\n", value);
+		}
+		sb.Append("\t}\n");
 	}
 
 	static void GenTableCode(StringBuilder sb, string dtName, IDictionary dic) {

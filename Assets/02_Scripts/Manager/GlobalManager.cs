@@ -10,6 +10,12 @@ public class Logger : AL.Logger{}
 public class Util : AL.Util {}
 
 public class Global {
+
+	public static string[] dtList = new string[] {
+		"CharData", 
+		"HeroData",
+	};
+
 	public enum LoadState
 	{
 		None,
