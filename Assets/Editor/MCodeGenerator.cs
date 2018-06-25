@@ -49,9 +49,8 @@ public class MCodeGenerator {
 		sb.Append("\tpublic void LoadDatatable()\n");
 		sb.Append("\t{\n");
 		foreach (string value in Global.dtList) {
-			Debug.Log("LoadCharData(null, dic);" + value);
 //			sb.AppendFormat("\tLoad{0}\n", value);
-			sb.AppendFormat("\tLoad{0}\n", value);
+//			sb.AppendFormat("\tLoad{0}\n", value);
 		}
 		sb.Append("\t}\n");
 	}
@@ -77,11 +76,11 @@ public class MCodeGenerator {
 		sb.AppendFormat("\tpublic void Load{0}s(IDictionary dic) {{\n", dtName);
 		sb.Append("\t\tvar enumerator = dic.GetEnumerator();\n");
 		sb.Append("\t\twhile (enumerator.MoveNext()) {\n");
-		sb.AppendFormat("\t\t\tLoad{0}(enumerator.Key, enumerator.Value);\n", dtName);
+		sb.AppendFormat("\t\t\tLoad{0}(enumerator.Value);\n", dtName);
 		sb.Append("\t\t}\n");
 		sb.Append("\t}\n");
 
-		sb.AppendFormat("\tpublic void Load{0}(object key, object value) {{\n", dtName);
+		sb.AppendFormat("\tpublic void Load{0}(object value) {{\n", dtName);
 		sb.AppendFormat("\t\tIDictionary v = (IDictionary)value;\n\n");
 		sb.AppendFormat("\t\t{0} i = new {0}();\n", dtName);
 
@@ -108,16 +107,16 @@ public class MCodeGenerator {
 	static void GenVariableCode2(StringBuilder sb, string name, string type) 
 	{
 		type = type.Replace("*", string.Empty).ToLower();
-		name = name.Replace(".", "_");
+		string newName = name.Replace(".", "_");
 
 		if (type.Equals("mtext")) 
 			type = "string";
 		
 		if (type.Equals("string")) {
-			sb.AppendFormat("\t\ti.{0} = (string)v[\"{0}\"];\n", name);
+			sb.AppendFormat("\t\ti.{0} = (string)v[\"{1}\"];\n", newName, name);
 		} 
 		else { 
-			sb.AppendFormat("\t\ti.{0} = {1}.Parse((string)v[\"{0}\"]);\n", name, type);
+			sb.AppendFormat("\t\ti.{0} = {1}.Parse((string)v[\"{2}\"]);\n", newName, type, name);
 		}
 	}
 

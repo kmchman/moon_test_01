@@ -25,10 +25,10 @@ public class _Datatable {
 	public void LoadCharDatas(IDictionary dic) {
 		var enumerator = dic.GetEnumerator();
 		while (enumerator.MoveNext()) {
-			LoadCharData(enumerator.Key, enumerator.Value);
+			LoadCharData(enumerator.Value);
 		}
 	}
-	public void LoadCharData(object key, object value) {
+	public void LoadCharData(object value) {
 		IDictionary v = (IDictionary)value;
 
 		CharData i = new CharData();
@@ -72,10 +72,10 @@ public class _Datatable {
 	public void LoadHeroDatas(IDictionary dic) {
 		var enumerator = dic.GetEnumerator();
 		while (enumerator.MoveNext()) {
-			LoadHeroData(enumerator.Key, enumerator.Value);
+			LoadHeroData(enumerator.Value);
 		}
 	}
-	public void LoadHeroData(object key, object value) {
+	public void LoadHeroData(object value) {
 		IDictionary v = (IDictionary)value;
 
 		HeroData i = new HeroData();
@@ -92,14 +92,12 @@ public class _Datatable {
 		i.ListState = (string)v["ListState"];
 		i.PvpPrefabName = (string)v["PvpPrefabName"];
 		i.PvpFaceImage = (string)v["PvpFaceImage"];
-		i.InscriptionID_0 = int.Parse((string)v["InscriptionID_0"]);
-		i.InscriptionID_1 = int.Parse((string)v["InscriptionID_1"]);
-		i.InscriptionID_2 = int.Parse((string)v["InscriptionID_2"]);
+		i.InscriptionID_0 = int.Parse((string)v["InscriptionID.0"]);
+		i.InscriptionID_1 = int.Parse((string)v["InscriptionID.1"]);
+		i.InscriptionID_2 = int.Parse((string)v["InscriptionID.2"]);
 		dtHeroData.Add(i.HeroID, i);
 	}
 	public void LoadDatatable()
 	{
-//	CharData
-//	HeroData
 	}
 }
