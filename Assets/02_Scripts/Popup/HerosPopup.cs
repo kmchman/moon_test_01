@@ -7,7 +7,7 @@ public class HerosPopup : MoonPopupUI {
 
 	[SerializeField] private HeroListItem		m_HeroItemPrefab;
 	[SerializeField] private Transform 			m_HeroListParent;
-	[SerializeField] private ScrollRect			m_ScrollRect;
+	[SerializeField] private STScrollRect		m_ScrollRect;
 
 	public override void Show(params object[] values)
 	{
@@ -16,13 +16,14 @@ public class HerosPopup : MoonPopupUI {
 		var enumerator = Datatable.Inst.dtHeroData.GetEnumerator();
 		while (enumerator.MoveNext()) {
 			Debug.Log("hero : " + enumerator.Current.Value.Name);
-//			Instantiate
+			m_ScrollRect.GetReuseItem(m_HeroItemPrefab, null);
 		}
 		CompleteShowAnimation();
 	}
 
 	public override void Hide(params object[] values)
 	{
+		m_ScrollRect.Clear();
 		for (int i = 0; i < 5; i++) 
 		{
 
