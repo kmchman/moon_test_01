@@ -1,10 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class HerosPopup : MoonPopupUI {
+
 	[SerializeField] private HeroListItem		m_HeroItemPrefab;
 	[SerializeField] private Transform 			m_HeroListParent;
+	[SerializeField] private ScrollRect			m_ScrollRect;
 
 	public override void Show(params object[] values)
 	{
@@ -13,6 +16,7 @@ public class HerosPopup : MoonPopupUI {
 		var enumerator = Datatable.Inst.dtHeroData.GetEnumerator();
 		while (enumerator.MoveNext()) {
 			Debug.Log("hero : " + enumerator.Current.Value.Name);
+//			Instantiate
 		}
 		CompleteShowAnimation();
 	}

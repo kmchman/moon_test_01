@@ -22,11 +22,6 @@ public class LobbyMainUIItem : MonoBehaviour {
 //		TouchScreenKeyboard.vi
 	}
 
-	public void OnClickBtn_GameSetting()
-	{
-		
-	}
-
 	public void OnClickBtn_Test01()
 	{
 		var enumerator = Datatable.Inst.dtCharData.GetEnumerator();
@@ -40,6 +35,11 @@ public class LobbyMainUIItem : MonoBehaviour {
 	public void OnClickBtn_Test02()
 	{
 		MoonGlobalPopupManager.Inst.ShowPopup(m_HerosPopupPrefab);
+	}
+
+	public void OnClickBtn_Test03()
+	{
+
 	}
 
 	public static void ShowNetworkInterfaces()
