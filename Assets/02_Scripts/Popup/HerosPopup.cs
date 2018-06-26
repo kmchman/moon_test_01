@@ -11,12 +11,14 @@ public class HerosPopup : MoonPopupUI {
 
 	public override void Show(params object[] values)
 	{
+		m_ScrollRect.Clear();
 		Debug.Log("public override void Show(params object[] values)");
 		base.Show(values);
 		var enumerator = Datatable.Inst.dtHeroData.GetEnumerator();
 		while (enumerator.MoveNext()) {
 			Debug.Log("hero : " + enumerator.Current.Value.Name);
-			m_ScrollRect.GetReuseItem(m_HeroItemPrefab, null);
+			HeroListItem item = m_ScrollRect.GetReuseItem(m_HeroItemPrefab, null);
+			item.SetData(enumerator.Current.Value.HeroID);
 		}
 		CompleteShowAnimation();
 	}
@@ -31,5 +33,4 @@ public class HerosPopup : MoonPopupUI {
 		base.Hide(values);
 		CompleteHideAnimation();
 	}
-
 }

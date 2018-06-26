@@ -90,6 +90,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 399632475aede4c8f8435bdb025941ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  reuseIdentifierName: HeroListItem
+  idItemInitData: 0
+  m_AtlasHeroFace: {fileID: 4343727234628468602, guid: 8d6dd3d86707f45f8956569b2b0912d4,
+    type: 2}
+  m_ImageFace: {fileID: 114630191244579486}
 --- !u!114 &114350054809904930
 MonoBehaviour:
   m_ObjectHideFlags: 1
