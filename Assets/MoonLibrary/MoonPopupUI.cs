@@ -24,22 +24,22 @@ public class MoonPopupUI : MonoBehaviour {
 
 		UIAnimationSetter [] uiAnimationSetter = GetComponents<UIAnimationSetter>();
 
-		for (int i = 0; i < uiAnimationSetter.Length; i++) 
-		{
-			switch (uiAnimationSetter[i].UIAnimationType) 
-			{
-			case UIAnimationEffectorType.PopupShow:
-				m_ShowAnimationSetter = GetComponent<UIAnimationSetter>();
-				break;
-			case UIAnimationEffectorType.PopupHide:
-				m_HideAnimationSetter = GetComponent<UIAnimationSetter>();
-				break;
-			case UIAnimationEffectorType.ButtonScaleUp:
-				break;
-			case UIAnimationEffectorType.ButtonScaleNomal:
-				break;
-			}
-		}
+//		for (int i = 0; i < uiAnimationSetter.Length; i++) 
+//		{
+//			switch (uiAnimationSetter[i].UIAnimationType) 
+//			{
+//			case UIAnimationEffectorType.PopupShow:
+//				m_ShowAnimationSetter = GetComponent<UIAnimationSetter>();
+//				break;
+//			case UIAnimationEffectorType.PopupHide:
+//				m_HideAnimationSetter = GetComponent<UIAnimationSetter>();
+//				break;
+//			case UIAnimationEffectorType.ButtonScaleUp:
+//				break;
+//			case UIAnimationEffectorType.ButtonScaleNomal:
+//				break;
+//			}
+//		}
 	}
 
 	public void ShowPopupByManager(Action<MoonPopupUI> hidePopupAction, params object[] values)
@@ -50,30 +50,30 @@ public class MoonPopupUI : MonoBehaviour {
 
 	public virtual void Show(params object[] values)
 	{
-		gameObject.SetActive(true);
-
-		m_animationSynchronizer.Init();
-		m_animationSynchronizer.IncreaseCount();
-		m_animationSynchronizer.IncreaseCount();
-		m_animationSynchronizer.AddWaitEvent(CompleteShowAnimation);
-
-		if (m_ShowAnimationSetter) 
-		{
-			UIAnimationEffector.Invoke(m_ShowAnimationSetter.UIAnimationType, rectTransformRef);	
-		}
+//		gameObject.SetActive(true);
+//
+//		m_animationSynchronizer.Init();
+//		m_animationSynchronizer.IncreaseCount();
+//		m_animationSynchronizer.IncreaseCount();
+//		m_animationSynchronizer.AddWaitEvent(CompleteShowAnimation);
+//
+//		if (m_ShowAnimationSetter) 
+//		{
+//			UIAnimationEffector.Invoke(m_ShowAnimationSetter.UIAnimationType, rectTransformRef);	
+//		}
 	}
 
 	public virtual void Hide(params object[] values)
 	{
-		if (m_HideAnimationSetter) 
-		{
-//			UIAnimationEffector.Invoke(m_HideAnimationSetter.UIAnimationType, rectTransformRef).OnComplete(CompleteHideAnimation);
-			UIAnimationEffector.Invoke(m_HideAnimationSetter.UIAnimationType, rectTransformRef).OnCompleteAppend(CompleteHideAnimation);
-		} 
-		else 
-		{
-			CompleteHideAnimation();	
-		}
+//		if (m_HideAnimationSetter) 
+//		{
+////			UIAnimationEffector.Invoke(m_HideAnimationSetter.UIAnimationType, rectTransformRef).OnComplete(CompleteHideAnimation);
+//			UIAnimationEffector.Invoke(m_HideAnimationSetter.UIAnimationType, rectTransformRef).OnCompleteAppend(CompleteHideAnimation);
+//		} 
+//		else 
+//		{
+//			CompleteHideAnimation();	
+//		}
 	}
 
 	protected void CompleteShowAnimation()

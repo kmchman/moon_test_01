@@ -48,7 +48,7 @@ public class STScrollRect : STScrollRectBase
 			m_RectTransformRef = transform as RectTransform;
 		return m_RectTransformRef;
 	} }
-	
+
 	public LayoutGroup layoutGroup { get {
 		if (m_LayoutGroup == null)
 			m_LayoutGroup = transform.GetComponentInChildren<LayoutGroup>(true);
@@ -57,6 +57,8 @@ public class STScrollRect : STScrollRectBase
 
 	private RectTransform m_RectTransformRef;
 	private LayoutGroup m_LayoutGroup;
+
+	private STImage m_CoverImage;
 
 	protected List<STScrollRectItem> m_ScrollRectItemList = new List<STScrollRectItem>();
 	protected List<STScrollRectItem> m_ShowScrollRectItemList = new List<STScrollRectItem>();
@@ -172,6 +174,22 @@ public class STScrollRect : STScrollRectBase
 		// Check Content View
 		CalculateContentSize();
 		CheckVisibleItem();
+	}
+
+	public Tween Remove(STScrollRectItem item, ItemAnimationType animationType)
+	{
+		switch(animationType)
+		{
+		case ItemAnimationType.None:
+			Remove(item);
+			return null;
+
+		case ItemAnimationType.VerticalCrush:
+		case ItemAnimationType.HorizontalCrush:
+			return PlayHideItemAnimation(item, animationType);
+		}
+
+		return null;
 	}
 
 	public void Remove(STScrollRectItem item)
@@ -341,6 +359,30 @@ public class STScrollRect : STScrollRectBase
 		CheckVisibleItem();
 	}
 
+	private void MakeCoverImage()
+	{
+		if(m_CoverImage != null)
+			return;
+
+		GameObject coverObject = new GameObject(COVER_IMAGE_NAME, typeof(STImage));
+		m_CoverImage = coverObject.GetComponent<STImage>();
+
+		m_CoverImage.rectTransform.SetParent(rectTransform, false);
+		m_CoverImage.rectTransform.anchorMin = Vector2.zero;
+		m_CoverImage.rectTransform.anchorMax = Vector2.one;
+		m_CoverImage.rectTransform.sizeDelta = Vector2.zero;
+
+		m_CoverImage.color = new Color(0, 0, 0, 0);
+	}
+
+	private void SetInteractive(bool isInteractive)
+	{
+		MakeCoverImage();
+
+		m_CoverImage.gameObject.SetActive(!isInteractive);
+		enabled = isInteractive;
+	}
+
 	private bool CheckActive()
 	{
 		if(gameObject.activeInHierarchy)
@@ -441,6 +483,53 @@ public class STScrollRect : STScrollRectBase
 	{
 		base.SetNormalizedPosition (value, axis);
 		CheckVisibleItem();
+	}
+
+	private Tween PlayHideItemAnimation(STScrollRectItem item, ItemAnimationType animationType)
+	{
+		StopHideItemAnimation();
+
+		SetInteractive(false);
+
+		Vector2 itemSize = new Vector2(item.layoutElement.minWidth, item.layoutElement.minHeight);
+		Vector3 itemScale = item.rectTransformRef.localScale;
+
+		Sequence sequence = DOTween.Sequence();
+		sequence.Append(DOVirtual.Float(1, 0, HIDE_ANIMATION_TIME, (percent) => {
+				switch (animationType)
+				{
+				case ItemAnimationType.VerticalCrush:
+					item.layoutElement.minHeight = itemSize.y * percent;
+					item.rectTransformRef.localScale = new Vector3(itemScale.x, itemScale.y  * percent, itemScale.z);
+					break;
+
+				case ItemAnimationType.HorizontalCrush:
+					item.layoutElement.minWidth = itemSize.x * percent; 
+					item.rectTransformRef.localScale = new Vector3(itemScale.x * percent, itemScale.y, itemScale.z);
+					break;
+				}
+
+				CalculateContentSize();
+				SetContentAnchoredPosition(ClampScrollAblePosition(content.anchoredPosition), true);
+			}).SetEase(Ease.Linear));
+
+		sequence.OnCompleteAppend(() => {
+				item.layoutElement.minWidth = itemSize.x;
+				item.layoutElement.minHeight = itemSize.y;
+
+				item.rectTransformRef.localScale = itemScale;
+
+				RemoveItem(item);
+
+				CalculateContentSize();
+				SetContentAnchoredPosition(ClampScrollAblePosition(content.anchoredPosition), true);
+
+				SetInteractive(true);
+			});
+
+		sequence.SetTarget(m_HideAnimationTarget);
+
+		return sequence;
 	}
 	
 	protected void CheckViewPortRectMovableScroll()

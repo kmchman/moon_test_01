@@ -96,6 +96,21 @@ namespace STDOTweenExtensions
 			return tween;
 		}
 
+		public static TypeName SetIsBlockInputEvent<TypeName>(this TypeName tween, bool isBlock) where TypeName : Tween
+		{
+			if (isBlock)
+			{
+				InputBlocker.inst.SetBlockByDOTween(tween);
+				tween.OnKillAppend(() => { InputBlocker.inst.ResetBlockByDOTween(tween); });
+			}
+			else
+			{
+				InputBlocker.inst.ResetBlockByDOTween(tween);
+			}
+
+			return tween;
+		}
+
 		private static void RemovePauseEventTween(Tween tween)
 		{
 			PauseEventActionTweens.Remove(tween);
@@ -104,6 +119,16 @@ namespace STDOTweenExtensions
 
 	public static class GraphicExtensions
 	{
+		public static Tween DOGrayScale(this Graphic graphic, float duraion)
+		{
+			graphic.material = GlobalDataStore.Inst.GetCloneUIMaskGrayScaleMaterial();
+
+			return DOTween.To((percent) =>
+			{
+				graphic.material.SetFloat("_EffectAmount", percent);
+			}, 0, 1, duraion).SetEase(Ease.OutCirc).SetTarget(graphic);
+		}
+
 		public static Tween DOCanvasRenderColor(this Graphic graphic, Color endColor, float duration)
 		{
 			return DOTween.To(graphic.canvasRenderer.GetColor, (color) => { graphic.canvasRenderer.SetColor(color); }, endColor, duration);

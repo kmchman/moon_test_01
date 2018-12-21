@@ -59,7 +59,7 @@ public class MoonPopupManager : MonoBehaviour {
 		if (m_AllPopups.ContainsKey(Prefab))
 			return m_AllPopups[Prefab] as T;
 		
-		m_AllPopups[Prefab] = Moon.Util.MakeItem(Prefab, transform, false);
+		m_AllPopups[Prefab] = Giant.Util.MakeItem(Prefab, transform, false);
 
 		return m_AllPopups[Prefab] as T;
 	}
@@ -104,7 +104,7 @@ public class MoonPopupManager : MonoBehaviour {
 			}
 		}
 
-		Image backGroundImage = Moon.Util.MakeItem(m_BackgroundImages[0], transform, false);
+		Image backGroundImage = Giant.Util.MakeItem(m_BackgroundImages[0], transform, false);
 		backGroundImage.gameObject.SetActive(true);
 		m_BackgroundImages.Add(backGroundImage);
 

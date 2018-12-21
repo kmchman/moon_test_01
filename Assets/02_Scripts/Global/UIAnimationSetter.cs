@@ -1,9 +1,19 @@
 ﻿using UnityEngine;
+
 using System.Collections;
+using System.Collections.Generic;
 
-public class UIAnimationSetter : MonoBehaviour {
+using DG.Tweening;
+using STDOTweenExtensions;
 
+public class UIAnimationSetter : MonoBehaviour
+{
+	[SerializeField] private UIAnimationEffectorType m_AnimationEffectorType = UIAnimationEffectorType.None;
 
-	[SerializeField] private UIAnimationEffectorType 		m_UIAnimationType;
-	public UIAnimationEffectorType UIAnimationType { get { return m_UIAnimationType;}}
+	public UIAnimationEffectorType animationEffectorType { get { return m_AnimationEffectorType; } }
+
+	public Tween Invoke(RectTransform rectTransform)
+	{
+		return UIAnimationEffector.Invoke(m_AnimationEffectorType, rectTransform);
+	}
 }
