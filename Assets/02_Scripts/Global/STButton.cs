@@ -25,33 +25,33 @@ public class STButton : Button
 	private bool m_IsPressedState = false;
 	private bool m_IsChainTouch = false;
 
-//	protected override void Awake()
-//	{
-//		m_RectTransformRef = transform as RectTransform;
-//
-//		if(m_AnimationRectTransform == null)
-//			m_AnimationRectTransform = m_RectTransformRef;
-//
-//		base.Awake();
-//
-////#if UNITY_EDITOR
-////		STGraphicManager.MakeSTGraphicManager();
-////#endif
-//
-//		Navigation tempNavigation = navigation;
-//		tempNavigation.mode = Navigation.Mode.None;
-//		navigation = tempNavigation;
-//
+	protected override void Awake()
+	{
+		m_RectTransformRef = transform as RectTransform;
+
+		if(m_AnimationRectTransform == null)
+			m_AnimationRectTransform = m_RectTransformRef;
+
+		base.Awake();
+
+//#if UNITY_EDITOR
+//		STGraphicManager.MakeSTGraphicManager();
+//#endif
+
+		Navigation tempNavigation = navigation;
+		tempNavigation.mode = Navigation.Mode.None;
+		navigation = tempNavigation;
+
 //		InitMarker();
 //		AddButton();
-//	}
-//
-//	protected override void OnDestroy()
-//	{
-//		base.OnDestroy();
-//
+	}
+
+	protected override void OnDestroy()
+	{
+		base.OnDestroy();
+
 //		RemoveButton();
-//	}
+	}
 
 	protected override void DoStateTransition(SelectionState state, bool instant)
 	{

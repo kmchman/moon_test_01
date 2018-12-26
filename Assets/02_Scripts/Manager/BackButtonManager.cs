@@ -8,14 +8,26 @@ public class BackButtonManager : MonoBehaviour {
 
 		if (Input.GetKeyDown(KeyCode.Escape)) 
 		{
-			BackButtonTouch();
+			TouchBackButton();
 		}
 	}
 
-	private void BackButtonTouch()
+	private void TouchBackButton()
 	{
-		MoonPopupManager popupManager = MoonPopupManager.GetPopupManager(0);
-		popupManager.HideLastPopup();
-	}
+		if (InputBlocker.inst.isBlock)
+			return;
 
+		for (int i = 0; i < PopupManager.count; ++i)
+		{
+			PopupManager popupManager = PopupManager.ManagerAt(i);
+			if (popupManager == null)
+				continue;
+
+			if (popupManager.HideLastPopupByBackButtonManager())
+				return;
+		}
+
+		if (PanelManager.inst != null)
+			PanelManager.inst.OnCallByBackButtonManager();
+	}
 }

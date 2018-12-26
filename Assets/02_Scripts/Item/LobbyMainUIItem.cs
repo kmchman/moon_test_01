@@ -34,7 +34,7 @@ public class LobbyMainUIItem : MonoBehaviour {
 
 	public void OnClickBtn_Test02()
 	{
-		MoonGlobalPopupManager.Inst.ShowPopup(m_HerosPopupPrefab);
+		GlobalPopupManager.Inst.ShowPopup(m_HerosPopupPrefab);
 	}
 
 	public void OnClickBtn_Test03()

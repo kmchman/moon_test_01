@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 
-public class HerosPopup : MoonPopupUI {
+public class HerosPopup : PopupUI {
 
 	[SerializeField] private HeroListItem		m_HeroItemPrefab;
 	[SerializeField] private Transform 			m_HeroListParent;
