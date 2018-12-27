@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿#if UNITY_EDITOR
+using UnityEditor;
+#endif
+using UnityEngine;
 using System.Collections;
 using System;
 
@@ -36,15 +39,15 @@ public class AssetBundleManager : MonoBehaviour {
 	{
 		string  assetBundleLowerName = assetBundleName.ToLower();
 #if UNITY_EDITOR && USE_ASSETDATABASE
-//		string [] assetPaths = AssetDatabase.GetAssetPathsFromAssetBundleAndAssetName(assetBundleLowerName, assetName);
-//		if (assetPaths.Length != 1)
-//		{
-//		Debug.LogError(Util.StringFormat("Check AssetBundle Name : {0}({1})", assetBundleLowerName, assetName));
-//		cb(null);
-//		return;
-//		}
-//
-//		cb(AssetDatabase.LoadAssetAtPath<UnityEngine.Object>(assetPaths[0]));
+		string [] assetPaths = AssetDatabase.GetAssetPathsFromAssetBundleAndAssetName(assetBundleLowerName, assetName);
+		if (assetPaths.Length != 1)
+		{
+		Debug.LogError(Util.StringFormat("Check AssetBundle Name : {0}({1})", assetBundleLowerName, assetName));
+		cb(null);
+		return;
+		}
+
+		cb(AssetDatabase.LoadAssetAtPath<UnityEngine.Object>(assetPaths[0]));
 #else
 		AddWaitingAssetBundle(assetBundleLowerName, cb);
 
