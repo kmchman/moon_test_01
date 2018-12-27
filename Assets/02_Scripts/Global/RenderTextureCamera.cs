@@ -79,16 +79,17 @@ public class RenderTextureCamera : MonoBehaviour
 	{
 		if (m_IDCharData == idCharData)
 			return;
-
+		
 		ReleaseCharacterAsset();
 
 		int idSequence = ++m_IDSequence;
 		m_IDCharData = idCharData;
 		m_CompleteShowCharacterDelegate = completeShowCharacterDelegate;
-//		AssetBundleManager.Inst.AsyncGetCharacterAsset(m_IDCharData, (prefab) =>
-//		{
+
+		AssetBundleManager.Inst.AsyncGetCharacterAsset(m_IDCharData, (prefab) =>
+		{
 //			GetCharacterAsset(idSequence, idCharData, isShowDialog, prefab);
-//		});
+		});
 	}
 		
 	public void ReleaseCharacterAsset()

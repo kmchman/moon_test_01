@@ -5,9 +5,10 @@ using UnityEngine;
 
 public class HerosPopup : PopupUI {
 
-	[SerializeField] private HeroListItem		m_HeroItemPrefab;
-	[SerializeField] private Transform 			m_HeroListParent;
-	[SerializeField] private STScrollRect		m_ScrollRect;
+	[SerializeField] private HeroListItem					m_HeroItemPrefab;
+	[SerializeField] private Transform 						m_HeroListParent;
+	[SerializeField] private STScrollRect					m_ScrollRect;
+	[SerializeField] private CharacterDetailViewItem		m_CharacterView;
 
 	public override void Show(params object[] values)
 	{
@@ -15,12 +16,19 @@ public class HerosPopup : PopupUI {
 		Debug.Log("public override void Show(params object[] values)");
 		base.Show(values);
 		var enumerator = Datatable.Inst.dtHeroData.GetEnumerator();
+		int index = 0;
 		while (enumerator.MoveNext()) {
 			Debug.Log("hero : " + enumerator.Current.Value.Name);
 			HeroListItem item = m_ScrollRect.GetReuseItem(m_HeroItemPrefab, null);
 			item.SetData(enumerator.Current.Value.HeroID);
+
+			if (index++ == 0) {
+				m_CharacterView.Show(enumerator.Current.Value.CharID);
+			}
 		}
+
 		CompleteShowAnimation();
+
 	}
 
 	public override void Hide(params object[] values)
@@ -32,5 +40,10 @@ public class HerosPopup : PopupUI {
 		}
 		base.Hide(values);
 		CompleteHideAnimation();
+	}
+
+	public void OnClickBtnClose()
+	{
+		Hide();
 	}
 }
