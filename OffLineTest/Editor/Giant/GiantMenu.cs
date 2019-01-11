@@ -594,13 +594,26 @@ public partial class GiantMenu
 	static bool CheckPreBuildFile(string path)
 	{
 		// OffLineTest
-		return true;
+		if (Path.GetFileName(path).StartsWith("."))
+			return false;
+		return path.StartsWith("ios") || path.StartsWith("raw") || path.StartsWith("dt/pw.nick");
+
+
+		if (path.StartsWith("dt"))
+		{
+			string fileName = Path.GetFileNameWithoutExtension(path);
+			if (fileName.StartsWith("ml.") || fileName.StartsWith("pw."))
+				return true;
+			return fileName.Equals("giantdatas");
+		}
+		return path.StartsWith("raw/json");
+
 #if UNITY_IOS
 //		if (Path.GetFileName(path).StartsWith("."))
 //			return false;
 //		return path.StartsWith("ios") || path.StartsWith("raw") || path.StartsWith("dt/pw.nick");
-
-
+//
+//
 //		if (path.StartsWith("dt"))
 //		{
 //			string fileName = Path.GetFileNameWithoutExtension(path);
