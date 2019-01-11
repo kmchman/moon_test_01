@@ -1163,6 +1163,10 @@ public partial class GiantMenu
 		{
 			if (Path.GetExtension(files[i]).Equals(".meta"))
 				continue;
+#if UNITY_ANDROID
+			if (files[i].EndsWith(Constant.SplashGoogleName))
+				continue;
+#endif
 			File.Delete(files[i]);
 		}
 

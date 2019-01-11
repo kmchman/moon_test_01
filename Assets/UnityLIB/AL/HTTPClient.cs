@@ -120,8 +120,10 @@ public class HTTPClient {
 		} catch (Exception e) {
 			Debug.LogError(Logger.Write(e));
 			Debug.LogError(Logger.Write("invoke: ", member, args));
-			MemberInfo[] mis = type.GetMember(member);
-			Util.ForEach(mis, Debug.LogError);
+#if UNITY_EDITOR || DONT_MUTE_LOG
+				MemberInfo[] mis = type.GetMember(member);
+				Util.ForEach(mis, Debug.LogError);
+#endif
 		}
 	}
 

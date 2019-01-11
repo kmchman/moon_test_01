@@ -68,33 +68,33 @@ public class LoginManager : MonoBehaviour
 		LoginSuccess();
 		return;
 
-		Action getGuildDataAction = ()=>{
-				// guild data
-				GiantHandler.Inst.doGetGuildData().SetSuccessAction(()=>{
-						LoginSuccess();
-					}).SetFailureAction((error)=>{
-							// 길드 정보 받는 걸 실패하더라도 게임에 진입할 수 있도록 한다.
-							GiantHandler.DefaultRequestFailure(error);
-							LoginSuccess();
-						});
-			};
+		Action getGuildDataAction = () => {
+			// guild data
+			GiantHandler.Inst.doGetGuildData().SetSuccessAction(LoginSuccess).SetFailureAction((error) => {
+				// 길드 정보 받는 걸 실패하더라도 게임에 진입할 수 있도록 한다.
+				GiantHandler.DefaultRequestFailure(error);
+				LoginSuccess();
+			});
+		};
 
-		Action updateSeasonData = ()=>{
-				AccountDataStore.instance.pvpSeasonInfo.UpdateLogin(()=>{
-						AccountDataStore.instance.arenaSeasonInfo.UpdateLogin(()=>{
-								AccountDataStore.instance.ValidateQuest(getGuildDataAction);
-							});
+		Action updateSeasonData = () => {
+			AccountDataStore.instance.pvpSeasonInfo.UpdateLogin(() => {
+				AccountDataStore.instance.arenaSeasonInfo.UpdateLogin(() => {
+					AccountDataStore.instance.duelSeasonInfo.UpdateLogin(() => {
+						AccountDataStore.instance.ValidateQuest(getGuildDataAction);
 					});
-			};
+				});
+			});
+		};
 
 		// getUser
-		GiantHandler.Inst.doGetUser().SetSuccessAction(()=>{
-				// takeMasterLevelUpTreasureChest - 레벨업을 했지만, 레벨업 보너스 보물 상자를 못 받고 게임이 꺼진 경우 다시 접속했을 때 연출 없이 보상만 다시 받도록 한다.
-				if (AccountDataStore.instance.IsStackedTreasureChest())
-					GiantHandler.Inst.doTakeMasterLevelUpTreasureChest().SetSuccessAction(updateSeasonData);
-				else
-					updateSeasonData();
-			}).SetFailureAction(LoginFail);
+		GiantHandler.Inst.doGetUser().SetSuccessAction(() => {
+			// takeMasterLevelUpTreasureChest - 레벨업을 했지만, 레벨업 보너스 보물 상자를 못 받고 게임이 꺼진 경우 다시 접속했을 때 연출 없이 보상만 다시 받도록 한다.
+			if (AccountDataStore.instance.IsStackedTreasureChest())
+				GiantHandler.Inst.doTakeMasterLevelUpTreasureChest().SetSuccessAction(updateSeasonData);
+			else
+				updateSeasonData();
+		}).SetFailureAction(LoginFail);
 	}
 
 	private void LoginSuccess()
