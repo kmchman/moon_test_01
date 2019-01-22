@@ -436,26 +436,62 @@ public class ResourceManager {
 //			}
 //		});
 
-			string seedName = "Seed";
-			PersistentStore.Inst.LoadJsonFromIDByThread(seedName, (obj) => {
+			string seedName = "MoonTest";
+			PersistentStore.Inst.LoadJsonFromID(seedName, (obj) => {
 				if(null == obj) { Debug.LogError("Check ReloadDt!"); }
 				else {
-					Global.Inst.PushThreadTask(() => {
-						LoadedResourceSeed(seedName, obj);
-						Global.Inst.PushTask(() => {
-							cb(false, true);
-						});
-					});
+					LoadedResourceSeed(seedName, obj);
+					cb(false, true);
+//					Global.Inst.PushTask(() => {
+//						cb(false, true);
+//					});
+
+//					Global.Inst.PushThreadTask(() => {
+//						LoadedResourceSeed(seedName, obj);
+//						Global.Inst.PushTask(() => {
+//							cb(false, true);
+//						});
+//					});
 				}
 			});
 	}
 
 	public void LoadedResourceSeed(string id, object obj)
 	{
-		foreach (IList fi in (IList)obj) {
-			resfiles[fi[1]] = fi[0];
-			ressizes[fi[0].ToString()] = long.Parse(fi[2].ToString());
-		}
+			IDictionary dic = (IDictionary)obj;
+			if (dic["fileDic"] != null) {
+				IDictionary fileDic = (IDictionary)dic["fileDic"];
+				var enuemrtor = fileDic.GetEnumerator();
+				while (enuemrtor.MoveNext()) {
+					resfiles[(string)enuemrtor.Value] = (string)enuemrtor.Key;
+				}
+				//				MoonTestResourceData resourceData = (MoonTestResourceData)dic["fileDic"];
+//				Dictionary<string, string> fileDic = (Dictionary<string, string>)dic["fileDic"];
+			}
+
+
+
+
+//		// OffLineTest
+//		foreach (IList fi in (IList)obj) {
+//			resfiles[fi[1]] = fi[0];
+//			ressizes[fi[0].ToString()] = long.Parse(fi[2].ToString());
+//		}
+
+//			Debug.Log("MoonTest LoadedResourceSeed");
+//			MoonTestResourceData resourceData = (MoonTestResourceData)obj;
+//			var enumertor = resourceData.fileDic.GetEnumerator();
+//			while (enumertor.MoveNext()) 
+//			{
+//				Debug.Log("key : " + enumertor.Current.Key + " value : " + enumertor.Current.Value);
+//				resfiles[enumertor.Current.Key] = enumertor.Current.Value;
+//			}
+
+//			var enumertor = dic.GetEnumerator();
+//			while (enumertor.MoveNext()) 
+//			{
+//				Debug.Log("key : " + dic.Keys.ToString());
+//			}
 		resID = id;
 	}
 

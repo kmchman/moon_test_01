@@ -237,7 +237,9 @@ public partial class GiantMenu
 		int resourceFolderLength = assetBundleResourceFolder.Length + 1;
 		string [] files = Directory.GetFiles(assetBundleResourceFolder, "*", SearchOption.AllDirectories);
 		// OffLineTest
-		Dictionary<string, string> fileDic = new Dictionary<string, string>(); 
+
+		MoonTestResourceData resourceData = new MoonTestResourceData();
+		resourceData.fileDic = new Dictionary<string, string>();
 
 		for (int i = 0; i < files.Length; ++i)
 		{
@@ -248,19 +250,40 @@ public partial class GiantMenu
 			if (Path.GetExtension(path).Equals(".json"))
 				bytes = Util.ALEEncode(bytes, ComponentAce.Compression.Libs.zlib.zlibConst.Z_DEFAULT_COMPRESSION);
 			string hash = PersistentStore.GetHash(bytes);
-			string id = ResourceManager.Inst.GetID(path);
-			if (!hash.Equals(id))
-				PersistentStore.Inst.LoadObject(id, (data) => { bytes = data; });
-
-			// OffLineTest
-			if(bytes != null)
-				File.WriteAllBytes(Path.Combine(PersistentStore.StreamingAssetObjDir, id), bytes);
-			fileDic.Add(path, id);
-		}
 
 		// OffLineTest
-//		File.WriteAllText(Path.Combine(PersistentStore.StreamingAssetObjDir, "MoonTest"), Util.JsonEncode2(fileDic));
-//		return;
+//			string id = ResourceManager.Inst.GetID(path);
+//			if (!hash.Equals(id))
+//				PersistentStore.Inst.LoadObject(id, (data) => { bytes = data; });
+
+			if(bytes != null)
+				File.WriteAllBytes(Path.Combine(PersistentStore.StreamingAssetObjDir, hash), bytes);
+			
+			if (!resourceData.fileDic.ContainsKey(hash))
+				resourceData.fileDic.Add(hash, path);
+			else
+				Debug.Log("alreay exist");
+		}
+			
+		// OffLineTest
+
+		string filePath = Path.Combine(PersistentStore.StreamingAssetObjDir, "MoonTest");
+		string json = Util.JsonEncode2(resourceData);
+		byte[] jsonBytes =  AL.Util.Utf8Encode(json);
+		jsonBytes = AL.Util.ALEEncode(jsonBytes);
+		AL.Util.WriteFile(filePath, jsonBytes);
+
+//		{
+//			string filePath = AL.PersistentStore.GetPath(fileName);
+//			string json = AL.Util.JsonEncode2(data);
+//			byte[] bytes =  AL.Util.Utf8Encode(json);
+//#if !UNITY_EDITOR
+//			bytes = AL.Util.ALEEncode(bytes);
+//#endif
+//			AL.Util.WriteFile(filePath, bytes, isiCloudAndiTunesBackup);
+//		}
+
+		return;
 		AssetDatabase.Refresh();
 
 		// 다른 플랫폼 폴더 삭제
@@ -547,22 +570,28 @@ public partial class GiantMenu
 
 	static void LoadResourceSeed()
 	{
-		string version = GetResourceGitBranchName();
-		string url = Util.StringFormat("{0}seed/{1}", ResServerUrl, version);
-		Util.SyncWWW(url, (www) => {
-			if (www == null || !string.IsNullOrEmpty(www.error))
-			{
-				Debug.LogError("Error : LoadResourceSeed");
-				return;
-			}
+		// OfflineTest
+//		string version = GetResourceGitBranchName();
+//		string url = Util.StringFormat("{0}seed/{1}", ResServerUrl, version);
+//		Util.SyncWWW(url, (www) => {
+//			if (www == null || !string.IsNullOrEmpty(www.error))
+//			{
+//				Debug.LogError("Error : LoadResourceSeed");
+//				return;
+//			}
+//
+//			byte[] data = Util.ALEDecode(www.bytes);
+//			string seed = Util.Utf8Decode(data);
+//
+//			PersistentStore.Init(ResServerUrl);
+//			PersistentStore.Inst.LoadJsonFromID(seed, (obj) => {
+//				ResourceManager.Inst.LoadedResourceSeed(seed, obj);
+//			});
+//		});
 
-			byte[] data = Util.ALEDecode(www.bytes);
-			string seed = Util.Utf8Decode(data);
-
-			PersistentStore.Init(ResServerUrl);
-			PersistentStore.Inst.LoadJsonFromID(seed, (obj) => {
-				ResourceManager.Inst.LoadedResourceSeed(seed, obj);
-			});
+		string seedName = "MoonTest";
+		PersistentStore.Inst.LoadJsonFromID(seedName, (obj) => {
+			ResourceManager.Inst.LoadedResourceSeed(seedName, obj);
 		});
 	}
 
@@ -596,6 +625,19 @@ public partial class GiantMenu
 		// OffLineTest
 		if (Path.GetFileName(path).StartsWith("."))
 			return false;
+
+		if (path.StartsWith("dt"))
+		{
+			string fileName = Path.GetFileNameWithoutExtension(path);
+			if (fileName.StartsWith("ml.") || fileName.StartsWith("pw."))
+				return true;
+			return fileName.Equals("giantdatas");
+		}
+		return path.StartsWith("ios") || path.StartsWith("raw") || path.StartsWith("dt/pw.nick") || path.StartsWith("raw/json");
+
+#if UNITY_IOS
+		if (Path.GetFileName(path).StartsWith("."))
+			return false;
 		return path.StartsWith("ios") || path.StartsWith("raw") || path.StartsWith("dt/pw.nick");
 
 
@@ -607,21 +649,6 @@ public partial class GiantMenu
 			return fileName.Equals("giantdatas");
 		}
 		return path.StartsWith("raw/json");
-
-#if UNITY_IOS
-//		if (Path.GetFileName(path).StartsWith("."))
-//			return false;
-//		return path.StartsWith("ios") || path.StartsWith("raw") || path.StartsWith("dt/pw.nick");
-//
-//
-//		if (path.StartsWith("dt"))
-//		{
-//			string fileName = Path.GetFileNameWithoutExtension(path);
-//			if (fileName.StartsWith("ml.") || fileName.StartsWith("pw."))
-//				return true;
-//			return fileName.Equals("giantdatas");
-//		}
-//		return path.StartsWith("raw/json");
 
 #else
 		return path.Equals("android/bgm_title");
@@ -1176,10 +1203,6 @@ public partial class GiantMenu
 		{
 			if (Path.GetExtension(files[i]).Equals(".meta"))
 				continue;
-#if UNITY_ANDROID
-			if (files[i].EndsWith(Constant.SplashGoogleName))
-				continue;
-#endif
 			File.Delete(files[i]);
 		}
 

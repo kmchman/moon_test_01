@@ -929,11 +929,16 @@ public class GiantHandler
 		public long uidLog;
 	}
 
-	struct DeckInfoParam
+	struct HeroDeckInfoParam
 	{
 		public long uidUser;
 	}
 
+	struct ArenaDeckInfoParma
+	{
+		public long uidUser;
+	}
+	
 	struct ResultRevengePvpHero
 	{
 		public long uidLog;
@@ -1021,18 +1026,6 @@ public class GiantHandler
 		public string targetGid;
 		public int idSlot;
 		public long damage;
-		public Dictionary<int, List<int>> saveDeck;
-	}
-
-	struct DuelRequestParam
-	{
-		public int isCash;
-		public int[] idHeros;
-	}
-
-	struct DuelResultParam
-	{
-		public int result;
 		public Dictionary<int, List<int>> saveDeck;
 	}
 
@@ -1277,7 +1270,7 @@ public class GiantHandler
 		List<int> saveDeck = AccountDataStore.instance.ChangeSaveDeck(deckType, deck, deckCount);
 		if (saveDeck != null)
 		{
-			param.saveDeck			= new Dictionary<int, List<int>>();
+			param.saveDeck		= new Dictionary<int, List<int>>();
 			param.saveDeck.Add((int)deckType, saveDeck);
 		}
 
@@ -1308,43 +1301,11 @@ public class GiantHandler
 		List<int> saveDeck = AccountDataStore.instance.ChangeSaveDeck(deckType, deck, deckCount);
 		if (saveDeck != null)
 		{
-			param.saveDeck			= new Dictionary<int, List<int>>();
+			param.saveDeck		= new Dictionary<int, List<int>>();
 			param.saveDeck.Add((int)deckType, saveDeck);
 		}
 
 		string json = GetPacketString(GetUserHeaderString("req", "resultGuildBattle"), Util.JsonEncode2(param));
-		return Request(json);
-	}
-
-	public STRequest doDuelRequest(bool isCash, int [] idHeros)
-	{
-		DuelRequestParam param		= new DuelRequestParam();
-		param.isCash				= isCash ? 1 : 0;
-		param.idHeros				= idHeros;
-
-		string json = GetPacketString(GetUserHeaderString("req", "duelRequest"), Util.JsonEncode2(param));
-		return Request(json);
-	}
-
-	public STRequest doDuelResult(int result, DECK_TYPE deckType, int [] deck, int deckCount)
-	{
-		DuelResultParam param		= new DuelResultParam();
-		param.result				= result;
-
-		List<int> saveDeck = AccountDataStore.instance.ChangeSaveDeck(deckType, deck, deckCount);
-		if (saveDeck != null)
-		{
-			param.saveDeck			= new Dictionary<int, List<int>>();
-			param.saveDeck.Add((int)deckType, saveDeck);
-		}
-
-		string json = GetPacketString(GetUserHeaderString("req", "duelResult"), Util.JsonEncode2(param));
-		return Request(json);
-	}
-
-	public STRequest doDuelDailyReward()
-	{
-		string json = GetPacketString(GetUserHeaderString("req", "duelDailyReward"), null);
 		return Request(json);
 	}
 
@@ -1473,7 +1434,7 @@ public class GiantHandler
 
 	public STRequest doPvpHeroDeckInfo(long uidUser)
 	{
-		DeckInfoParam param = new DeckInfoParam();
+		HeroDeckInfoParam param = new HeroDeckInfoParam();
 		param.uidUser = uidUser; 
 
 		string json = GetPacketString(GetUserHeaderString("req", "pvpHeroDeckInfo"), Util.JsonEncode2(param));
@@ -1500,43 +1461,10 @@ public class GiantHandler
 
 	public STRequest doArenaDeckInfo(long uidUser)
 	{
-		DeckInfoParam param = new DeckInfoParam();
+		ArenaDeckInfoParma param = new ArenaDeckInfoParma();
 		param.uidUser = uidUser; 
 
 		string json = GetPacketString(GetUserHeaderString("req", "arenaDeckInfo"), Util.JsonEncode2(param));
-		return Request(json);
-	}
-
-	public STRequest doDuelSeasonInfo()
-	{
-		string json = GetPacketString(GetUserHeaderString("req", "duelSeasonInfo"), null);	
-		return Request(json);
-	}
-
-	public STRequest doDuelSeasonReward()
-	{
-		string json = GetPacketString(GetUserHeaderString("req", "duelSeasonReward"), null);	
-		return Request(json);
-	}
-
-	public STRequest doDuelRanking()
-	{
-		string json = GetPacketString(GetUserHeaderString("req", "duelRanking"), null);
-		return Request(json);
-	}
-
-	public STRequest doDuelDeckInfo(long uidUser)
-	{
-		DeckInfoParam param = new DeckInfoParam();
-		param.uidUser = uidUser; 
-
-		string json = GetPacketString(GetUserHeaderString("req", "duelDeckInfo"), Util.JsonEncode2(param));
-		return Request(json);
-	}
-
-	public STRequest doDuelTakeReward()
-	{
-		string json = GetPacketString(GetUserHeaderString("req", "duelTakeReward"), null);
 		return Request(json);
 	}
 
@@ -2610,11 +2538,6 @@ public class GiantHandler
 		public int idCore;
 	}
 
-	struct UniqueCoreIDParam
-	{
-		public int baseCore;
-	}
-
 	struct CoreSaleParam
 	{
 		public List<int> saleCoreList;
@@ -2625,44 +2548,10 @@ public class GiantHandler
 		public int count;
 	}
 
-	struct SynthesizeCore
-	{
-		public int baseCore;
-		public int materialCore;
-	}
-
 	struct CoreStatChangeParam
 	{
 		public int idCore;
 		public int optionIndex;
-	}
-
-	public STRequest doSynthesizeCore(int idBaseCore, int idMaterialCore)
-	{
-		SynthesizeCore param = new SynthesizeCore();
-		param.baseCore = idBaseCore;
-		param.materialCore = idMaterialCore;
-
-		string json = GetPacketString(GetUserHeaderString("req", "synthesizeCore"), Util.JsonEncode2(param));
-		return Request(json);
-	}
-
-	public STRequest doSmeltCore(int idBaseCore)
-	{
-		UniqueCoreIDParam param = new UniqueCoreIDParam();
-		param.baseCore = idBaseCore;
-
-		string json = GetPacketString(GetUserHeaderString("req", "smeltCore"), Util.JsonEncode2(param));
-		return Request(json);
-	}
-
-	public STRequest doDecomposeCore(int idBaseCore)
-	{
-		UniqueCoreIDParam param = new UniqueCoreIDParam();
-		param.baseCore = idBaseCore;
-
-		string json = GetPacketString(GetUserHeaderString("req", "decomposeCore"), Util.JsonEncode2(param));
-		return Request(json);
 	}
 
 	public STRequest doChangeOldCore(int idCore)
@@ -2852,7 +2741,7 @@ public class GiantHandler
 
 	public STRequest doWorldBossDeckInfo(long uidUser)
 	{
-		DeckInfoParam param = new DeckInfoParam();
+		HeroDeckInfoParam param = new HeroDeckInfoParam();
 		param.uidUser = uidUser; 
 
 		string json = GetPacketString(GetUserHeaderString("req", "worldBossDeckInfo"), Util.JsonEncode2(param));
@@ -2898,7 +2787,7 @@ public class GiantHandler
 		if (dic.Contains("chatServerUrl"))
 			chatServerURL = dic["chatServerUrl"].ToString();
 		if (dic.Contains("offset"))
-			timeOffset = int.Parse(dic["offset"].ToString()) * Constant.HourMilliseconds;
+			timeOffset = int.Parse(dic["offset"].ToString());
 	}
 
 	public void evtSeed(string str)
@@ -3353,14 +3242,9 @@ public class GiantHandler
 		AccountDataStore.instance.user.pvpHeroRanking = (int)heroRank;
 	}
 
-	// 추후 삭제 예정
 	public void evtArenaSeasonInfo(IDictionary dic)
 	{
-	}
-
-	// 추후 삭제 예정
-	public void evtDuelSeasonInfo(IDictionary dic)
-	{
+		AccountDataStore.instance.arenaSeasonInfo.UpdateValues(dic, true);
 	}
 
 	public void evtArenaRanking(IList list)
@@ -3394,7 +3278,14 @@ public class GiantHandler
 
 	public void evtWorldBossDeckInfo(IDictionary dic)
 	{
-		_evtDeckInfo(dic, TargetUserDeckType.WorldBoss);
+		DeckInfo deckInfo = new DeckInfo();
+		deckInfo.UpdateValues(dic, true);
+		deckInfo.deckType = (int)TargetUserDeckType.WorldBoss;
+
+		var enumerator = deckInfo.hero.GetEnumerator();
+		while (enumerator.MoveNext())
+			enumerator.Current.Value.idHero = enumerator.Current.Key;
+		deckInfoDelegate(deckInfo);
 	}
 
 	public void evtWorldBossSeasonInfo(IDictionary dic)
@@ -3404,72 +3295,36 @@ public class GiantHandler
 
 	public void evtUserWorldBossTotalRanking(IDictionary dic)
 	{
-		AccountDataStore.instance.worldBossUserTotalRanking.UpdateValues(dic, true);
+		AccountDataStore.instance.worldBossTotalRankingInfo.UpdateValues(dic, true);
 	}
 
 	public void evtUserWorldBossMaxRanking(IDictionary dic)
 	{
-		AccountDataStore.instance.worldBossUserBestRanking.UpdateValues(dic, true);
+		AccountDataStore.instance.worldBossBestRankingInfo.UpdateValues(dic, true);
 	}
 
 	public void evtWorldBossTotalRanking(IList list)
 	{
-		_evtRanking(list, AccountDataStore.instance.worldBossTotalRanking);
+		AccountDataStore.instance.worldBossTotalRanking.Clear();
+		for (int i = 0; i < list.Count; i++)
+		{
+			GiantWorldBossRankingData item = new GiantWorldBossRankingData();
+			item.UpdateValues((IDictionary)list[i], true);
+			item.ranking = i + 1;
+			AccountDataStore.instance.worldBossTotalRanking.Add(item);
+		}
 	}
 
 	public void evtWorldBossMaxRanking(IList list)
 	{
-		_evtRanking(list, AccountDataStore.instance.worldBossBestRanking);
-	}
-
-	private void _evtRanking(IList list, List<GiantRankingData> datas)
-	{
-		datas.Clear();
+		AccountDataStore.instance.worldBossBestRanking.Clear();
 		for (int i = 0; i < list.Count; i++)
 		{
-			GiantRankingData item = new GiantRankingData();
+			GiantWorldBossRankingData item = new GiantWorldBossRankingData();
 			item.UpdateValues((IDictionary)list[i], true);
 			item.ranking = i + 1;
-			datas.Add(item);
+			AccountDataStore.instance.worldBossBestRanking.Add(item);
 		}
-	}
-
-	public void evtDuelDummy(IDictionary dic)
-	{
-		int id = int.Parse(dic["idDummy"].ToString());
-		AccountDataStore.instance.duel.UpdateDummyData(id);
-	}
-
-	public void evtDuelUser(IDictionary dic)
-	{
-		AccountDataStore.instance.duel.UpdateUserData(dic);
-	}
-
-	public void evtDuelRanking(IList list)
-	{
-		_evtRanking(list, AccountDataStore.instance.duelRanking);
-	}
-
-	public void evtDuelUserRanking(IDictionary dic)
-	{
-		AccountDataStore.instance.duelUserRanking.UpdateValues(dic, true);
-	}
-
-	public void evtDuelDeckInfo(IDictionary dic)
-	{
-		_evtDeckInfo(dic, TargetUserDeckType.Duel);
-	}
-
-	private void _evtDeckInfo(IDictionary dic, TargetUserDeckType type)
-	{
-		DeckInfo deckInfo = new DeckInfo();
-		deckInfo.UpdateValues(dic, true);
-		deckInfo.deckType = (int)type;
-
-		var enumerator = deckInfo.hero.GetEnumerator();
-		while (enumerator.MoveNext())
-			enumerator.Current.Value.idHero = enumerator.Current.Key;
-		deckInfoDelegate(deckInfo);
 	}
 
 	public void evtNoticeEvent(List<object> obj)
@@ -3863,11 +3718,6 @@ public class GiantHandler
 			curServerTime = clientTime + timeGap;
 		}
 		return curServerTime;
-	} }
-	public long serverOffsetTime { get {
-		DateTime dt = new System.DateTime(1, 1, 1);
-		dt = dt.AddMilliseconds(serverTime + timeOffset);
-		return dt.Ticks / 10000;
 	} }
 	#endregion
 

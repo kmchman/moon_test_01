@@ -64,7 +64,7 @@ public class PersistentStore {
 	}
 	static public bool CheckHash(string id, byte[] data) {
 			// OffLineTest
-		if (id.Equals("Seed"))
+		if (id.Equals("Seed") || id.Equals("MoonTest"))
 			return true;
 		return !enableCheckHash || _CheckHash(id, data);
 	}

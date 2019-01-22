@@ -18,7 +18,7 @@ public class LobbySceneHandler : MonoBehaviour
 		if (BaseOperatorUnit.instance.prevSceneType == PlaySceneType.PreGame)
 		{
 			type = (InStageInfoType)DeviceSaveManager.Inst.LoadInStageInfoData().Type;
-			if (type != InStageInfoType.Default)
+			if (type == InStageInfoType.Arena || type == InStageInfoType.HeroRevenge)
 				QuickQuestInfoHandler.isUpdateQuest = false;
 		}
 
@@ -43,10 +43,8 @@ public class LobbySceneHandler : MonoBehaviour
 				PanelManager.inst.PushPanel(PanelType.PvpInfo, false, PvpMainTabType.PvpDefenseLog);
 				break;
 			case InStageInfoType.Arena:
+				PanelManager.inst.PushPanel(PanelType.LobbyMain, false, -1, false, true);
 				PanelManager.inst.PushPanel(PanelType.Arena);
-				break;
-			case InStageInfoType.Duel:
-				PanelManager.inst.PushPanel(PanelType.Duel);
 				break;
 			}
 			QuickQuestInfoHandler.isUpdateQuest = true;
@@ -94,12 +92,7 @@ public class LobbySceneHandler : MonoBehaviour
 	{
 		if (type == AreaEnterItemType.Arena)
 		{
-			PanelManager.inst.PushPanel(PanelType.Arena);
-			return;
-		}
-		else if (type == AreaEnterItemType.Duel)
-		{
-			PanelManager.inst.PushPanel(PanelType.Duel);
+			PanelManager.inst.PushPanel(PanelType.GameFormEdit, false, AccountDataStore.instance.arena.epData, Vector3.zero);
 			return;
 		}
 
@@ -249,10 +242,6 @@ public class LobbySceneHandler : MonoBehaviour
 
 		case PanelType.WorldBoss:
 			SetWorldMapStaticImage(SpriteType.Exploration_World_Map_WorldBoss);
-			break;
-
-		case PanelType.Duel:
-			SetWorldMapStaticImage(SpriteType.Exploration_World_Map_Duel);
 			break;
 		}
 	}
