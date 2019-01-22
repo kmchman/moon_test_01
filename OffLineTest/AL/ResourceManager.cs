@@ -458,21 +458,28 @@ public class ResourceManager {
 
 	public void LoadedResourceSeed(string id, object obj)
 	{
-			IDictionary dic = (IDictionary)obj;
-			if (dic["fileDic"] != null) {
-				IDictionary fileDic = (IDictionary)dic["fileDic"];
-				var enuemrtor = fileDic.GetEnumerator();
-				while (enuemrtor.MoveNext()) {
-					resfiles[(string)enuemrtor.Value] = (string)enuemrtor.Key;
+			// OffLineTest
+			MoonTestResourceData data = new MoonTestResourceData();
+
+			if ((IDictionary)obj != null) {
+				Util.GetFields(data, obj);
+				var enumertor = data.fileDic.GetEnumerator();
+				while (enumertor.MoveNext()) {
+					resfiles[(string)enumertor.Current.Value] = (string)enumertor.Current.Key;
 				}
-				//				MoonTestResourceData resourceData = (MoonTestResourceData)dic["fileDic"];
-//				Dictionary<string, string> fileDic = (Dictionary<string, string>)dic["fileDic"];
 			}
 
+//			IDictionary dic = (IDictionary)obj;
+//			MoonTestResourceData resourceData = (MoonTestResourceData)obj;
+//			if (dic["fileDic"] != null) {
+//				IDictionary fileDic = (IDictionary)dic["fileDic"];
+//				var enuemrtor = fileDic.GetEnumerator();
+//				while (enuemrtor.MoveNext()) {
+//					resfiles[(string)enuemrtor.Value] = (string)enuemrtor.Key;
+//				}
+//			}
 
-
-
-//		// OffLineTest
+		
 //		foreach (IList fi in (IList)obj) {
 //			resfiles[fi[1]] = fi[0];
 //			ressizes[fi[0].ToString()] = long.Parse(fi[2].ToString());
