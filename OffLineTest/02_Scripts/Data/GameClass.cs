@@ -1,4 +1,5 @@
 using UnityEngine;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -206,6 +207,7 @@ public class GameResultArguments
 	public string bossFaceImageName;
 	public float bossHPPercent;
 	public int racePoint;
+	public int oldGrade;
 	public long bossTotalDamage;
 	public float bossTotalDamagePercent;
 	public bool isWorldBossNewRecord;
@@ -215,7 +217,7 @@ public class GameResultArguments
 	public GameStatData [] enemyStatDatas;
 	public Dictionary<int, int> killDatas;
 
-	public void SetData(GiantEPData epData, GameResult result, bool isRaidTimeOver, int stageStar, string bossFaceImageName, float bossHPPercent, int racePoint,
+	public void SetData(GiantEPData epData, GameResult result, bool isRaidTimeOver, int stageStar, string bossFaceImageName, float bossHPPercent, int racePoint, int oldGrade,
 		List<GiantRewardData> rewards, GiantHeroData [] heroDatas, GameStatData [] myStatDatas, GameStatData [] enemyStatDatas, Dictionary<int, int> killDatas,
 		long bossTotalDamage, float bossTotalDamagePercent, bool isWorldBossNewRecord)
 	{
@@ -226,6 +228,7 @@ public class GameResultArguments
 		this.bossFaceImageName = bossFaceImageName;
 		this.bossHPPercent = bossHPPercent;
 		this.racePoint = racePoint;
+		this.oldGrade = oldGrade;
 		this.rewards = rewards;
 		this.heroDatas = heroDatas;
 		this.myStatDatas = myStatDatas;
@@ -762,5 +765,299 @@ public class AutoExplorationResultData
 			++succBattleCount;
 		else
 			++failBattleCount;
+	}
+}
+
+public class SeasonInfo
+{
+	protected SeasonInfoType seasonInfoType;
+
+	public int 		idSeason;
+	public long 	startDate;
+	public long 	endDate;
+	public long 	resetDate;
+	public long		boardPostDate;
+
+	public int		idSeasonNext;
+	public long		startDateNext;
+
+	private bool	isReceiveSeasonReward;
+
+	public SeasonInfo(SeasonInfoType type)
+	{
+		seasonInfoType = type;
+	}
+
+	public bool IsNewSeason()
+	{
+		return idSeasonNext != 0 && GiantHandler.Inst.serverTime >= startDateNext;
+	}
+
+	public bool IsShowRanking()
+	{
+		return IsOnSeason() || IsBoardPostTime(true);
+	}
+
+	public bool IsOnSeason()
+	{
+		return GiantHandler.Inst.serverTime >= startDate && GiantHandler.Inst.serverTime < endDate;
+	}
+
+	public bool IsBoardPostTime(bool isChecking = false)
+	{
+		if (isChecking)
+			return GiantHandler.Inst.serverTime >= resetDate && GiantHandler.Inst.serverTime < boardPostDate;
+		return GiantHandler.Inst.serverTime >= endDate && GiantHandler.Inst.serverTime < boardPostDate;
+	}
+
+	public bool IsCheckingTime()
+	{
+		return GiantHandler.Inst.serverTime >= endDate && GiantHandler.Inst.serverTime < resetDate;
+	}
+
+	// resetDate ~ boardPostDate : 시즌 보상을 받을 수 있는 기간
+	public bool IsSeasonRewardTime()
+	{
+		return GiantHandler.Inst.serverTime >= resetDate && GiantHandler.Inst.serverTime < boardPostDate;
+	}
+
+	// startDate ~ endDate + calculateStartTime : 전투 보상을 받을 수 있는 기간
+	public bool IsRewardTime()
+	{
+		return GiantHandler.Inst.serverTime >= startDate && GiantHandler.Inst.serverTime < endDate + GetCalculateStartTime() * 60000;
+	}
+
+	public int GetCalculateStartTime()
+	{
+		switch (seasonInfoType)
+		{
+		case SeasonInfoType.Arena:
+			return Datatable.Inst.settingData.ArenaResetCalculateStart;
+		}
+		return 0;
+	}
+
+	public bool IsBoardPostOverTime()
+	{
+		return GiantHandler.Inst.serverTime >= boardPostDate;
+	}
+
+	public void UpdateLogin(Action cb)
+	{
+		switch (seasonInfoType)
+		{
+		case SeasonInfoType.Arena:
+			Datatable.Inst.UpdateSeason(ARENADUEL_TYPE.ARENA, this);
+			break;
+		case SeasonInfoType.Duel:
+			Datatable.Inst.UpdateSeason(ARENADUEL_TYPE.DUEL, this);
+			break;
+		}
+		UpdateSeasonAfter();
+		ReceiveSeasonReward(cb);
+	}
+
+	public IEnumerator UpdateLobby(Action cb = null)
+	{
+		if (IsNewSeason())
+		{
+			switch (seasonInfoType)
+			{
+			case SeasonInfoType.Arena:
+				Datatable.Inst.UpdateSeason(ARENADUEL_TYPE.ARENA, this);
+				yield return GiantHandler.Inst.doArenaSeasonInfo().WaitForResponse();
+				break;
+			case SeasonInfoType.Duel:
+				Datatable.Inst.UpdateSeason(ARENADUEL_TYPE.DUEL, this);
+				yield return GiantHandler.Inst.doDuelSeasonInfo().SetSuccessAction(cb).WaitForResponse();
+				break;
+			}
+			UpdateSeasonAfter();
+		}
+		ReceiveSeasonReward(cb);
+	}
+
+	protected virtual void UpdateSeasonAfter()
+	{
+		isReceiveSeasonReward = false;
+	}
+
+	private void ReceiveSeasonReward(Action cb)
+	{
+		Action successAction = ()  => {
+			if (cb != null)
+				cb();
+		};
+
+		Action<object> failureAction = (error) => {
+			GiantHandler.DefaultRequestFailure(error);
+			if (cb != null)
+				cb();
+		};
+
+		if (!isReceiveSeasonReward && IsSeasonRewardTime())
+		{
+			switch (seasonInfoType)
+			{
+			case SeasonInfoType.Arena:
+				GiantHandler.Inst.doArenaSeasonReward().SetSuccessAction(successAction).SetFailureAction(failureAction);
+				break;
+			case SeasonInfoType.Duel:
+				GiantHandler.Inst.doDuelSeasonReward().SetSuccessAction(successAction).SetFailureAction(failureAction);
+				break;
+			}
+		}
+		else
+		{
+			successAction();
+		}
+	}
+}
+
+public class ArenaSeasonInfo : SeasonInfo
+{
+	public ArenaSeasonInfo() : base(SeasonInfoType.Arena)
+	{
+	}
+
+	private Dictionary<int, List<Datatable.ArenaGrade>> m_ArenaGradeByGradeGroup = new Dictionary<int, List<Datatable.ArenaGrade>>();	// 끝 ~ 1까지 내림차순
+	public List<Datatable.ArenaGrade> GetArenaGradeByGradeGroup()
+	{
+		int gradeGroup;
+		Datatable.ArenaDuelSeason season;
+		if (Datatable.Inst.dtArenaDuelSeason.TryGetValue(idSeason, out season))
+			gradeGroup = season.GradeGroup;
+		else
+			return null;
+		List<Datatable.ArenaGrade> arenaGrades;
+		if (m_ArenaGradeByGradeGroup.TryGetValue(gradeGroup, out arenaGrades))
+			return arenaGrades;
+
+		List<Datatable.ArenaGrade> tempArenaGrades = new List<Datatable.ArenaGrade>();
+		m_ArenaGradeByGradeGroup.Add(gradeGroup, tempArenaGrades);
+		Datatable.ArenaGrade arenaGrade;
+		var enumerator = Datatable.Inst.dtArenaGrade.Values.GetEnumerator();
+		while (enumerator.MoveNext())
+		{
+			arenaGrade = enumerator.Current;
+			if (arenaGrade.GradeGroup != gradeGroup)
+				continue;
+			tempArenaGrades.Add(arenaGrade);
+		}
+
+		tempArenaGrades.Sort((x, y) => {
+			if (x.ConditionPoint != y.ConditionPoint)
+				return y.ConditionPoint.CompareTo(x.ConditionPoint);
+			if (x.ConditionRanking != y.ConditionRanking)
+				return y.ConditionRanking.CompareTo(x.ConditionRanking);
+			return 0;
+		});
+
+		return tempArenaGrades;
+	}
+
+	public Datatable.ArenaGrade GetMyGradeData()
+	{
+		int myGrade = AccountDataStore.instance.user.arenaGrade;
+		return GetGradeData(myGrade);
+	}
+
+	public int GetGrade(int point, int ranking)
+	{
+		Datatable.ArenaGrade arenaGrade = GetGradeData(point, ranking);
+		if (arenaGrade != null)
+			return arenaGrade.Grade;
+		return 0;
+	}
+
+	public Datatable.ArenaGrade GetGradeData(int point, int ranking)
+	{
+		int grade = 0;
+		var list = GetArenaGradeByGradeGroup();
+		for (int i = 0; i < list.Count; ++i)
+		{
+			var data = list[i];
+			if (grade < data.Grade && point >= data.ConditionPoint && (data.ConditionRanking == 0 || ranking <= data.ConditionRanking))
+				grade = data.Grade;
+		}
+		return GetGradeData(grade);
+	}
+	
+	public Datatable.ArenaGrade GetGradeData(int grade)
+	{
+		var list = GetArenaGradeByGradeGroup();
+		for (int i = 0; i < list.Count; ++i)
+		{
+			if (list[i].Grade == grade)
+				return list[i];
+		}
+		return null;
+	}
+
+	public float GetGradeRate(float point, int grade)
+	{
+		var list = GetArenaGradeByGradeGroup();
+		int index = list.Count - grade;
+		int nextIndex = index - 1;
+		if (index < 0 || index >= list.Count)
+			return 0f;
+		if (nextIndex < 0)
+			return 1f;
+		Datatable.ArenaGrade curData = list[index];
+		Datatable.ArenaGrade nextData = list[nextIndex];
+		return (float)(point - curData.ConditionPoint) / (nextData.ConditionPoint - curData.ConditionPoint);
+	}
+}
+
+public class DuelSeasonInfo : SeasonInfo
+{
+	private int [] idBannedHeroes = new int[Constant.HeroBanMax];
+	private int raceBuff;
+
+	public DuelSeasonInfo() : base(SeasonInfoType.Duel)
+	{
+	}
+
+	protected override void UpdateSeasonAfter()
+	{
+		base.UpdateSeasonAfter();
+
+		Datatable.ArenaDuelSeason season;
+		if (Datatable.Inst.dtArenaDuelSeason.TryGetValue(idSeason, out season))
+		{
+			raceBuff = season.RaceBuff;
+
+			var data = Datatable.Inst.dtDuelHeroBan[season.HeroBanGroup];
+			idBannedHeroes[0] = data.BannedHeroID_0;
+			idBannedHeroes[1] = data.BannedHeroID_1;
+			idBannedHeroes[2] = data.BannedHeroID_2;
+		}
+		else
+		{
+			raceBuff = (int)RACE.NONE;
+
+			for (int i = 0; i < idBannedHeroes.Length; ++i)
+				idBannedHeroes[i] = 0;
+		}
+	}
+
+	public int GetRaceBuff()
+	{
+		return raceBuff;
+	}
+
+	public int [] GetBannedHeroIDs()
+	{
+		return idBannedHeroes;
+	}
+
+	public bool IsBannedHero(int idHero)
+	{
+		for (int i = 0; i < idBannedHeroes.Length; ++i)
+		{
+			if (idHero == idBannedHeroes[i])
+				return true;
+		}
+		return false;
 	}
 }

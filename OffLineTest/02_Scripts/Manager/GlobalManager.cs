@@ -170,14 +170,14 @@ public class Global {
 		}, () => {
 			Debug.LogError(Logger.Write("Global.InitResourceData.Failure"));
 			InitVersion(CheckVersion);
-		}, false);
+		});
 	}
 
-	public void InitResourceData(Action InitSuccess, Action InitFailure, bool isReload) {
-		GlobalManager.Inst.StartCoroutine(DoInitResourceData(InitSuccess, InitFailure, isReload));
+	public void InitResourceData(Action InitSuccess, Action InitFailure) {
+		GlobalManager.Inst.StartCoroutine(DoInitResourceData(InitSuccess, InitFailure));
 	}
 
-	private IEnumerator DoInitResourceData(Action InitSuccess, Action InitFailure, bool isReload) {
+	private IEnumerator DoInitResourceData(Action InitSuccess, Action InitFailure) {
 		Action<bool> failureAction = (isByServer) => {
 			InvokeLoadingEnd();
 			UITextEnum textEnum = isByServer ? UITextEnum.BUILTIN_SERVER_FAIL : UITextEnum.BUILTIN_DATA_FAIL;

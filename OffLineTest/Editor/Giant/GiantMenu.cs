@@ -173,6 +173,14 @@ public partial class GiantMenu
 		Selection.activeObject = Camera.main;
 	}
 
+	[MenuItem("Giant/Make AssetBundleDatabase")]
+	static void MakeAssetBundleDatabase()
+	{
+		// AssetBundleDatabase
+		AssetBundleManager.MakeAssetBundleDatabase();
+		SaveAssetBundleDatabase();
+	}
+
 	[MenuItem("Giant/Build AssetBundles")]
 	static void BuildAssetBundles()
 	{
@@ -186,7 +194,7 @@ public partial class GiantMenu
 	[MenuItem("Giant/Build AssetBundles Twice")]
 	static void BuildAssetBundles_Twice()
 	{
-		if (EditorUtility.DisplayDialog("경고", "에셋번들 빌드를 2번실행 합니다. 진행 하시겠습니까?", "예", "아니오"))
+		if (EditorUtility.DisplayDialog("경고", "에셋번들 빌드를 2번 실행합니다. 진행하시겠습니까?", "예", "아니오"))
 		{
 			BuildAssetBundles();
 			BuildAssetBundles();
@@ -1113,7 +1121,33 @@ public partial class GiantMenu
 	{
 		FindAllUITextEnumInScene(true);
 	}
-	
+
+	[MenuItem("Giant/Find All Button Marker", false, 900)]
+	static void FindAllButtonMarker()
+	{
+		List<int> markers = new List<int>();
+		List<STButton> buttons = STPrefabUtil.FindAllComponents<STButton>();
+		for (int i = 0; i < buttons.Count; ++i)
+		{
+			List<int> thisButtonMarkers = buttons[i].Markers;
+			for (int j = 0; j < thisButtonMarkers.Count; ++j)
+			{
+				if (markers.Contains(thisButtonMarkers[j]))
+					continue;
+				markers.Add(thisButtonMarkers[j]);
+			}
+		}
+
+		markers.Sort();
+
+		StringBuilder stringBuilder = new StringBuilder();
+		stringBuilder.AppendLine("Button Marker : " + markers.Count);
+		for (int i = 0; i < markers.Count; ++i)
+			stringBuilder.AppendFormat("{0}, ", markers[i]);
+
+		Debug.LogWarning(stringBuilder.ToString());
+	}
+
 	[MenuItem("Giant/Find All Useless CanvasRenderer In Prefab", false, 900)]
 	static void FindAllUselessCanvasRendererInPrefab()
 	{
@@ -1187,8 +1221,7 @@ public partial class GiantMenu
 	static void BuildAssetBundles(BuildTarget buildTarget)
 	{
 		// AssetBundleDatabase
-		AssetBundleManager.MakeAssetBundleDatabase();
-		SaveAssetBundleDatabase();
+		MakeAssetBundleDatabase();
 
 		// 에셋번들 빌드
 		string folderName = Path.Combine(AssetBundleFolderName, buildTarget.ToString());
@@ -1203,6 +1236,10 @@ public partial class GiantMenu
 		{
 			if (Path.GetExtension(files[i]).Equals(".meta"))
 				continue;
+#if UNITY_ANDROID
+			if (files[i].EndsWith(Constant.SplashGoogleName))
+				continue;
+#endif
 			File.Delete(files[i]);
 		}
 

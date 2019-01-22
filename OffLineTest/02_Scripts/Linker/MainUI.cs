@@ -10,10 +10,10 @@ public class MainUI : MonoBehaviour
 	[SerializeField] private GameSettingPopup 	m_GameSettingPrefab;
 	[SerializeField] private CommunityPopup 	m_GameUICommunityPrefab;
 	[SerializeField] private HotTimePopup 		m_HotTimePopupPrefab;
-	[SerializeField] private DailyAttendanceEventPopup m_DailyAttendacePopupPrefab;
 
 	[SerializeField] private GameObject 		m_WorldBossBetaSeasonItemObject;
 	[SerializeField] private STGrayScaleGroup	m_ArenaGrayScaleGroup;
+	[SerializeField] private STGrayScaleGroup	m_DuelGrayScaleGroup;
 	[SerializeField] private STGrayScaleGroup	m_GameFormSettingGrayScaleGroup;
 	[SerializeField] private GameObject			m_ObjectNoti;
 	[SerializeField] private GameObject			m_ObjectChatNoti;
@@ -35,7 +35,7 @@ public class MainUI : MonoBehaviour
 		HideFolderBtns();
 		UpdateUserData(UserDataFlag.User | UserDataFlag.Area);
 		UpdatePvpLogNoti();
-		UpdateArenaGrayScale();
+		UpdateArenaDuelGrayScale();
 		UpdateGameFormSettingGrayScale();
 	}
 
@@ -53,6 +53,7 @@ public class MainUI : MonoBehaviour
 
 		StartCoroutine(AccountDataStore.instance.pvpSeasonInfo.UpdateLobby());
 		StartCoroutine(AccountDataStore.instance.arenaSeasonInfo.UpdateLobby());
+		StartCoroutine(AccountDataStore.instance.duelSeasonInfo.UpdateLobby());
 
 		CheckWorldBossInfo();
 	}
@@ -75,7 +76,7 @@ public class MainUI : MonoBehaviour
 		}
 		if ((updateFlag & UserDataFlag.Area) != 0)
 		{
-			UpdateArenaGrayScale();
+			UpdateArenaDuelGrayScale();
 			UpdateGameFormSettingGrayScale();
 		}
 	}
@@ -185,6 +186,18 @@ public class MainUI : MonoBehaviour
 		HideFolderBtns();
 	}
 
+	public void OnClickBtnDuel()
+	{
+		if (!AccountDataStore.instance.clientData.isOpenArena)
+		{
+			GlobalSystemRewardMsgHandler.instance.ShowMessage(Datatable.Inst.GetUIText(UITextEnum.LOBBY_MAIN_AREA_DISABLE_MODE, Datatable.Inst.GetAreaName(Datatable.Inst.settingData.ArenaSearchIDForUnlock)));
+			return;
+		}
+
+		PanelManager.inst.PushPanel(PanelType.Duel);
+		HideFolderBtns();
+	}
+
 	public void OnClickBtnWorldBoss()
 	{
 		PanelManager.inst.PushPanel(PanelType.WorldBoss);
@@ -264,9 +277,11 @@ public class MainUI : MonoBehaviour
 		}
 	}
 
-	private void UpdateArenaGrayScale()
+	private void UpdateArenaDuelGrayScale()
 	{
-		m_ArenaGrayScaleGroup.SetActive(!AccountDataStore.instance.clientData.isOpenArena);
+		bool isActive = !AccountDataStore.instance.clientData.isOpenArena;
+		m_ArenaGrayScaleGroup.SetActive(isActive);
+		m_DuelGrayScaleGroup.SetActive(isActive);
 	}
 
 	private void UpdateGameFormSettingGrayScale()
