@@ -3,4 +3,5 @@
 public class SceneName
 {
 	public const string Lobby				= "01_Lobby";
+    public const string Town                = "02_Town";
 }
