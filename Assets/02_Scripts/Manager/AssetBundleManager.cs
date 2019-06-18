@@ -49,48 +49,48 @@ public class AssetBundleManager : MonoBehaviour {
 
 		cb(AssetDatabase.LoadAssetAtPath<UnityEngine.Object>(assetPaths[0]));
 #else
-		AddWaitingAssetBundle(assetBundleLowerName, cb);
+		//AddWaitingAssetBundle(assetBundleLowerName, cb);
 
-		AsyncLoadDependencies(assetBundleLowerName, (isResult) => {
-			if (!ExistsWaitingAssetBundle(assetBundleLowerName, cb))
-			{
-				if (isResult)
-					UnloadDependencies(assetBundleLowerName);
-				return;
-			}
-			if (!isResult)
-			{
-				RemoveWaitingAssetBundle(assetBundleLowerName, cb);
-				cb(null);
-				return;
-			}
+		//AsyncLoadDependencies(assetBundleLowerName, (isResult) => {
+		//	if (!ExistsWaitingAssetBundle(assetBundleLowerName, cb))
+		//	{
+		//		if (isResult)
+		//			UnloadDependencies(assetBundleLowerName);
+		//		return;
+		//	}
+		//	if (!isResult)
+		//	{
+		//		RemoveWaitingAssetBundle(assetBundleLowerName, cb);
+		//		cb(null);
+		//		return;
+		//	}
 
-			AsyncLoadAssetBundleInternal(assetBundleLowerName, (assetBundle) => {
-				if (assetBundle == null)
-					UnloadDependencies(assetBundleLowerName);
-				if (!ExistsWaitingAssetBundle(assetBundleLowerName, cb))
-				{
-					if (assetBundle != null)
-						UnloadAssetBundle(assetBundleLowerName);
-					return;
-				}
-				if (assetBundle == null || string.IsNullOrEmpty(assetName))
-				{
-					RemoveWaitingAssetBundle(assetBundleLowerName, cb);
-					cb(null);
-					return;
-				}
-				StartCoroutine(AsyncLoadAsset(assetBundle, assetName, (obj) => {
-					if (!ExistsWaitingAssetBundle(assetBundleLowerName, cb))
-						UnloadAssetBundle(assetBundleLowerName);
-					else
-					{
-						RemoveWaitingAssetBundle(assetBundleLowerName, cb);
-						cb(obj);
-					}
-				}));
-			});
-		});
+		//	AsyncLoadAssetBundleInternal(assetBundleLowerName, (assetBundle) => {
+		//		if (assetBundle == null)
+		//			UnloadDependencies(assetBundleLowerName);
+		//		if (!ExistsWaitingAssetBundle(assetBundleLowerName, cb))
+		//		{
+		//			if (assetBundle != null)
+		//				UnloadAssetBundle(assetBundleLowerName);
+		//			return;
+		//		}
+		//		if (assetBundle == null || string.IsNullOrEmpty(assetName))
+		//		{
+		//			RemoveWaitingAssetBundle(assetBundleLowerName, cb);
+		//			cb(null);
+		//			return;
+		//		}
+		//		StartCoroutine(AsyncLoadAsset(assetBundle, assetName, (obj) => {
+		//			if (!ExistsWaitingAssetBundle(assetBundleLowerName, cb))
+		//				UnloadAssetBundle(assetBundleLowerName);
+		//			else
+		//			{
+		//				RemoveWaitingAssetBundle(assetBundleLowerName, cb);
+		//				cb(obj);
+		//			}
+		//		}));
+		//	});
+		//});
 #endif
 	}
 }
