@@ -11,6 +11,7 @@ Assets/Plugins/Android*
 Assets/Plugins/iOS*
 Assets/Plugins.meta
 Build/
+Library/PackageCache/
 Library/AnnotationManager
 Library/assetDatabase3
 Library/AssetImportState
