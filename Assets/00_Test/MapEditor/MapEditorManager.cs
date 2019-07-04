@@ -1,151 +1,151 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEditor;
-using Game;
-using NN;
+﻿//using System.Collections;
+//using System.Collections.Generic;
+//using UnityEngine;
+//using UnityEditor;
+//using Game;
+//using NN;
 
-namespace MapEditor
-{
+//namespace MapEditor
+//{
     
-    public class MapEditorManager : MonoBehaviour
-    {
+//    public class MapEditorManager : MonoBehaviour
+//    {
 
         
-        public static MapEditorManager Instance
-        {
-            get { return _instance; }
-        }
+//        public static MapEditorManager Instance
+//        {
+//            get { return _instance; }
+//        }
 
-        private static MapEditorManager _instance;
+//        private static MapEditorManager _instance;
 
-        public TableDataManager tableDataManager;
-        public SystemManager systemManager;
-        public GameSystemManager gameSystemManager;
-        public SQLiteSystem sqliteSystem;
+//        public TableDataManager tableDataManager;
+//        public SystemManager systemManager;
+//        public GameSystemManager gameSystemManager;
+//        public SQLiteSystem sqliteSystem;
 
-        public NPCDataManager npcDataManager;
+//        public NPCDataManager npcDataManager;
 
-        public MapEditorEditController editController;
-        public MapEditorObjectFactory objectFactory;
+//        public MapEditorEditController editController;
+//        public MapEditorObjectFactory objectFactory;
 
-        public MapEditorUIBuildingList buildingListUI;
+//        public MapEditorUIBuildingList buildingListUI;
 
-        public Building_Table buildingTable;
-        public FishTable fishTable;
-        public GUITable guiTable;
+//        public Building_Table buildingTable;
+//        public FishTable fishTable;
+//        public GUITable guiTable;
 
-        private void Init_System()
-        {
-            systemManager = gameObject.AddComponent<SystemManager>();
-            systemManager.Initialize();
+//        private void Init_System()
+//        {
+//            systemManager = gameObject.AddComponent<SystemManager>();
+//            systemManager.Initialize();
 
-            gameSystemManager = gameObject.AddChild<GameSystemManager>();
-            gameSystemManager.Initialize();
+//            gameSystemManager = gameObject.AddChild<GameSystemManager>();
+//            gameSystemManager.Initialize();
 
-            sqliteSystem = systemManager.MakeMonoSystem<SQLiteSystem>();
+//            sqliteSystem = systemManager.MakeMonoSystem<SQLiteSystem>();
 
-            sqliteSystem.Startup(true);
-            sqliteSystem.Initialize();
-        }
+//            sqliteSystem.Startup(true);
+//            sqliteSystem.Initialize();
+//        }
 
-        private void Init_Table()
-        {
-            tableDataManager = new TableDataManager();
-            tableDataManager.Initialize();
+//        private void Init_Table()
+//        {
+//            tableDataManager = new TableDataManager();
+//            tableDataManager.Initialize();
 
-            buildingTable = tableDataManager.MakeTable<Building_Table>();
-            buildingTable.Initialize();
+//            buildingTable = tableDataManager.MakeTable<Building_Table>();
+//            buildingTable.Initialize();
 
-            fishTable = tableDataManager.MakeTable<FishTable>();
-            fishTable.Initialize();
+//            fishTable = tableDataManager.MakeTable<FishTable>();
+//            fishTable.Initialize();
 
-            guiTable = tableDataManager.MakeTable<GUITable>();
-            guiTable.Initialize();
+//            guiTable = tableDataManager.MakeTable<GUITable>();
+//            guiTable.Initialize();
 
-            var expandTable = tableDataManager.MakeTable<ExpandmapTable>();
-            expandTable.Initialize();
-        }
+//            var expandTable = tableDataManager.MakeTable<ExpandmapTable>();
+//            expandTable.Initialize();
+//        }
 
-        private void Initialize()
-        {
-            _instance = this;
-            Init_System();
-            Init_Table();
-            StartCoroutine(Prepare_DB());
-        }
+//        private void Initialize()
+//        {
+//            _instance = this;
+//            Init_System();
+//            Init_Table();
+//            StartCoroutine(Prepare_DB());
+//        }
         
-        void Start()
-        {
-            Initialize();
-        }
+//        void Start()
+//        {
+//            Initialize();
+//        }
 
-        private IEnumerator Prepare_DB()
-        {
-            var sql = systemManager.GetSystem<SQLiteSystem>();
+//        private IEnumerator Prepare_DB()
+//        {
+//            var sql = systemManager.GetSystem<SQLiteSystem>();
 
-            yield return StartCoroutine(sql.PrepareProcess());
-            sql.Open();
-            tableDataManager.Build();
+//            yield return StartCoroutine(sql.PrepareProcess());
+//            sql.Open();
+//            tableDataManager.Build();
 
-            npcDataManager = new NPCDataManager();
+//            npcDataManager = new NPCDataManager();
 
-            buildingListUI.Initialize();
+//            buildingListUI.Initialize();
 
-            editController.Initialize();
-            objectFactory.LoadAbyssworld(npcDataManager.npcData);
-        }
+//            editController.Initialize();
+//            objectFactory.LoadAbyssworld(npcDataManager.npcData);
+//        }
 
-        public void CreateFish()
-        {
+//        public void CreateFish()
+//        {
 
-        }
+//        }
 
-        public void CreateBuilding(int id)
-        {
-            var obj = objectFactory.CreateBuilding(id, 0, 0, 0, 0);
-            if(obj != null)
-            {
-                npcDataManager.AddBuildingData(obj.data);
-            }
-        }
+//        public void CreateBuilding(int id)
+//        {
+//            var obj = objectFactory.CreateBuilding(id, 0, 0, 0, 0);
+//            if(obj != null)
+//            {
+//                npcDataManager.AddBuildingData(obj.data);
+//            }
+//        }
 
-        public void DeleteBuilding(GameObject go, MapEditorBuildingEntity entity)
-        {
-            npcDataManager.RemoveBuildingData(entity.data);
-            Destroy(go);
-        }
+//        public void DeleteBuilding(GameObject go, MapEditorBuildingEntity entity)
+//        {
+//            npcDataManager.RemoveBuildingData(entity.data);
+//            Destroy(go);
+//        }
 
-        public void OnClickSave()
-        {
-            string json = npcDataManager.ToJson();
+//        public void OnClickSave()
+//        {
+//            string json = npcDataManager.ToJson();
 
-            string path = EditorUtility.SaveFilePanel("Json 파일 저장하기", "","NPC_DATA.json", "json");
-            if(path.Length != 0)
-            {
-                System.IO.File.WriteAllText(path, json);
-            }
-        }
+//            string path = EditorUtility.SaveFilePanel("Json 파일 저장하기", "","NPC_DATA.json", "json");
+//            if(path.Length != 0)
+//            {
+//                System.IO.File.WriteAllText(path, json);
+//            }
+//        }
 
-        public void OnClickLoad()
-        {
-            string path = UnityEditor.EditorUtility.OpenFilePanel("Json 파일 불러오기", "", "json");
-            if (path.Length != 0)
-            {
-                npcDataManager.LoadFromJson(path);
+//        public void OnClickLoad()
+//        {
+//            string path = UnityEditor.EditorUtility.OpenFilePanel("Json 파일 불러오기", "", "json");
+//            if (path.Length != 0)
+//            {
+//                npcDataManager.LoadFromJson(path);
 
-                objectFactory.ResetWorld(npcDataManager.npcData);
-            }
-        }
+//                objectFactory.ResetWorld(npcDataManager.npcData);
+//            }
+//        }
 
-        public void OnClickShowBuildingList()
-        {
-            buildingListUI.Open();
-        }
+//        public void OnClickShowBuildingList()
+//        {
+//            buildingListUI.Open();
+//        }
 
-        public void OnClickShowFishList()
-        {
+//        public void OnClickShowFishList()
+//        {
 
-        }
-    }
-}
+//        }
+//    }
+//}
