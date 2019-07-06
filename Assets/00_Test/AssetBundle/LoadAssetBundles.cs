@@ -8,17 +8,30 @@ public class LoadAssetBundles : MonoBehaviour
     public string path;
     public string testAssetName;
 
+    public static LoadAssetBundles Inst;
+    
+    void Awake()
+    {
+        Inst = this;
+    }
+
     void Start()
     {
-        LoadAssetBundle(path);
-        InstantiateObjectFromBundle(testAssetName);
+        //LoadAssetBundle(path);
+        //InstantiateObjectFromBundle(testAssetName);
+    }
+
+    public void LoadTest(string assetBundle, string asset)
+    {
+        LoadAssetBundle(Constant.TestAssetRoot + assetBundle);
+        InstantiateObjectFromBundle(asset);
     }
 
     void LoadAssetBundle(string bundleUrl)
     {
         myLoadedAssetbundles = AssetBundle.LoadFromFile(bundleUrl);
         Debug.Log(myLoadedAssetbundles == null ? "failed to load assetBundles" : "AssetBundle succesfully loaded");
-
+        
     }
 
     void InstantiateObjectFromBundle(string assetName)

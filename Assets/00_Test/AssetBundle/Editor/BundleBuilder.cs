@@ -8,7 +8,11 @@ public class BundleBuilder : Editor
     [MenuItem("Assets/ Build AssetBundles")]
     static void BuildAllAssetBundles()
     {
-        BuildPipeline.BuildAssetBundles(@"C:\dev\assetBundle", BuildAssetBundleOptions.ChunkBasedCompression, BuildTarget.StandaloneWindows64);
+        BuildPipeline.BuildAssetBundles(Constant.TestAssetRoot, BuildAssetBundleOptions.ChunkBasedCompression, BuildTarget.StandaloneWindows64);
+
+        //BuildPipeline.BuildAssetBundles(@"C:\Users\David\Dev\AssetBundles", BuildAssetBundleOptions.ChunkBasedCompression, BuildTarget.StandaloneWindows64);
+        //BuildPipeline.BuildAssetBundles("Assets /AssetBundles", BuildAssetBundleOptions.ChunkBasedCompression, BuildTarget.StandaloneWindows64);
+
     }
 
 }

@@ -33,32 +33,45 @@ public class MainPanel : MonoBehaviour
         buildingObj.transform.position = new Vector3(x, y, z);
         buildingList.Add(buildingObj);
     }
-
     public void CreateBuildingRand()
     {
-        int x = UnityEngine.Random.Range(0, 5);
-        int y = UnityEngine.Random.Range(3, 4);
-        int z = UnityEngine.Random.Range(0, 5);
-
-        GameObject buildingObj = Util_GO.MakeGameObjectFromPrefab("Model/BuildingDeco03", false);
-        buildingObj.transform.position = new Vector3(x, y, z);
-        buildingList.Add(buildingObj);
     }
 
     public void RemoveObject()
     {
-        for(int i = 0; i < buildingList.Count; i++)
-            GameObject.Destroy(buildingList[i].gameObject);
-        buildingList.Clear();
+
     }
 
     public void OnClickBtnCreate()
     {
-        for (int i = 0; i < buildingData.Length; i++)
-        {
-            CreateObject(buildingData[i].x, buildingData[i].y, buildingData[i].z);
-        }
+
+        LoadAssetBundles.Inst.LoadTest("assettest", "Model_Building_House_01_C");
     }
+    //public void CreateBuildingRand()
+    //{
+    //    int x = UnityEngine.Random.Range(0, 5);
+    //    int y = UnityEngine.Random.Range(3, 4);
+    //    int z = UnityEngine.Random.Range(0, 5);
+
+    //    GameObject buildingObj = Util_GO.MakeGameObjectFromPrefab("Model/BuildingDeco03", false);
+    //    buildingObj.transform.position = new Vector3(x, y, z);
+    //    buildingList.Add(buildingObj);
+    //}
+
+    //public void RemoveObject()
+    //{
+    //    for(int i = 0; i < buildingList.Count; i++)
+    //        GameObject.Destroy(buildingList[i].gameObject);
+    //    buildingList.Clear();
+    //}
+
+    //public void OnClickBtnCreate()
+    //{
+    //    for (int i = 0; i < buildingData.Length; i++)
+    //    {
+    //        CreateObject(buildingData[i].x, buildingData[i].y, buildingData[i].z);
+    //    }
+    //}
 
     public void OnClickBtnRemove()
     {
