@@ -5,10 +5,10 @@ using UnityEngine;
 using System.Collections;
 using System;
 
-public class AssetBundleManager : MonoBehaviour {
+public class GiantAssetBundleManager : MonoBehaviour {
 
-	private static AssetBundleManager _inst = null;
-	public static AssetBundleManager Inst { get { return _inst; } }
+	private static GiantAssetBundleManager _inst = null;
+	public static GiantAssetBundleManager Inst { get { return _inst; } }
 
 	public void AsyncGetCharacterAsset(int idCharData, Action<UnityEngine.Object> cb)
 	{

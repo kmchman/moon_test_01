@@ -86,7 +86,7 @@ public class RenderTextureCamera : MonoBehaviour
 		m_IDCharData = idCharData;
 		m_CompleteShowCharacterDelegate = completeShowCharacterDelegate;
 
-		AssetBundleManager.Inst.AsyncGetCharacterAsset(m_IDCharData, (prefab) =>
+		GiantAssetBundleManager.Inst.AsyncGetCharacterAsset(m_IDCharData, (prefab) =>
 		{
 //			GetCharacterAsset(idSequence, idCharData, isShowDialog, prefab);
 		});

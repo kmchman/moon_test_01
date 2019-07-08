@@ -8,6 +8,6 @@ public class SceneName
 
 public class Constant
 {
-    public const string TestAssetRoot = @"C:\dev\assetBundle\";
+    public const string TestAssetRoot = @"C:\Dev\assetBundle\";
 }
 

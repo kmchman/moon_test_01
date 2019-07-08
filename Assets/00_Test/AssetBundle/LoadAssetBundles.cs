@@ -20,7 +20,6 @@ public class LoadAssetBundles : MonoBehaviour
     }
 
     AssetBundle myLoadedAssetbundles;
-    public string path;
     public string testAssetName;
 
     public static LoadAssetBundles Inst;
@@ -55,7 +54,7 @@ public class LoadAssetBundles : MonoBehaviour
                 foreach (var old in this.oldAsset)
                 {
 
-                    Debug.LogFormat("<color=red>{0}, {1}\t{2}, {3}</color>", old.bundle, old.hash128, this.newAsset[i].bundle, this.newAsset[i].hash128);
+                    Debug.LogFormat("<color=blue>{0}, {1}\t{2}, {3}</color>", old.bundle, old.hash128, this.newAsset[i].bundle, this.newAsset[i].hash128);
 
                     if (old.hash128 != this.newAsset[i].hash128)
                     {
