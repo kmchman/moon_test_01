@@ -39,13 +39,16 @@ public class MainPanel : MonoBehaviour
 
     public void RemoveObject()
     {
-
+        Debug.Log("LoadAssetBundles.Inst.AssetLoad()");
+        LoadAssetBundles.Inst.AssetLoad();
     }
 
     public void OnClickBtnCreate()
     {
+        Debug.Log("LoadAssetBundles.Inst.LoadTest();");
 
-        LoadAssetBundles.Inst.LoadTest("assettest", "Model_Building_House_01_C");
+        LoadAssetBundles.Inst.StopCoroutine("DownLoadTest");
+        LoadAssetBundles.Inst.StartCoroutine("DownLoadTest");
     }
     //public void CreateBuildingRand()
     //{

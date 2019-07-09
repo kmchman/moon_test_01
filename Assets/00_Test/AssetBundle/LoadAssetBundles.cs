@@ -24,13 +24,20 @@ public class LoadAssetBundles : MonoBehaviour
 
     public static LoadAssetBundles Inst;
     private int version = 8;
-    private List<AssetbundleInfo> oldAsset = new List<AssetbundleInfo>();
-    private List<AssetbundleInfo> newAsset = new List<AssetbundleInfo>();
+
+    private Dictionary<string, AssetbundleInfo> oldAssetDic = new Dictionary<string, AssetbundleInfo>();
+    private Dictionary<string, AssetbundleInfo> newAssetDic = new Dictionary<string, AssetbundleInfo>();
+
+    //private List<AssetbundleInfo> oldAssetList = new List<AssetbundleInfo>();
+    //private List<AssetbundleInfo> newAssetList = new List<AssetbundleInfo>();
+
+    Dictionary<string, Object> ObjectMap = new Dictionary<string, Object>();
+    List<AssetBundle> assetBundleList = new List<AssetBundle>();
 
 
     public string[] strAssetBundle = new string[] { "assetBundle", "assettest" };
+    public string rootAssetBundleName = "assetBundle";
 
-    
     void Awake()
     {
         Inst = this;
@@ -42,36 +49,40 @@ public class LoadAssetBundles : MonoBehaviour
         //InstantiateObjectFromBundle(testAssetName);
     }
 
-    public void LoadTest(string assetBundle, string asset)
+    public void AssetLoad()
     {
-
-        System.Action action = () =>
+        string root = Application.persistentDataPath + "/AssetBundles/";
+        AssetBundle bundle = AssetBundle.LoadFromFile(Constant.TestAssetRoot + strAssetBundle[0]);
+        AssetBundleManifest manifest = bundle.LoadAsset<AssetBundleManifest>("AssetBundleManifest");
+        Debug.Log(manifest);
+        string[] bundleList = manifest.GetAllAssetBundles();
+        foreach (string assetBundle in bundleList)
         {
-            StartCoroutine(LoadFromCacheOrDownload(Constant.TestAssetRoot + strAssetBundle[0], (manifest) =>
+            AssetBundle _bundle = AssetBundle.LoadFromFile(root + assetBundle);
+            Debug.Log(_bundle);
+            assetBundleList.Add(_bundle);
+        }
+    }
+
+    public IEnumerator DownLoadTest()
+    {
+        CheckOldAsset();
+
+        StartCoroutine(LoadFromCacheOrDownload(Constant.TestAssetRoot + strAssetBundle[0], (manifest) =>
+        {
+            var enumertor = newAssetDic.GetEnumerator();
+            while (enumertor.MoveNext())
             {
-                
-                int i = 0;
-                foreach (var old in this.oldAsset)
+                AssetbundleInfo _newAssetInfo = enumertor.Current.Value;
+                if (!oldAssetDic.ContainsKey(_newAssetInfo.bundle) || oldAssetDic[_newAssetInfo.bundle].hash128 != _newAssetInfo.hash128)
                 {
-
-                    Debug.LogFormat("<color=blue>{0}, {1}\t{2}, {3}</color>", old.bundle, old.hash128, this.newAsset[i].bundle, this.newAsset[i].hash128);
-
-                    if (old.hash128 != this.newAsset[i].hash128)
-                    {
-                        Debug.LogFormat("<color=red>{0}, {1}</color>", this.newAsset[i].bundle, this.newAsset[i].hash128);
-
-                        StartCoroutine(this.SaveAndDownload(Constant.TestAssetRoot + this.newAsset[i].bundle, Application.persistentDataPath + "/AssetBundles/", this.newAsset[i].bundle));
-
-                        StartCoroutine(this.SaveAndDownload(Constant.TestAssetRoot + strAssetBundle[0], Application.persistentDataPath + "/AssetBundles/", strAssetBundle[0]));
-
-                    }
-
-                    i++;
+                    Debug.Log("download : " + _newAssetInfo.bundle);
+                    StartCoroutine(this.SaveAndDownload(Constant.TestAssetRoot + _newAssetInfo.bundle, Application.persistentDataPath + "/AssetBundles/", _newAssetInfo.bundle));
                 }
-            }));
-        };
-        StartCoroutine(LoadFromLocal(strAssetBundle[0], action)); 
+            }
+        }));
 
+        yield return null;
     }
 
     //public void LoadTest(string assetBundle, string asset)
@@ -107,7 +118,7 @@ public class LoadAssetBundles : MonoBehaviour
     {
         myLoadedAssetbundles = AssetBundle.LoadFromFile(bundleUrl);
         Debug.Log(myLoadedAssetbundles == null ? "failed to load assetBundles" : "AssetBundle succesfully loaded");
-        
+
     }
 
     void InstantiateObjectFromBundle(string assetName)
@@ -130,7 +141,7 @@ public class LoadAssetBundles : MonoBehaviour
         ////yield return www;
         //byte[] bytes = www.bytes;
         byte[] bytes = uwr.downloadHandler.data;
-
+        
         Debug.Log("<color=red>" + bytes.Length + "</color>");
 
         // Create the directory if it doesn't already exist
@@ -146,9 +157,23 @@ public class LoadAssetBundles : MonoBehaviour
 
     public IEnumerator LoadFromCacheOrDownload(string uri, System.Action<AssetBundleManifest> onComplete)
     {
-        var uwr = UnityWebRequestAssetBundle.GetAssetBundle(uri);
+        //var uwr = UnityWebRequestAssetBundle.GetAssetBundle(uri);
+        //yield return uwr.SendWebRequest();
+        var uwr = UnityWebRequest.Get(uri);
         yield return uwr.SendWebRequest();
-        AssetBundle assetBundle = DownloadHandlerAssetBundle.GetContent(uwr);
+
+        string localPath = Application.persistentDataPath + "/AssetBundles/";
+        if (!Directory.Exists(localPath))
+        {
+            Directory.CreateDirectory(localPath);
+        }
+
+        Debug.Log(localPath);
+        byte[] bytes = uwr.downloadHandler.data;
+        File.WriteAllBytes(localPath + rootAssetBundleName, bytes);
+
+        //AssetBundle assetBundle = DownloadHandlerAssetBundle.GetContent(uwr);
+        AssetBundle assetBundle = AssetBundle.LoadFromFile(localPath + rootAssetBundleName);
         
         Debug.Log("assetBundle: " + assetBundle);
 
@@ -158,37 +183,41 @@ public class LoadAssetBundles : MonoBehaviour
 
         foreach (var bundle in manifest.GetAllAssetBundles())
         {
-            this.newAsset.Add(new AssetbundleInfo(bundle, manifest.GetAssetBundleHash(bundle)));
+            newAssetDic.Add(bundle, new AssetbundleInfo(bundle, manifest.GetAssetBundleHash(bundle)));
             Debug.Log("new : " + manifest.GetAssetBundleHash(bundle));
         }
-        
+
         assetBundle.Unload(false);
 
         onComplete(manifest);
 
     }
 
+    private void CheckOldAsset()
+    {
+        if (File.Exists(Application.persistentDataPath + "/AssetBundles/" + rootAssetBundleName))
+        {
+            AssetBundle oldAssetBundle = AssetBundle.LoadFromFile(Application.persistentDataPath + "/AssetBundles/" + rootAssetBundleName);
+
+            AssetBundleManifest manifest = oldAssetBundle.LoadAsset<AssetBundleManifest>("AssetBundleManifest");
+            foreach (var bundle in manifest.GetAllAssetBundles())
+            {
+                oldAssetDic.Add(bundle, new AssetbundleInfo(bundle, manifest.GetAssetBundleHash(bundle)));
+                Debug.LogFormat("Old : {0}, {1}", bundle, manifest.GetAssetBundleHash(bundle));
+            }
+            oldAssetBundle.Unload(false);
+        }
+    }
+
     IEnumerator LoadFromLocal(string assetName, System.Action callBack)
     {
         var path = Path.Combine(Application.persistentDataPath + "/AssetBundles/", assetName);
         Debug.Log(path);
-
+        
         AssetBundleCreateRequest req = AssetBundle.LoadFromFileAsync(path);
         yield return req;
 
         var assetBundle = req.assetBundle;
-
-        if (assetBundle == null)
-        {
-            Debug.Log("Failed to load AssetBundle!");
-            yield return StartCoroutine(SaveAndDownload(Constant.TestAssetRoot + strAssetBundle[0], Application.persistentDataPath + "/AssetBundles/", strAssetBundle[0]));
-            yield return StartCoroutine(SaveAndDownload(Constant.TestAssetRoot + strAssetBundle[1], Application.persistentDataPath + "/AssetBundles/", strAssetBundle[1]));
-
-            req = AssetBundle.LoadFromFileAsync(path);
-            yield return req;
-            assetBundle = req.assetBundle;
-        }
-
         Debug.Log(assetBundle);
 
         AssetBundleManifest manifest = assetBundle.LoadAsset<AssetBundleManifest>("AssetBundleManifest");
@@ -197,8 +226,7 @@ public class LoadAssetBundles : MonoBehaviour
 
         foreach (var bundle in manifest.GetAllAssetBundles())
         {
-            this.oldAsset.Add(new AssetbundleInfo(bundle, manifest.GetAssetBundleHash(bundle)));
-
+            //this.oldAssetList.Add(new AssetbundleInfo(bundle, manifest.GetAssetBundleHash(bundle)));
             Debug.LogFormat("Old : {0}, {1}", bundle, manifest.GetAssetBundleHash(bundle));
         }
 
