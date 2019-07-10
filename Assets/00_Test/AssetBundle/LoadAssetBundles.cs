@@ -49,18 +49,50 @@ public class LoadAssetBundles : MonoBehaviour
         //InstantiateObjectFromBundle(testAssetName);
     }
 
-    public void AssetLoad()
+    public IEnumerator AssetLoad()
     {
         string root = Application.persistentDataPath + "/AssetBundles/";
-        AssetBundle bundle = AssetBundle.LoadFromFile(Constant.TestAssetRoot + strAssetBundle[0]);
+        //AssetBundle bundle = AssetBundle.LoadFromFile(Constant.TestAssetRoot + strAssetBundle[0]);
+        //AssetBundle bundle = AssetBundle.LoadFromFile(Application.streamingAssetsPath + "/" + strAssetBundle[0]);
+
+        UnityWebRequest request = UnityWebRequestAssetBundle.GetAssetBundle(Application.streamingAssetsPath + "/" + strAssetBundle[0], 0);
+        yield return request.SendWebRequest();
+        AssetBundle bundle = DownloadHandlerAssetBundle.GetContent(request);
+
         AssetBundleManifest manifest = bundle.LoadAsset<AssetBundleManifest>("AssetBundleManifest");
         Debug.Log(manifest);
         string[] bundleList = manifest.GetAllAssetBundles();
-        foreach (string assetBundle in bundleList)
+        foreach (string strAssetBundle in bundleList)
         {
-            AssetBundle _bundle = AssetBundle.LoadFromFile(root + assetBundle);
-            Debug.Log(_bundle);
-            assetBundleList.Add(_bundle);
+            //AssetBundle _assetBundle = AssetBundle.LoadFromFile(Application.streamingAssetsPath + "/" + strAssetBundle);
+            //AssetBundle _assetBundle = Resources.Load<AssetBundle>(strAssetBundle);
+            UnityWebRequest request2 = UnityWebRequestAssetBundle.GetAssetBundle(Application.streamingAssetsPath + "/" + strAssetBundle, 0);
+            yield return request2.SendWebRequest();
+            AssetBundle _assetBundle = DownloadHandlerAssetBundle.GetContent(request2);
+
+
+            if (_assetBundle == null)
+            {
+                AssetBundle _bundle = AssetBundle.LoadFromFile(root + strAssetBundle);
+                Debug.Log(_bundle);
+                assetBundleList.Add(_bundle);
+                GameObject[] objs = _bundle.LoadAllAssets<GameObject>();
+                foreach (GameObject obj in objs)
+                {
+                    Debug.Log("Down obj : " + obj);
+                    Instantiate(obj);
+                }
+            }
+            else
+            {
+                GameObject[] objs = _assetBundle.LoadAllAssets<GameObject>();
+                foreach (GameObject obj in objs)
+                {
+                    Debug.Log("Resource obj : " + obj);
+                    Instantiate(obj);
+                }
+            }
+            
         }
     }
 
@@ -84,6 +116,7 @@ public class LoadAssetBundles : MonoBehaviour
 
         yield return null;
     }
+
 
     //public void LoadTest(string assetBundle, string asset)
     //{

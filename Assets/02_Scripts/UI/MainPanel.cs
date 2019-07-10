@@ -40,7 +40,8 @@ public class MainPanel : MonoBehaviour
     public void RemoveObject()
     {
         Debug.Log("LoadAssetBundles.Inst.AssetLoad()");
-        LoadAssetBundles.Inst.AssetLoad();
+
+        LoadAssetBundles.Inst.StartCoroutine("AssetLoad");
     }
 
     public void OnClickBtnCreate()

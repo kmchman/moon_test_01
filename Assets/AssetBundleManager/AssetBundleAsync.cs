@@ -10,7 +10,7 @@ namespace AssetBundles
     public class AssetBundleAsync : IEnumerator
     {
         public AssetBundle AssetBundle;
-
+        
         public bool IsDone { get; private set; }
         public bool Failed { get; private set; }
 

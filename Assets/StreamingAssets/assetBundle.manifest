@@ -1,0 +1,13 @@
+ManifestFileVersion: 0
+CRC: 1536876917
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: face
+      Dependencies: {}
+    Info_1:
+      Name: bufficon
+      Dependencies: {}
+    Info_2:
+      Name: assettest
+      Dependencies: {}
