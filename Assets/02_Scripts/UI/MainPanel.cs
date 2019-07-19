@@ -53,9 +53,10 @@ public class MainPanel : MonoBehaviour
     public void OnClickBtnCreate()
     {
         Debug.Log("LoadAssetBundles.Inst.LoadTest();");
+        MainController.Inst.CreateBaseMap();
 
-        LoadAssetBundles.Inst.StopCoroutine("DownLoadTest");
-        LoadAssetBundles.Inst.StartCoroutine("DownLoadTest");
+        //LoadAssetBundles.Inst.StopCoroutine("DownLoadTest");
+        //LoadAssetBundles.Inst.StartCoroutine("DownLoadTest");
     }
     //public void CreateBuildingRand()
     //{
