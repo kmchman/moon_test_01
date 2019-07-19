@@ -16,6 +16,12 @@ public class MainPanel : MonoBehaviour
             z = _z;
         }
     }
+    [SerializeField] private GameObject titleImage;
+
+    private void OnEnable()
+    {
+        titleImage.SetActive(false);
+    }
 
     BuildingData[] buildingData = new BuildingData[] {
         new BuildingData(1, 3, 5),
