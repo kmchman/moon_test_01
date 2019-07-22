@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MainPanel : MonoBehaviour
 {
+    [SerializeField] private TestPopup01 testPopup01Prefab;
     class BuildingData
     {
         public int x;
@@ -86,7 +87,8 @@ public class MainPanel : MonoBehaviour
 
     public void OnClickBtnRemove()
     {
-        RemoveObject();
+        //RemoveObject();
+        MoonGlobalPopupManager.Inst.ShowPopup("Popup_Test02");
     }
 
     public void OnClickBtnChange()

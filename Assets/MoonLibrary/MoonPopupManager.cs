@@ -4,119 +4,118 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 
 public class MoonPopupManager : MonoBehaviour {
+    
+    // Static
+    private static Dictionary<int, MoonPopupManager> popupManager = new Dictionary<int, MoonPopupManager>();
 
-	// static
-	private static Dictionary<int, MoonPopupManager> 		m_PopupManager = new Dictionary<int, MoonPopupManager>();
+    // Key : PopupUI Prefab, value : instance
+    private Dictionary<string, MoonPopupUI> allPopup = new Dictionary<string, MoonPopupUI>();
+    private List<MoonPopupUI> openedPopupLists = new List<MoonPopupUI>();
 
-	// Key : PopupUI Prefab, value : instance
-	private Dictionary<MoonPopupUI, MoonPopupUI> 			m_AllPopups = new Dictionary<MoonPopupUI, MoonPopupUI>();
-	private List<MoonPopupUI>								m_OpenedPopupLists = new List<MoonPopupUI>();
+    public int depth = 0;
+    public int defaultOrder = 0;
 
-	// Key : Instance
-	private Dictionary<MoonPopupUI, Image> 					m_CurrentBackGroundImage = new Dictionary<MoonPopupUI, Image>();
+    protected virtual void Awake()
+    {
+        if (!popupManager.ContainsKey(depth))
+        {
+            popupManager[depth] = this;
+        }
+    }
 
-	public RectTransform 									rectTransformRef { get { return m_RectTransformRef; } }
-	private RectTransform 									m_RectTransformRef;
+    public T ShowPopup<T>(T popupPrefab, params object[] args) where T : MoonPopupUI
+    {
+        T popup = MakePopup<T>(popupPrefab);
+        //if(!openedPopupLists.Contains(popup))
+        //    openedPopupLists.Add(popup);
 
+        //popup.ShowPopupByManager(OnHidePopup, defaultOrder + openedPopupLists.Count, args);
+        
+        return _ShowPopup(popup, args) as T;
+    }
 
-	[SerializeField] private int 							m_depth = 0;
-	[SerializeField] private List<Image> 					m_BackgroundImages = new List<Image>();
+    private T MakePopup<T>(T popupPrefab) where T : MoonPopupUI
+    { 
+        if (allPopup.ContainsKey(popupPrefab.name))
+            return allPopup[popupPrefab.name] as T;
+        allPopup[popupPrefab.name] = Giant.Util.MakeItem<T>(popupPrefab, transform, false);
 
+        return allPopup[popupPrefab.name] as T;
+    }
 
-	protected virtual void Awake()
-	{
-		m_RectTransformRef = transform as RectTransform;
+    public MoonPopupUI ShowPopup(string popupPrefab, params object[] args)
+    {
+        return _ShowPopup(MakePopup(popupPrefab), args);
+    }
 
-		var enumerator = m_BackgroundImages.GetEnumerator();
-		while (enumerator.MoveNext()) 
-		{
-			enumerator.Current.gameObject.SetActive(false);
-		}
+    private MoonPopupUI _ShowPopup(MoonPopupUI popup, params object[] args)
+    {
+        if(!openedPopupLists.Contains(popup))
+            openedPopupLists.Add(popup);
 
-		if(!m_PopupManager.ContainsKey(m_depth))
-		{
-			m_PopupManager[m_depth] = this;			
-		}
-	}
+        popup.ShowPopupByManager(OnHidePopup, defaultOrder, openedPopupLists.Count, args);
 
-	public T ShowPopup<T>(T popupPrefab, params object[] args) where T : MoonPopupUI
-	{
-		T popup = MakePopup(popupPrefab);
-		m_OpenedPopupLists.Add(popup);
+        TouchBlock(popup.touchBackground);
 
-		Image backGroundImage = MakeBackgroundImage();
-		m_CurrentBackGroundImage[popup] = backGroundImage;
+        return popup;
+    }
 
-		backGroundImage.rectTransform.SetAsLastSibling();
-		popup.rectTransformRef.SetAsLastSibling();
+    private void TouchBlock(bool value)
+    {
+        //GameUserInputSystem gameUserInputSystem = Framework.GetGameSystem<GameUserInputSystem>();
+        //gameUserInputSystem.myEvent.Send_TouchBlock(value);
+    }
 
-		popup.ShowPopupByManager(OnHidePopup, args);
-		return popup;
-	}
+    public MoonPopupUI GetPopup(string popupPrefab)
+    {
+        MoonPopupUI popup = null;
+        if (allPopup.ContainsKey(popupPrefab))
+            popup = openedPopupLists.Find(item => item == allPopup[popupPrefab]);
+        return popup;
+    }
 
-	private T MakePopup<T> (T Prefab) where T : MoonPopupUI
-	{
-		if (m_AllPopups.ContainsKey(Prefab))
-			return m_AllPopups[Prefab] as T;
-		
-		m_AllPopups[Prefab] = Giant.Util.MakeItem(Prefab, transform, false);
+    public void HidePopup(string popupPrefab)
+    {
+        if (allPopup.ContainsKey(popupPrefab))
+        {
+            MoonPopupUI popupUI = allPopup[popupPrefab];
+            popupUI.Hide();
+        }
+    }
 
-		return m_AllPopups[Prefab] as T;
-	}
+    private MoonPopupUI MakePopup(string popupPrefab)
+    {
+        if (allPopup.ContainsKey(popupPrefab))
+            return allPopup[popupPrefab] as MoonPopupUI;
+        
+        MoonPopupUI popupUI = Giant.Util.MakeItem<MoonPopupUI>(Constant.PopupRootPath + popupPrefab, transform, false);
+        RectTransform rect = popupUI.GetComponent<RectTransform>();
+        popupUI.transform.localPosition = Vector3.zero;
+        popupUI.transform.localScale = Vector3.one;
 
-	public static MoonPopupManager GetPopupManager(int depth)
-	{
-		if (m_PopupManager.ContainsKey(depth)) 
-		{
-			return m_PopupManager[depth];
-		}
-			
-		return null;
-	}
+        rect.anchorMin = Vector2.zero;
+        rect.anchorMax = Vector2.one;
+        rect.offsetMin = Vector2.zero;
+        rect.offsetMax = Vector2.zero;
 
-	protected virtual void OnHidePopup(MoonPopupUI popup)
-	{
-		m_OpenedPopupLists.Remove(popup);
+        allPopup[popupPrefab] = popupUI;
 
-		if (m_CurrentBackGroundImage.ContainsKey(popup)) 
-		{
-			m_CurrentBackGroundImage[popup].gameObject.SetActive(false);
-			m_CurrentBackGroundImage.Remove(popup);
-		}
-	}
+        return allPopup[popupPrefab];
+    }
 
-	private Image MakeBackgroundImage()
-	{
-		if (m_BackgroundImages.Count <= 0)
-		{
-			Debug.LogError(Util.LogFormat("Not found background image object"));
-			return null;
-		}
+    protected virtual void OnHidePopup(MoonPopupUI popup)
+    {
+        openedPopupLists.Remove(popup);
 
-		var enumerator = m_BackgroundImages.GetEnumerator();
-		while (enumerator.MoveNext()) 
-		{
-			if (enumerator.Current.gameObject.activeSelf == false) 
-			{
-				enumerator.Current.gameObject.SetActive(true);
+        foreach (MoonPopupUI _popup in openedPopupLists)
+        {
+            if (_popup.touchBackground == true)
+            {
+                TouchBlock(true);
+                return;
+            }
+        }
+        TouchBlock(false);
 
-				return enumerator.Current;
-			}
-		}
-
-		Image backGroundImage = Giant.Util.MakeItem(m_BackgroundImages[0], transform, false);
-		backGroundImage.gameObject.SetActive(true);
-		m_BackgroundImages.Add(backGroundImage);
-
-		return backGroundImage;
-	}
-
-	public void HideLastPopup()
-	{
-		if (m_OpenedPopupLists.Count <= 0)
-			return;
-
-		MoonPopupUI popUp = m_OpenedPopupLists[m_OpenedPopupLists.Count - 1];
-		popUp.Hide();
-	}
+    }
 }

@@ -3,14 +3,6 @@ using System.Collections;
 
 public class TestPopup01 : MoonPopupUI {
 
-	protected override void Awake()
-	{
-		base.Awake();
-
-		gameObject.SetActive (false);
-
-	}
-
 	public override void Show(params object[] values)
 	{
 		base.Show(values);
