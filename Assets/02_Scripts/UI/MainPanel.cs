@@ -53,8 +53,8 @@ public class MainPanel : MonoBehaviour
 
     public void OnClickBtnCreate()
     {
-        string csvPath = Application.streamingAssetsPath + "/BuildingData2.csv";
-        string jsonPath = Application.streamingAssetsPath + "/BuildingData2.json";
+        string csvPath = Application.streamingAssetsPath + "/csvTest1.csv";
+        string jsonPath = Application.streamingAssetsPath + "/csvTest1.json";
         string json = Giant.Util.ConvertCsvFileToJsonObject(csvPath);
         Debug.Log("ConvertCsvFileToJsonObject" + json);
         System.IO.File.WriteAllText(jsonPath, json);
