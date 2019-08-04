@@ -97,6 +97,29 @@ public class _Datatable {
 		i.InscriptionID_2 = int.Parse((string)v["InscriptionID.2"]);
 		dtHeroData.Add(i.HeroID, i);
 	}
+	public class BuildingData2 {
+		public int dsf;
+		public int asd;
+		public int sd;
+		public int sdf;
+	};
+	public Dictionary<int, BuildingData2> dtBuildingData2 = new Dictionary<int, BuildingData2>();
+	public void LoadBuildingData2s(IDictionary dic) {
+		var enumerator = dic.GetEnumerator();
+		while (enumerator.MoveNext()) {
+			LoadBuildingData2(enumerator.Value);
+		}
+	}
+	public void LoadBuildingData2(object value) {
+		IDictionary v = (IDictionary)value;
+
+		BuildingData2 i = new BuildingData2();
+		i.dsf = int.Parse((string)v["dsf"]);
+		i.asd = int.Parse((string)v["asd"]);
+		i.sd = int.Parse((string)v["sd"]);
+		i.sdf = int.Parse((string)v["sdf"]);
+		dtBuildingData2.Add(i.dsf, i);
+	}
 	public void LoadDatatable()
 	{
 	}

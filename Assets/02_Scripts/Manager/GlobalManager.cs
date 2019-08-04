@@ -14,7 +14,8 @@ public class Global {
 	public static string[] dtList = new string[] {
 		"CharData", 
 		"HeroData",
-	};
+        "BuildingData2",
+    };
 
 	public enum LoadState
 	{

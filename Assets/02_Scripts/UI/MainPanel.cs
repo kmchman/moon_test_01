@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MainPanel : MonoBehaviour
 {
-    [SerializeField] private TestPopup01 testPopup01Prefab;
+    [SerializeField] private TestPopup02 testPopup02Prefab;
     class BuildingData
     {
         public int x;
@@ -53,8 +53,15 @@ public class MainPanel : MonoBehaviour
 
     public void OnClickBtnCreate()
     {
-        Debug.Log("LoadAssetBundles.Inst.LoadTest();");
-        MainController.Inst.CreateBaseMap();
+        string csvPath = Application.streamingAssetsPath + "/BuildingData2.csv";
+        string jsonPath = Application.streamingAssetsPath + "/BuildingData2.json";
+        string json = Giant.Util.ConvertCsvFileToJsonObject(csvPath);
+        Debug.Log("ConvertCsvFileToJsonObject" + json);
+        System.IO.File.WriteAllText(jsonPath, json);
+
+        //MoonGlobalPopupManager.Inst.ShowPopup(testPopup02Prefab, null);
+        //Debug.Log("LoadAssetBundles.Inst.LoadTest();");
+        //MainController.Inst.CreateBaseMap();
 
         //LoadAssetBundles.Inst.StopCoroutine("DownLoadTest");
         //LoadAssetBundles.Inst.StartCoroutine("DownLoadTest");

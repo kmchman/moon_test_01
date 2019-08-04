@@ -28,6 +28,24 @@ public class Util_GO : MonoBehaviour
         return newObject;
     }
 
+    public static Sprite LoadSprite(string _path)
+    {
+        var sp = Resources.Load(_path) as Sprite;
+
+        if (sp == null)
+        {
+            var tex = Resources.Load(_path) as Texture2D;
+            if (tex == null)
+            {
+                return sp;
+            }
+
+            sp = Sprite.Create(tex, new Rect(0, 0, tex.width, tex.height), Vector2.zero);
+        }
+
+        return sp;
+    }
+
     public static GameObject MakeGameObject(string objectName, GameObject parent, bool dontDestroyOnLoad)
     {
         GameObject TempObject = new GameObject(objectName);

@@ -4,7 +4,8 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 
 public class MoonPopupManager : MonoBehaviour {
-    
+
+    [SerializeField] private GameObject bgImage;
     // Static
     private static Dictionary<int, MoonPopupManager> popupManager = new Dictionary<int, MoonPopupManager>();
 
@@ -21,6 +22,7 @@ public class MoonPopupManager : MonoBehaviour {
         {
             popupManager[depth] = this;
         }
+        bgImage.SetActive(false);
     }
 
     public T ShowPopup<T>(T popupPrefab, params object[] args) where T : MoonPopupUI
@@ -64,6 +66,7 @@ public class MoonPopupManager : MonoBehaviour {
     {
         //GameUserInputSystem gameUserInputSystem = Framework.GetGameSystem<GameUserInputSystem>();
         //gameUserInputSystem.myEvent.Send_TouchBlock(value);
+        bgImage.SetActive(value);
     }
 
     public MoonPopupUI GetPopup(string popupPrefab)
