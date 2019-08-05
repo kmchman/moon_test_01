@@ -1,0 +1,135 @@
+﻿[
+    {
+        "ID": 1,
+        "BuildingID": 101,
+        "PosX": 0,
+        "PosY": 0,
+        "Rot": 0
+    },
+    {
+        "ID": 2,
+        "BuildingID": 201,
+        "PosX": 2,
+        "PosY": -8,
+        "Rot": 0
+    },
+    {
+        "ID": 3,
+        "BuildingID": 202,
+        "PosX": -5,
+        "PosY": 3,
+        "Rot": 0
+    },
+    {
+        "ID": 4,
+        "BuildingID": 301,
+        "PosX": -6,
+        "PosY": -3,
+        "Rot": 0
+    },
+    {
+        "ID": 5,
+        "BuildingID": 302,
+        "PosX": -6,
+        "PosY": -9,
+        "Rot": 0
+    },
+    {
+        "ID": 6,
+        "BuildingID": 1001,
+        "PosX": 2,
+        "PosY": -3,
+        "Rot": 0
+    },
+    {
+        "ID": 7,
+        "BuildingID": 1001,
+        "PosX": 4,
+        "PosY": -3,
+        "Rot": 0
+    },
+    {
+        "ID": 9,
+        "BuildingID": 19015,
+        "PosX": 2,
+        "PosY": -1,
+        "Rot": 0
+    },
+    {
+        "ID": 10,
+        "BuildingID": 19017,
+        "PosX": -6,
+        "PosY": 6,
+        "Rot": 0
+    },
+    {
+        "ID": 11,
+        "BuildingID": 19018,
+        "PosX": -2,
+        "PosY": 6,
+        "Rot": 0
+    },
+    {
+        "ID": 12,
+        "BuildingID": 19019,
+        "PosX": 0,
+        "PosY": 6,
+        "Rot": 0
+    },
+    {
+        "ID": 13,
+        "BuildingID": 19020,
+        "PosX": -8,
+        "PosY": -2,
+        "Rot": 0
+    },
+    {
+        "ID": 14,
+        "BuildingID": 19021,
+        "PosX": -2,
+        "PosY": -2,
+        "Rot": 0
+    },
+    {
+        "ID": 15,
+        "BuildingID": 19022,
+        "PosX": 7,
+        "PosY": -4,
+        "Rot": 0
+    },
+    {
+        "ID": 16,
+        "BuildingID": 19023,
+        "PosX": 9,
+        "PosY": -3,
+        "Rot": 0
+    },
+    {
+        "ID": 17,
+        "BuildingID": 19025,
+        "PosX": -11,
+        "PosY": 4,
+        "Rot": 0
+    },
+    {
+        "ID": 18,
+        "BuildingID": 19026,
+        "PosX": 6,
+        "PosY": 2,
+        "Rot": 0
+    },
+    {
+        "ID": 19,
+        "BuildingID": 19028,
+        "PosX": 1,
+        "PosY": -2,
+        "Rot": 0
+    },
+    {
+        "ID": 20,
+        "BuildingID": 19028,
+        "PosX": 1,
+        "PosY": -3,
+        "Rot": 0
+    }
+]

@@ -1,0 +1,37 @@
+﻿[
+    {
+        "ID": 120,
+        "Local_String": "NameItemBreedRate01",
+        "Unlock_level": 1,
+        "Reward_Rate": 5000,
+        "RewardDouble_Rate": 100000
+    },
+    {
+        "ID": 121,
+        "Local_String": "NameItemBreedRate02",
+        "Unlock_level": 8,
+        "Reward_Rate": 4000,
+        "RewardDouble_Rate": 80000
+    },
+    {
+        "ID": 122,
+        "Local_String": "NameItemBreedRate03",
+        "Unlock_level": 16,
+        "Reward_Rate": 3000,
+        "RewardDouble_Rate": 60000
+    },
+    {
+        "ID": 123,
+        "Local_String": "NameItemBreedRate04",
+        "Unlock_level": 24,
+        "Reward_Rate": 2000,
+        "RewardDouble_Rate": 40000
+    },
+    {
+        "ID": 124,
+        "Local_String": "NameItemBreedRate05",
+        "Unlock_level": 31,
+        "Reward_Rate": 1000,
+        "RewardDouble_Rate": 20000
+    }
+]

@@ -1,0 +1,232 @@
+﻿[
+    {
+        "ConstantType": "Immediately_AbyssCash_AreaExtend",
+        "Value": 1,
+        "name": "영역 확장 즉시완료 기준 캐시량"
+    },
+    {
+        "ConstantType": "Immediately_AbyssCash_Crop",
+        "Value": 4,
+        "name": "경작 즉시완료 기준 캐시량"
+    },
+    {
+        "ConstantType": "Immediately_AbyssCash_Farm",
+        "Value": 4,
+        "name": "농장 즉시완료 기준 캐시량"
+    },
+    {
+        "ConstantType": "Immediately_AbyssCash_Product",
+        "Value": 4,
+        "name": "생산 즉시완료 기준 캐시량"
+    },
+    {
+        "ConstantType": "Immediately_AbyssCash_Build",
+        "Value": 4,
+        "name": "건설 즉시완료 기준 캐시량"
+    },
+    {
+        "ConstantType": "Immediately_AbyssCash_QuestCooltime",
+        "Value": 4,
+        "name": "퀘스트 쿨타임 즉시완료 기준 캐시량"
+    },
+    {
+        "ConstantType": "Immediately_AbyssCash_BreedCooltime",
+        "Value": 1,
+        "name": "교배 NPC 생성 쿨타임 즉시완료 기준캐시량"
+    },
+    {
+        "ConstantType": "Immediately_AbyssCash_BreedDeliveryTime",
+        "Value": 1,
+        "name": "소셜 교배 배송시간 즉시완료 기준캐시량"
+    },
+    {
+        "ConstantType": "Immediately_Time_AreaExtend",
+        "Value": 600,
+        "name": "영역 확장 즉시완료 기준 시간"
+    },
+    {
+        "ConstantType": "Immediately_Time_Crop",
+        "Value": 60,
+        "name": "경작 즉시완료 기준 시간"
+    },
+    {
+        "ConstantType": "Immediately_Time_Farm",
+        "Value": 60,
+        "name": "농장 즉시완료 기준 시간"
+    },
+    {
+        "ConstantType": "Immediately_Time_Product",
+        "Value": 60,
+        "name": "생산 즉시완료 기준 시간"
+    },
+    {
+        "ConstantType": "Immediately_Time_Build",
+        "Value": 360,
+        "name": "건설 즉시완료 기준 시간"
+    },
+    {
+        "ConstantType": "Immediately_Time_QuestCooltime",
+        "Value": 60,
+        "name": "퀘스트 쿨타임 즉시완료 기준 시간"
+    },
+    {
+        "ConstantType": "Immediately_Time_BreedCooltime",
+        "Value": 600,
+        "name": "교배 NPC 생성 쿨타임 즉시완료 기준시간"
+    },
+    {
+        "ConstantType": "Immediately_Time_BreedDeliveryTime",
+        "Value": 600,
+        "name": "소셜 교배 배송시간 즉시완료 기준시간"
+    },
+    {
+        "ConstantType": "Breed_Unlock_Level",
+        "Value": 2,
+        "name": "교배 건물 언락 조건(삭제할 예정)"
+    },
+    {
+        "ConstantType": "Breed_NpcFish_Lv_Up",
+        "Value": 50,
+        "name": "교배 NPC 생성 확률 해당 마을 레벨 물고기 상승폭 (%)"
+    },
+    {
+        "ConstantType": "Breed_NpcFish_CumulativeNum",
+        "Value": 10,
+        "name": "교배 NPC 생성 확률 누적 교배횟수 (회) 이상"
+    },
+    {
+        "ConstantType": "Breed_NpcFish_CumulativeNum_Up",
+        "Value": 50,
+        "name": "교배 NPC 생성 확률 누적 교배횟수 미보유 물고기 상승폭 (%)"
+    },
+    {
+        "ConstantType": "Breed_NpcFish_Mutant",
+        "Value": 60,
+        "name": "교배 NPC 생성 확률 보유한 변종 비율 (%) 미만"
+    },
+    {
+        "ConstantType": "Breed_NpcFish_Mutant_Up",
+        "Value": 50,
+        "name": "교배 NPC 생성 확률 변종 물고기 상승폭 (%)"
+    },
+    {
+        "ConstantType": "Breed_Rate_Up",
+        "Value": 50,
+        "name": "교배 확률 상승 아이템 적용 확률 (%)"
+    },
+    {
+        "ConstantType": "Fish_Sell_Cost_Rate",
+        "Value": 100,
+        "name": "물고기 판매가격 기준 상수 Fish Rank*상수값"
+    },
+    {
+        "ConstantType": "Default_Fish_Population",
+        "Value": 5,
+        "name": "게임 시작 시 Max 물고기 값"
+    },
+    {
+        "ConstantType": "QuestType01_Breed_Fish_Rate",
+        "Value": 10,
+        "name": "생며의 나무 퀘스트 물고기 선정 시 교배물고기 선정 확률 상수"
+    },
+    {
+        "ConstantType": "QuestType01_Dialogue_Num",
+        "Value": 10,
+        "name": "생명의 나무 퀘스트 대사창 목록 개수"
+    },
+    {
+        "ConstantType": "QuestType01_Reward_Ratio_Min",
+        "Value": 45,
+        "name": "생명의 나무 퀘스트 리워드에서 경험치가 차지하는 비율 최소값(경험치 정해진 후 나머지는 생명력으로 결정) 10일경우 10%"
+    },
+    {
+        "ConstantType": "QuestType01_Reward_Ratio_Max",
+        "Value": 65,
+        "name": "생명의 나무 퀘스트 리워드에서 경험치가 차지하는 비율 최소대(경험치 정해진 후 나머지는 생명력으로 결정) 10일경우 10%"
+    },
+    {
+        "ConstantType": "QuestType02_Extend_01_Level",
+        "Value": 14,
+        "name": "산호 퀘스트 첫번째 확장 레벨"
+    },
+    {
+        "ConstantType": "QuestType02_Extend_02_Level",
+        "Value": 26,
+        "name": "산호 퀘스트 두번째 확장 레벨"
+    },
+    {
+        "ConstantType": "QuestType02_Extend_01_Cost",
+        "Value": 1000,
+        "name": "산호 퀘스트 첫번째 확장 가격(생명력만)"
+    },
+    {
+        "ConstantType": "QuestType02_Extend_02_Cost",
+        "Value": 2000,
+        "name": "산호 퀘스트 두번째 확장 가격(생명력만)"
+    },
+    {
+        "ConstantType": "Friend_MaxNum",
+        "Value": 50,
+        "name": "친구 최대 보유 가능 수(페이스북 제외)"
+    },
+    {
+        "ConstantType": "Friend_All_MaxNum",
+        "Value": 100,
+        "name": "친구 최대 보유 가능 수(페이스북 포함)"
+    },
+    {
+        "ConstantType": "Friend_Recommend_MaxNum",
+        "Value": 10,
+        "name": "추천 친구 리스트 최대 수"
+    },
+    {
+        "ConstantType": "Friend_Recommend_Level_High",
+        "Value": 10,
+        "name": "추천 친구 상위 몇레벨까지 찾을지"
+    },
+    {
+        "ConstantType": "Friend_Recommend_Level_Low",
+        "Value": 5,
+        "name": "추천 친구 하위 몇레벨까지 찾을지"
+    },
+    {
+        "ConstantType": "Friend_Recommend_Cooltime",
+        "Value": 18000,
+        "name": "추천 친구 갱신 시간(5시간)"
+    },
+    {
+        "ConstantType": "Friend_RecentHelp_MaxNum",
+        "Value": 20,
+        "name": "최근 받은 도움 친구 리스트 최대 수"
+    },
+    {
+        "ConstantType": "Friend_RecentHelp_Duration",
+        "Value": 43200,
+        "name": "최근 받은 도움 친구 리스트 유지 기간(12시간)"
+    },
+    {
+        "ConstantType": "FreeGift_Offer_MaxNum",
+        "Value": 5,
+        "name": "프리 기프트 일 제공 수량(00시 리셋)"
+    },
+    {
+        "ConstantType": "Npc_Quest_Cooltime",
+        "Value": 1800,
+        "name": "Npc 마을 화산 퀘스트 리셋 쿨타임"
+    },
+    {
+        "ConstantType": "Npc_Quest_Probability",
+        "Value": 70,
+        "name": "Npc 마을 화산 퀘스트 도움 요청 확률"
+    },
+    {
+        "ConstantType": "Npc_Breed_Cooltime",
+        "Value": 18000,
+        "name": "Npc 마을 교배 물고기 리셋 쿨타임(5시간)"
+    },
+    {
+        "ConstantType": "Npc_Breed_Probability",
+        "Value": 50,
+        "name": "Npc 마을 교배 물고기 공유 확률"
+    }
+]

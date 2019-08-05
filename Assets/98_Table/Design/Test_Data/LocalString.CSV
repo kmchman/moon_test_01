@@ -1,0 +1,654 @@
+﻿Key,Korean,English
+SystemMessageAlertSuccess,성공,Success.
+SystemMessageAlertFail,실패,Fail.
+SystemMessageAlertConnectionError,서버와 연결중 오류가 발생했습니다.\nErrorCode:{0},An error has occurred with server connection.\nErrorCode:{0}
+SystemMessageAlertCreateAccountError,계정 생성 중에 오류가 발생했습니다.\nErrorCode:{0},An error has occurred during account creation.\nErrorCode:{0}
+SystemMessageAlertPasswordError,비밀번호가 일치하지 않습니다.\nErrorCode:{0},Passwords do not match.\nErrorcode:{0}
+SystemMessageAlertLoginError,로그인 중에 오류가 발생했습니다.\nErrorCode:{0},An error has occurred during login.\nErrorCode:{0}
+SystemMessageAlertNetworkError,네트워크 오류가 발생 했습니다.\nErrorCode:{0},A network error has occurred.\nErrorCode:{0}
+SystemMessageAlertRequestError,네트워크 요청이 지연되고 있습니다.\n재요청을 시도합니다.\ErrorCode:{0},Cannot reach the server.\nRe-sending the request.\nErrorCode:{0}
+SystemMessageAlertDataLoadError,게임 데이터 로드중 오류가 발생했습니다.\nErrorCode:{0},Error loading game data.\nErrorCode:{0}
+SystemMessageAlertError01,경험치 또는 재화 지급에 실패했습니다.\nErrorCode:{0},Experience or commodity failed.\nErrorCode:{0}
+SystemMessageAlertError02,아이템 획득에 실패하였습니다.\nErrorCode:{0},Failed to acquire item. \nErrorCode:{0}
+SystemMessageAlertError03,아이템 판매중 오류가 발생했습니다.\nErrorCode:{0},There was an error in selling the item.\nErrorCode:{0}
+SystemMessageAlertError21,건설중 오류가 발생했습니다.\nErrorCode:{0},An error occurred during construction.\nErrorCode:{0}
+SystemMessageAlertError22,건설 즉시 완료 처리중 오류가 발생했습니다.\nErrorCode:{0},There was an error processing construction immediately.\nErrorCode:{0}
+SystemMessageAlertError23,건물 개시 중 오류가 발생했습니다.\nErrorCode:{0},There was an error opening the building.\nErrorCode:{0}
+SystemMessageAlertError24,건물 이동 중 오류가 발생했습니다.\nErrorCode:{0},There was an error moving the building.\nErrorCode:{0}
+SystemMessageAlertError31,생산 요청 처리중 오류가 발생했습니다.\nErrorCode:{0},Error processing production request. \nErrorCode:{0}
+SystemMessageAlertError32,생산 즉시 완료 처리중 오류가 발생했습니다.\nErrorCode:{0},An error occurred processing the production immediately.\nErrorCode:{0}
+SystemMessageAlertError33,생산품 수확중 오류가 발생했습니다.\nErrorCode:{0},An error occurred while harvesting the product.\nErrorCode:{0}
+SystemMessageAlertError34,슬롯 확장중 오류가 발생했습니다.\nErrorCode:{0},Error in slot expansion.\nErrorCode:{0}
+SystemMessageAlertError41,물고기 창조중 오류가 발생했습니다.\nErrorCode:{0},Error creating fish.\nErrorCode:{0}
+SystemMessageAlertError42,물고기 삭제중 오류가 발생했습니다.\nErrorCode:{0},There was an error removing the fish.\nErrorCode:{0}
+SystemMessageAlertError51,퀘스트 진행중 오류가 발생했습니다.\nErrorCode:{0},An error occurred during the quest.\ nErrorCode:{0}
+SystemMessageAlertError52,퀘스트 아이템 추가중 오류가 발생했습니다.\nErrorCode:{0},Error adding quest item.\nErrorCode:{0}
+SystemMessageAlertError53,퀘스트 보상을 획득할 수 없습니다.\nErrorCode:{0},Quest reward can not be obtained.\nErrorCode:{0}
+SystemMessageAlertError54,퀘스트 포기중 오류가 발생했습니다.\nErrorCode:{0},There was an error giving up the quest.\nErrorCode:{0}
+SystemMessageAlertError55,퀘스트 생성중 오류가 발생했습니다.\nErrorCode:{0},There was an error creating the quest.\nErrorCode:{0}
+UiCommonOK,확인,Confirm
+UiCommonCancel,취소,Cancel
+UiCommonYes,네,Yes
+UiCommonNo,아니오,No
+UiCommonLevel,레벨,Level
+UiCommonLevelRequired,레벨 {0} 필요,Level {0}\nRequired
+UiCommonFree,무료,Free
+UiCommonRequired,{0} 필요,{0} Required
+UiCommonAll,모두,All
+UiCommonSmall,소형,Small
+UiCommonMedium,중형,Medium
+UiCommonBig,대형,Big
+UiCommonPlacement,배치중,Placement
+UiCommonTotal,총보유,Total
+UiCommonClose,닫기,Close
+UiCommonFishNum,{0} 마리,{0} fish
+UiCommonNotEnoughMaterials,재료 부족,Lack of Materials
+UiCommonPurchase,{0}로 구매,Buy with {0}
+UiCommonRemainingTimeDH,{0}일,{0}d
+UiCommonRemainingTimeHM,{0}시,{0}h
+UiCommonRemainingTimeMS,{0}분,{0}m
+UiCommonRemainingTimeS,{0}초,{0}s
+UiCommonRemainingTimeComplete,즉시 완료,Complete immediately
+UiCommonFishCreation,창조,Creation
+UiCommonFishSocialCreation,소셜창조,Social Creation
+AlertDescQueueFull,생산 대기열이 가득찼습니다.,The production queue is full.
+AlertDescNotEnoughLife,생명력이 부족합니다.,Not Enough Heart
+AlertDescNotEnoughCash,어비스 캐시가 부족합니다.,Not Enough Cash
+AlertDescNotEnoughItem,아이템이 부족합니다.,Not Enough Item
+AlertDescFullLife,생명력이 최대치에 도달했습니다.,Over_Heart
+AlertDescFullCash,어비스 캐시가 최대치에 도달했습니다.,Over_Cash
+AlertDescFullStorage,저장소가 가득찼습니다.,Storage is full.
+AlertDescLevelLockBreed,{0}레벨에 교배 컨텐츠를 사용할 수 있습니다.,Breeding content is available at {0} level.
+AlertDescFriendAddRequestListDelete,친구 요청이 취소되었습니다.,Friend request canceled.
+AlertDescThanksLetterSend,{0}님에게 감사편지를 전달,Send a thank-you letter to {0}
+AlertDescFishSendOver,채집지가 요구하는 최소 물고기 수를 초과할 수 없습니다.,You can not exceed the minimum number of fish required by the collector.
+AlertPopupNotEnoughCash,어비스 캐시가 부족합니다.\n상점으로 이동하시겠습니까?,Not Enough Cash\nDo you want to go to the Cash shop
+AlertPopupNotEnoughLife,생명력이 부족합니다.\n상점으로 이동하시겠습니까?,Not Enough Life\nDo you want to go to the Cash shop
+AlertPopupFishSend,물고기를 내보내면 활동지역 물고기 상태가 자동 저장되며 내보낸 물고기는 다시 되돌릴 수 없습니다.\n그래도 내보내시겠습니까?,"When you export a fish, the status of the fish in the active area is automatically saved and the exported fish can not be returned. \nDo you want to export it anyway?"
+AlertPopupQuitMsg,게임을 종료하시겠습니까?,Are you sure to quit the game?
+AlertPopupStorageFullTitle,저장소가 가득찼습니다.,The storage is full.
+AlertPopupStorageFullMsg,저장소를 업그레이드해 용량을 늘리세요.,Upgrade your storage to increase capacity.
+AlertPopupStorageFullButton,지금 업그레이드,Upgrade
+AlertPopupItemLackTitle,아이템 부족,Not enough items
+AlertPopupItemLackMsg,어비스캐시로 빠진 제품을 구입하고 의뢰를 완료하세요.,Purchase a missing product and complete the order.
+AlertPopupItemLackButton,{0}로 구매,{0} Purchase
+AlertPopupFriendAddOver,친구 목록이 가득차 더 이상 친구를 초대할 수 없습니다.,Your friends list is full and you can not invite friends anymore.
+AlertPopupNotFriend,해당 유저는 더 이상 친구가 아닙니다.,This user is no longer a friend.
+UiPopupWorldNameRule,"영문·숫자·띄어쓰기 16자, 한글 8자","English, Numeric, Offset 16 Characters, Korean 8 Characters"
+UiPopupLoginTitle,로그인,Log In
+UiPopupLoginID,"ID (영문, 숫자 8자리 이상)",ID (8 or more alphabets and numbers)
+UiPopupLoginPassword,"Password (영문, 숫자 8자리 이상)",Password (8 or more alphabets and numbers)
+UiPopupAlertUsedID,이미 사용하고 있는 ID입니다.,This ID is already in use.
+UiPopupBuildingShopTitle,건설,Creation
+UiPopupBuildingShopHouse,보금자리,House
+UiPopupBuildingShopFactory,공장,Factory
+UiPopupBuildingShopFarm,농장,Farm
+UiPopupBuildingShopFarmland,채집,Farmland
+UiPopupBuildingShopDeco,장식,Deco
+UiPopupBuildingShopSpecial,특수건물,Special
+UiPopupShopNewTag,New,New
+UiPopupStorageTitle,저장소,Storage
+UiPopupStorageGuide,판매하려는 아이템을 누르세요.,Press the item you want to sell.
+UiPopupStorageSpace,용량 : ,Space : 
+UiPopupStorageButtonSell,판매,Sell
+UiPopupStorageButtonUpgrade,확장,Upgrade
+UiPopupActiveBuyAll,모두구입,Buy All
+UiPopupActiveGuide,덤보 정거장에서 건축 재료를 받을 수 있습니다.,You can receive the building materials you lack By Dumbo station.
+UiPopupActiveButtonComplete,완성,Complete
+UiPopupFishManageTitle,물고기 관리,Fish Manage
+UiPopupFishManageTapGeneral,일반,General
+UiPopupFishManageTapEvent,이벤트,Event
+UiPopupFishManageCountAll,총 획득 수,All Fish
+UiPopupFishManageCountNormal,일반 : {0}/{1},General : {0}/{1}
+UiPopupFishManageCountEvent,이벤트 : {0}/{1},Event : {0}/{1}
+UiPopupFishManageFishAllStore,물고기 모두보관,Store all Fish
+UiPopupFishDetailTotal,총보유,Total
+UiPopupFishDetailActive,활동,Active
+UiPopupFishDetailKeep,보관,Keep
+UiPopupFishDetailFishNum,{0}마리,{0}Fish
+UiPopupFishDetailSendButton,방생하기,Send
+UiPopupAreaExtendPurchase,확장 조건,Extension Conditions
+UiPopupAreaExtendOK,확장,Extend
+UiPopupBreed,교배,Breed
+UiPopupBreedShareTitle,공유,Share
+UiPopupBreedShareDesc,해당 물고기를 공유하시겠습니까?,Do you want to share this fish?
+UiPopupBreedSendawayTitle,내보내기,Sendaway
+UiPopupBreedSendawayDesc,해당 물고기를 내보내시겠습니까?,Do you want to sendaway this fish?
+UiPopupBreedBreedSlotTitle,슬롯 구매,Slot Purchase
+UiPopupBreedBreedSlotDesc,슬롯을 추가 구매하시겠습니까?,Do you want to purchase additional slots?
+UiPopupBreedResetTimeTitle,시간 초기화,ResetTime
+UiPopupBreedResetTimeDesc,물고기가 즉시 방문하도록 하시겠습니까?,Do you want the fish to visit immediately?
+UiPopupBreedSpeciesDesc,아래 물고기 중 1종을 획득할 수 있습니다.,One of the following fish can be obtained
+UiPopupBreedRateUpDesc,아이템을 소모하여 해당 물고기 획득 확률을 증가시킬 수 있습니다.,You can increase the probability of acquiring the fish by consuming the item
+UiPopupBreedDelay,해일로 인해 물고기가 오지 못하고 있어요. 잠시만 기다려주세요.,The tidal waves are preventing fish from coming. Please wait a moment.
+UiPopupBreedMessageSelect,물고기를 선택해 주세요.,Please choose a fish.
+UiPopupBreedMessageCannotBreed,교배할 물고기가 없습니다.,There are no fish to breed with
+UiPopupBreedMessageAllSlotEmpty,물고기가 오는 중입니다.,The fish is coming.
+UiPopupBreedMessageShare,이미 공유한 물고기 입니다.,It's a fish I've already shared.
+UiPopupBreedMessageShareAnother,공유한 물고기가 있습니다.,Other fish is shared.
+UiPopupProfile,프로필,Profile
+UiPopupProfileImage,프로필 이미지 선택,Select Profile Image
+UiPopupProfileWorldName,마을 이름을 입력하세요.,Enter World name.
+UiPopupProfileCondition01,{0} 보유,Retain {0}
+UiPopupProfileShowGame,게임 화면에 표시,Show on game screen
+UiPopupProfilePlayhistory01,도감 활성화된 물고기 종류,Type of fish acquired
+UiPopupProfilePlayhistory02,획득한 생명력 수,Number of acquired life
+UiPopupProfilePlayhistory03,생산한 작물 수,Number of crops produced
+UiPopupProfilePlayhistory04,생산한 생산품 수,Number of products produced
+UiPopupProfilePlayhistory05,퀘스트01 완료 수,Quest01 Completion Count
+UiPopupLevelupUnlock,레벨 잠금 해제,New Item Unlocked
+UiPopupFishbookTitle,도감,Fishbook
+UiPopupFishbookTapGeneral,일반,General
+UiPopupFishbookTapEvent,이벤트,Event
+UiPopupFishbookCollection,컬렉션,Collection
+UiPopupSocialAlertTitle,커뮤니티 경고,Community warning
+UiPopupSocialAlertDesc,게임 커뮤니티에서 초대 가능한 친구 수가 최대 인원인 50명에 도달했습니다.\n\n하지만 Facebook 친구는 더 초대할 수 있습니다.,The game community has reached the maximum number of 50 friends you can invite. \n\nBut your Facebook friends can be invited more.
+UiPopupSocialTapFriend,친구,Friends
+UiPopupSocialTapRecomFriend,추천 친구,Suggest Friends
+UiPopupSocialTapHelp,최근 받은 도움,Recently received help
+UiPopupSocialButtonInvite,초대하기,Invite
+UiPopupSocialButtonFriendInvite,친구 초대,Invite friend
+UiPopupSocialFriendAddTitle,친구초대,Invite friend
+UiPopupSocialFriendAddCodeCopyDesc,당신의 코드 : {0},Your code : {0}
+UiPopupSocialFriendAddCodeCopyButton,코드복사,Copy Code
+UiPopupSocialFriendAddCodeSendDesc,코드를 보내 친구들이 당신과 함께할 수 있도록 하세요.,Send the code so your friends can join you.
+UiPopupSocialFriendAddCodeInputDesc,친구에게 받은 코드를 받은 함께 플레이 하세요.,Play with the code you received from your friend.
+UiPopupSocialFriendAddCodeInputButton,코드입력,Enter code
+UiPopupSocialCodeInputDesc,친구에게 받은은 코드를 입력해 친구를 초대하세요.,Enter your friend's code to invite your friends.
+UiPopupSocialHelpListEmptyDesc,도움이 필요한 친구를 볼 수 있습니다.,You can see which friends need help.
+UiPopupSocialInviting,요청하였습니다.,Requesting
+UiPopupSocialButtonAccept,수락,Accept
+UiPopupSocialAcceptStanby,수락 대기중,Waiting accept
+UiPopupSocialInterlock,연동,Interlock
+UiPopupSocialInterDesc,연동하고 친구를 추천 받으세요.,Interlock your friends and get recommendations.
+UiPopupSocialButtonPresentSend,전송,Send
+UiPopupSocialRecomFriendReset,갱신까지 :,Reset :
+UiPopupSocialRecomHelpListEmptyDesc,나를 도와준 친구를 볼 수 있습니다.,You can see a friend who helped me.
+UiPopupSocialProfileLike,좋아요,Like!
+UiPopupSocialMailTitle,친구가 보낸 감사편지,Thank-you letter from a friend
+UiPopupSocialMailDesc,도와 주셔서 대단히 감사해요!,Thank you for your help.
+UiPopupSocialMailCount,편지 : {0}개,Letter : {0}
+UiPopupSocialMailButtonReceive,모두 받기,Get all
+UiPopupSocialFriendDeleteTitle,친구 삭제,Delet
+UiPopupSocialFriendDeleteDesc,정말 {0}님을 친구 목록에서 삭제하시겠습니까?,Are you sure you want to remove {0} from your friends list?
+UiPopupSocialAcceptListEmptyDesc,다른 플레이어를 초대하고 친구가 되어 선물과 도움을 주고 받으세요.,"Invite other players, become friends, and exchange gifts and help."
+UiPopupQuest02Title,해저 화산,Submarine volcano
+UiPopupQuest02SlotIdleTitle,화산폭발 소요시간,Volcanic eruption time
+UiPopupQuest02SlotIdleTimeHour,시간,Hour
+UiPopupQuest02SlotIdleTimeMinute,분,Minute
+UiPopupQuest02SlotIdleTimeSecond,초,Second
+UiPopupQuest02SlotIdleButton,{0}으로 즉시폭발,{0}explosion
+UiPopupQuest02SlotLockDesc,새로운 화면은 {0}레벨에 오픈됩니다.,{0}Lv Open
+UiPopupQuest02SlotOpenButton,{0}으로 화산 추가,{0} Volcano Add
+UiPopupQuest02ExtendButtonHelp,도움요청,Request help
+UiPopupQuest02ExtendButtonSend,전달,Send
+NameBuildingStone,산호석,Stone
+NameBuildingBreed,교배,Breed
+NameBuildingStorage,저장소,Storage
+NameBuildingQuest01,퀘스트 건물01,Quest_01
+NameBuildingQuest02,퀘스트 건물02,Quest_02
+NameBuildingQuest03,퀘스트 건물03,Quest_03
+NameBuildingFarmland01,해초 숲,Farmland01
+NameBuildingFarmland02,플랑크톤 군집,Farmland02
+NameBuildingFarmland03,산호초,Farmland03
+NameBuildingFarmland04,해면 지대,Farmland04
+NameBuildingFarm01,얼음 동굴,Farm_01
+NameBuildingFarm02,열수구,Farm_02
+NameBuildingFarm03,모래 구덩,Farm_03
+NameBuildingFarm04,고래 언덕,Farm_04
+NameBuildingFactory01,주스 샘,Factory_01
+NameBuildingFactory02,방앗간,Factory_02
+NameBuildingFactory03,불의 연못,Factory_03
+NameBuildingFactory04,주방,Factory_04
+NameBuildingFactory05,발효통,Factory_05
+NameBuildingFactory06,아기 급식소,Factory_06
+NameBuildingFactory07,여과 항아리,Factory_07
+NameBuildingFactory08,불장어 얼음관,Factory_08
+NameBuildingFactory09,모래알 게,Factory_09
+NameBuildingFactory10,전구 나무,Factory_10
+NameBuildingHouse01,안티 하우스,House_01
+NameBuildingHouse02,안티 퍼플 하우스,House_02
+NameBuildingHouse03,탱탱 하우스,House_03
+NameItemLandExtend01,가위손풀,Land_Extend_Item_01
+NameItemLandExtend02,호롱불,Land_Extend_Item_02
+NameItemLandExtend03,결계 큐브,Land_Extend_Item_03
+DescItemLandExtend,영역을 확장시키는데 사용,Used to expand the Land.
+NameItemStorageExtend01,오색 비늘,Storage_Extend_Item_01
+NameItemStorageExtend02,가시 고기,Storage_Extend_Item_02
+NameItemStorageExtend03,해운석,Storage_Extend_Item_03
+DescItemStorageExtend,저장소를 확장시키는데 사용,Used to expand the Storage.
+NameItemBuildingActive01,푸른 신비석,Building_Active_Item_01
+NameItemBuildingActive02,산호핵,Building_Active_Item_02
+NameItemBuildingActive03,마법룬,Building_Active_Item_03
+DescItemBuildingActive,건물을 활성화시키는데 사용,Used to activate Buildings.
+NameItemBreedRate01,빨간 고래 꼬리,Breed_Rate_Item_01
+NameItemBreedRate02,핑크 고래 꼬리,Breed_Rate_Item_02
+NameItemBreedRate03,파란 고래 꼬리,Breed_Rate_Item_03
+NameItemBreedRate04,초록 고래 꼬리,Breed_Rate_Item_04
+NameItemBreedRate05,노란 고래 꼬리,Breed_Rate_Item_05
+DescItemBreedRate,교배 확률을 증가시키는데 사용,Used to increase the probability of crossing.
+NameCrops01,키다리 해초,Crops_01
+NameCrops02,붉은 꽃 해초,Crops_02
+NameCrops03,뿔 해초,Crops_03
+NameCrops04,식물 플랑크톤,Crops_04
+NameCrops05,동물 플랑크톤,Crops_05
+NameCrops06,박테리아,Crops_06
+NameCrops07,접시 산호,Crops_07
+NameCrops08,말랑 해면,Crops_08
+NameCrops09,항아리 말미잘,Crops_09
+NameCrops10,빛 플랑크톤,Crops_10
+NameCrops11,우산 해초,Crops_11
+NameCrops12,나팔 해면,Crops_12
+Desc_Crops,경작지에서 생산된 작물,Crops Produced in Farmland.
+NameFarm01Goods01,얼음,Farm01Goods01
+NameFarm01Goods02,소금,Farm01Goods02
+NameFarm01Goods03,석탄,Farm01Goods03
+NameFarm02Goods01,마그마,Farm02Goods01
+NameFarm02Goods02,유황,Farm02Goods02
+NameFarm02Goods03,철,Farm02Goods03
+NameFarm03Goods01,모래,Farm03Goods01
+NameFarm03Goods02,유목,Farm03Goods02
+NameFarm03Goods03,금,Farm03Goods03
+NameFarm04Goods01,비늘,Farm04Goods01
+NameFarm04Goods02,껍질,Farm04Goods02
+NameFarm04Goods03,이빨,Farm04Goods03
+NameFactory01Goods01,주스,Factory01Goods01
+NameFactory01Goods02,오일,Factory01Goods02
+NameFactory01Goods03,소다,Factory01Goods03
+NameFactory02Goods01,해초 파우더,Factory02Goods01
+NameFactory02Goods02,플랑크톤 파우더,Factory02Goods02
+NameFactory02Goods03,여과 파우더,Factory02Goods03
+NameFactory03Goods01,미네랄,Factory03Goods01
+NameFactory03Goods02,증점제,Factory03Goods02
+NameFactory03Goods03,독,Factory03Goods03
+NameFactory03Goods04,염료,Factory03Goods04
+NameFactory04Goods01,비건 볼,Factory04Goods01
+NameFactory04Goods02,해초 롤,Factory04Goods02
+NameFactory04Goods03,크릴 큐브,Factory04Goods03
+NameFactory04Goods04,말미잘 플레이크,Factory04Goods04
+NameFactory05Goods01,효모,Factory05Goods01
+NameFactory05Goods02,치어 빈,Factory05Goods02
+NameFactory06Goods01,해독주스,Factory06Goods01
+NameFactory06Goods02,면역시럽,Factory06Goods02
+NameFactory07Goods01,여과 링,Factory07Goods01
+NameFactory07Goods02,버블 주머니,Factory07Goods02
+NameFactory07Goods03,여과 스펀지,Factory07Goods03
+Desc_Goods,{0}에서 생산,Produce at {0}
+Desc_Fish_Create,창조에서 획득,Get at creation
+Desc_Fish_Breed,교배에서 획득,Get at Breed
+NameNPCSeaOtter,해달,Sea Otter
+NameFishAnthias01,쓰레핀 안티아스,Fish_Anthias_01
+NameFishAnthias02,타이거 안티아스,Fish_Anthias_02
+NameFishAnthias03,롱핀 안티아스,Fish_Anthias_03
+NameFishAnthias04,바틀렛 안티아스,Fish_Anthias_04
+NameFishAnthias05,스퀘어스팟 안티아스,Fish_Anthias_05
+NameFishGoby01,블루 밴디드 고비,Fish_Goby_01
+NameFishGoby02,랜달스 고비,Fish_Goby_02
+NameFishGoby03,파이어 고비,Fish_Goby_03
+NameFishGoby04,헬피리치 고비,Fish_Goby_04
+NameFishGoby05,폭죽 고비,Fish_Goby_05
+NameFishClownfish01,레드 크라운피쉬,Fish_Clownfish_01
+NameFishClownfish02,마룬 크라운피쉬,Fish_Clownfish_02
+NameFishClownfish03,토마토 크라운피쉬,Fish_Clownfish_03
+NameFishClownfish04,핑크 스컹크 크라운피쉬,Fish_Clownfish_04
+NameFishClownfish05,블랙&화이트 크라운피쉬,Fish_Clownfish_05
+NameFishFilefish01,매티드 파일피쉬,Fish_Filefish_01
+NameFishFilefish02,미믹 파일피쉬,Fish_Filefish_02
+NameFishFilefish03,롱노우즈 파일피쉬,Fish_Filefish_03
+NameFishFilefish04,레드테일 파일피쉬,Fish_Filefish_04
+NameFishFilefish05,펜타일 파일피쉬,Fish_Filefish_05
+NameFishSnapper01,골든 스네퍼,Fish_Snapper_01
+NameFishSnapper02,레인 스네퍼,Fish_Snapper_02
+NameFishSnapper03,레드 스네퍼,Fish_Snapper_03
+NameFishSnapper04,옐로우테일 스네퍼,Fish_Snapper_04
+NameFishSnapper05,엠퍼러 스네퍼,Fish_Snapper_05
+NameFishRay01,소코 가오리,Fish_Ray_01
+NameFishRay02,점박이 매가오리,Fish_Ray_02
+NameFishRay03,톱가오리,Fish_Ray_03
+NameFishRay04,만타 가오리,Fish_Ray_04
+NameFishRay05,체브론 만타 가오리,Fish_Ray_05
+NameFishPuffer01,발렌티니스 푸퍼,Fish_Puffer_01
+NameFishPuffer02,도그페이스 푸퍼,Fish_Puffer_02
+NameFishPuffer03,포큐파인 푸퍼,Fish_Puffer_03
+NameFishPuffer04,화이트스팟 푸퍼,Fish_Puffer_04
+NameFishPuffer05,피규어 푸퍼,Fish_Puffer_05
+NameFishTuna01,알바코어 튜나,Fish_Tuna_01
+NameFishTuna02,스킵잭 튜나,Fish_Tuna_02
+NameFishTuna03,블루핀 튜나,Fish_Tuna_03
+NameFishTuna04,옐로핀 튜나,Fish_Tuna_04
+NameFishTuna05,보니토 튜나,Fish_Tuna_05
+NameFishTang01,블루 탱,Fish_Tang_01
+NameFishTang02,미믹 탱,Fish_Tang_02
+NameFishTang03,파우더 탱,Fish_Tang_03
+NameFishTang04,세일핀 탱,Fish_Tang_04
+NameFishTang05,화이트테일 탱,Fish_Tang_05
+NameFishTurtle01,붉은 바다거북,Fish_Turtle_01
+NameFishTurtle02,초록 바다거북,Fish_Turtle_02
+NameFishTurtle03,대모거북,Fish_Turtle_03
+NameFishTurtle04,켐프각시 바다거북,Fish_Turtle_04
+NameFishTurtle05,장수거북,Fish_Turtle_05
+NameFishChromis01,블루그린 챠로미스,Fish_Chromis_01
+NameFishChromis02,블랙바 챠로미스,Fish_Chromis_02
+NameFishChromis03,블랙앤화이트 챠로미스,Fish_Chromis_03
+NameFishChromis04,그린 챠로미스,Fish_Chromis_04
+NameFishChromis05,보초 챠로미스,Fish_Chromis_05
+NameFishButterfly01,라쿤 나비,Fish_Butterfly_01
+NameFishButterfly02,트라이앵글 나비,Fish_Butterfly_02
+NameFishButterfly03,롱노즈 나비,Fish_Butterfly_03
+NameFishButterfly04,에잇밴드 나비,Fish_Butterfly_04
+NameFishButterfly05,새들 나비,Fish_Butterfly_05
+NameFishParrotfish01,블루 패럿피쉬,Fish_Parrotfish_01
+NameFishParrotfish02,레드 패럿피쉬,Fish_Parrotfish_02
+NameFishParrotfish03,바이컬러 패럿피쉬,Fish_Parrotfish_03
+NameFishParrotfish04,블루바드 패럿피쉬,Fish_Parrotfish_04
+NameFishParrotfish05,점박이 패럿피쉬,Fish_Parrotfish_05
+NameFishAngel01,임페리얼 엔젤,Fish_Angel_01
+NameFishAngel02,레몬필 엔젤,Fish_Angel_02
+NameFishAngel03,페퍼민트 엔젤,Fish_Angel_03
+NameFishAngel04,애스퍼 엔젤,Fish_Angel_04
+NameFishAngel05,스크리블드 엔젤,Fish_Angel_05
+NameFishCowfish01,롱혼 카우피쉬,Fish_Cowfish_01
+NameFishCowfish02,오렌지 카우피쉬,Fish_Cowfish_02
+NameFishCowfish03,낙타 거북복,Fish_Cowfish_03
+NameFishCowfish04,허니콤보 카우피쉬,Fish_Cowfish_04
+NameFishCowfish05,오네이트 카우피쉬,Fish_Cowfish_05
+NameFishBoxfish01,이스턴 스무스 박스피쉬,Fish_Boxfish_01
+NameFishBoxfish02,옐로우 박스피쉬,Fish_Boxfish_02
+NameFishBoxfish03,스팟티드 박스피쉬,Fish_Boxfish_03
+NameFishBoxfish04,화이트바 박스피쉬,Fish_Boxfish_04
+NameFishBoxfish05,흰줄 박스피쉬,Fish_Boxfish_05
+NameFishDamsel01,블랙 앤 골드 담셀,Fish_Damsel_01
+NameFishDamsel02,크로스 담셀,Fish_Damsel_02
+NameFishDamsel03,벨벳 담셀,Fish_Damsel_03
+NameFishDamsel04,핑크 스미스 담셀,Fish_Damsel_04
+NameFishDamsel05,샛별돔,Fish_Damsel_05
+NameFishDottyback01,로얄 도티백,Fish_Dottyback_01
+NameFishDottyback02,오키드 도티백,Fish_Dottyback_02
+NameFishDottyback03,다이아뎀 도티백,Fish_Dottyback_03
+NameFishDottyback04,스프링거 도티백,Fish_Dottyback_04
+NameFishDottyback05,스트로베리 도티백,Fish_Dottyback_05
+NameFishSeahorse01,오렌지 해마,Fish_Seahorse_01
+NameFishSeahorse02,피그미 해마,Fish_Seahorse_02
+NameFishSeahorse03,옐로우 해마,Fish_Seahorse_03
+NameFishSeahorse04,큰배 해마,Fish_Seahorse_04
+NameFishSeahorse05,지브라 해마,Fish_Seahorse_05
+NameFishSeadragon01,나뭇잎 해룡,Fish_Seadragon_01
+NameFishSeadragon02,풀잎 해룡,Fish_Seadragon_02
+NameFishSeadragon03,대왕 해룡,Fish_Seadragon_03
+NameFishSeadragon04,루비 해룡,Fish_Seadragon_04
+NameFishSeadragon05,점박이 해룡,Fish_Seadragon_05
+NameFishJellyfish01,보름달 물해파리,Fish_Jellyfish_01
+NameFishJellyfish02,하얀점 해파리,Fish_Jellyfish_02
+NameFishJellyfish03,분홍 해파리,Fish_Jellyfish_03
+NameFishJellyfish04,작은보호탑 해파리,Fish_Jellyfish_04
+NameFishJellyfish05,큰보라 해파리,Fish_Jellyfish_05
+NameFishSharkSmall01,긴꼬리 상어,Fish_Shark_Small_01
+NameFishSharkSmall02,얼룩말 상어,Fish_Shark_Small_02
+NameFishSharkSmall03,흑기흉 상어,Fish_Shark_Small_03
+NameFishSharkSmall04,고블린 상어,Fish_Shark_Small_04
+NameFishSharkSmall05,망치 상어,Fish_Shark_Small_05
+NameFishSharkBig01,너스 상어,Fish_Shark_Big_01
+NameFishSharkBig02,백상아리,Fish_Shark_Big_02
+NameFishSharkBig03,넓은주둥이 상어,Fish_Shark_Big_03
+NameFishSharkBig04,돌묵상어,Fish_Shark_Big_04
+NameFishSharkBig05,고래상어,Fish_Shark_Big_05
+NameFishDolphin01,병코 돌고래,Fish_Dolphin_01
+NameFishDolphin02,분홍 돌고래,Fish_Dolphin_02
+NameFishDolphin03,이라와디 돌고래,Fish_Dolphin_03
+NameFishDolphin04,긴부리 참돌고래,Fish_Dolphin_04
+NameFishDolphin05,머리코 돌고래,Fish_Dolphin_05
+NameFishWhale01,밍크고래,Fish_Whale_01
+NameFishWhale02,범고래,Fish_Whale_02
+NameFishWhale03,향유고래,Fish_Whale_03
+NameFishWhale04,혹등고래,Fish_Whale_04
+NameFishWhale05,흰긴수염고래,Fish_Whale_05
+QuestFish01Dialogue01,안티아스 스토리 01,Fish 01 Story 01
+QuestFish01Dialogue02,안티아스 스토리 02,Fish 01 Story 02
+QuestFish01Dialogue03,안티아스 스토리 03,Fish 01 Story 03
+QuestFish01Dialogue04,안티아스 스토리 04,Fish 01 Story 04
+QuestFish01Dialogue05,안티아스 스토리 05,Fish 01 Story 05
+QuestFish01Dialogue06,안티아스 스토리 06,Fish 01 Story 06
+QuestFish01Dialogue07,안티아스 스토리 07,Fish 01 Story 07
+QuestFish01Dialogue08,안티아스 스토리 08,Fish 01 Story 08
+QuestFish01Dialogue09,안티아스 스토리 09,Fish 01 Story 09
+QuestFish01Dialogue10,안티아스 스토리 10,Fish 01 Story 10
+QuestFish02Dialogue01,고비 스토리 01,Fish 02 Story 01
+QuestFish02Dialogue02,고비 스토리 02,Fish 02 Story 02
+QuestFish02Dialogue03,고비 스토리 03,Fish 02 Story 03
+QuestFish02Dialogue04,고비 스토리 04,Fish 02 Story 04
+QuestFish02Dialogue05,고비 스토리 05,Fish 02 Story 05
+QuestFish02Dialogue06,고비 스토리 06,Fish 02 Story 06
+QuestFish02Dialogue07,고비 스토리 07,Fish 02 Story 07
+QuestFish02Dialogue08,고비 스토리 08,Fish 02 Story 08
+QuestFish02Dialogue09,고비 스토리 09,Fish 02 Story 09
+QuestFish02Dialogue10,고비 스토리 10,Fish 02 Story 10
+QuestFish03Dialogue01,크라운피쉬 스토리 01,Fish 03 Story 01
+QuestFish03Dialogue02,크라운피쉬 스토리 02,Fish 03 Story 02
+QuestFish03Dialogue03,크라운피쉬 스토리 03,Fish 03 Story 03
+QuestFish03Dialogue04,크라운피쉬 스토리 04,Fish 03 Story 04
+QuestFish03Dialogue05,크라운피쉬 스토리 05,Fish 03 Story 05
+QuestFish03Dialogue06,크라운피쉬 스토리 06,Fish 03 Story 06
+QuestFish03Dialogue07,크라운피쉬 스토리 07,Fish 03 Story 07
+QuestFish03Dialogue08,크라운피쉬 스토리 08,Fish 03 Story 08
+QuestFish03Dialogue09,크라운피쉬 스토리 09,Fish 03 Story 09
+QuestFish03Dialogue10,크라운피쉬 스토리 10,Fish 03 Story 10
+QuestFish04Dialogue01,파일피쉬 스토리 01,Fish 04 Story 01
+QuestFish04Dialogue02,파일피쉬 스토리 02,Fish 04 Story 02
+QuestFish04Dialogue03,파일피쉬 스토리 03,Fish 04 Story 03
+QuestFish04Dialogue04,파일피쉬 스토리 04,Fish 04 Story 04
+QuestFish04Dialogue05,파일피쉬 스토리 05,Fish 04 Story 05
+QuestFish04Dialogue06,파일피쉬 스토리 06,Fish 04 Story 06
+QuestFish04Dialogue07,파일피쉬 스토리 07,Fish 04 Story 07
+QuestFish04Dialogue08,파일피쉬 스토리 08,Fish 04 Story 08
+QuestFish04Dialogue09,파일피쉬 스토리 09,Fish 04 Story 09
+QuestFish04Dialogue10,파일피쉬 스토리 10,Fish 04 Story 10
+QuestFish05Dialogue01,스네퍼 스토리 01,Fish 05 Story 01
+QuestFish05Dialogue02,스네퍼 스토리 02,Fish 05 Story 02
+QuestFish05Dialogue03,스네퍼 스토리 03,Fish 05 Story 03
+QuestFish05Dialogue04,스네퍼 스토리 04,Fish 05 Story 04
+QuestFish05Dialogue05,스네퍼 스토리 05,Fish 05 Story 05
+QuestFish05Dialogue06,스네퍼 스토리 06,Fish 05 Story 06
+QuestFish05Dialogue07,스네퍼 스토리 07,Fish 05 Story 07
+QuestFish05Dialogue08,스네퍼 스토리 08,Fish 05 Story 08
+QuestFish05Dialogue09,스네퍼 스토리 09,Fish 05 Story 09
+QuestFish05Dialogue10,스네퍼 스토리 10,Fish 05 Story 10
+QuestFish06Dialogue01,가오리 스토리 01,Fish 06 Story 01
+QuestFish06Dialogue02,가오리 스토리 02,Fish 06 Story 02
+QuestFish06Dialogue03,가오리 스토리 03,Fish 06 Story 03
+QuestFish06Dialogue04,가오리 스토리 04,Fish 06 Story 04
+QuestFish06Dialogue05,가오리 스토리 05,Fish 06 Story 05
+QuestFish06Dialogue06,가오리 스토리 06,Fish 06 Story 06
+QuestFish06Dialogue07,가오리 스토리 07,Fish 06 Story 07
+QuestFish06Dialogue08,가오리 스토리 08,Fish 06 Story 08
+QuestFish06Dialogue09,가오리 스토리 09,Fish 06 Story 09
+QuestFish06Dialogue10,가오리 스토리 10,Fish 06 Story 10
+QuestFish07Dialogue01,푸퍼 스토리 01,Fish 07 Story 01
+QuestFish07Dialogue02,푸퍼 스토리 02,Fish 07 Story 02
+QuestFish07Dialogue03,푸퍼 스토리 03,Fish 07 Story 03
+QuestFish07Dialogue04,푸퍼 스토리 04,Fish 07 Story 04
+QuestFish07Dialogue05,푸퍼 스토리 05,Fish 07 Story 05
+QuestFish07Dialogue06,푸퍼 스토리 06,Fish 07 Story 06
+QuestFish07Dialogue07,푸퍼 스토리 07,Fish 07 Story 07
+QuestFish07Dialogue08,푸퍼 스토리 08,Fish 07 Story 08
+QuestFish07Dialogue09,푸퍼 스토리 09,Fish 07 Story 09
+QuestFish07Dialogue10,푸퍼 스토리 10,Fish 07 Story 10
+QuestFish08Dialogue01,참치 스토리 01,Fish 08 Story 01
+QuestFish08Dialogue02,참치 스토리 02,Fish 08 Story 02
+QuestFish08Dialogue03,참치 스토리 03,Fish 08 Story 03
+QuestFish08Dialogue04,참치 스토리 04,Fish 08 Story 04
+QuestFish08Dialogue05,참치 스토리 05,Fish 08 Story 05
+QuestFish08Dialogue06,참치 스토리 06,Fish 08 Story 06
+QuestFish08Dialogue07,참치 스토리 07,Fish 08 Story 07
+QuestFish08Dialogue08,참치 스토리 08,Fish 08 Story 08
+QuestFish08Dialogue09,참치 스토리 09,Fish 08 Story 09
+QuestFish08Dialogue10,참치 스토리 10,Fish 08 Story 10
+QuestFish09Dialogue01,탱 스토리 01,Fish 09 Story 01
+QuestFish09Dialogue02,탱 스토리 02,Fish 09 Story 02
+QuestFish09Dialogue03,탱 스토리 03,Fish 09 Story 03
+QuestFish09Dialogue04,탱 스토리 04,Fish 09 Story 04
+QuestFish09Dialogue05,탱 스토리 05,Fish 09 Story 05
+QuestFish09Dialogue06,탱 스토리 06,Fish 09 Story 06
+QuestFish09Dialogue07,탱 스토리 07,Fish 09 Story 07
+QuestFish09Dialogue08,탱 스토리 08,Fish 09 Story 08
+QuestFish09Dialogue09,탱 스토리 09,Fish 09 Story 09
+QuestFish09Dialogue10,탱 스토리 10,Fish 09 Story 10
+QuestFish10Dialogue01,거북 스토리 01,Fish 10 Story 01
+QuestFish10Dialogue02,거북 스토리 02,Fish 10 Story 02
+QuestFish10Dialogue03,거북 스토리 03,Fish 10 Story 03
+QuestFish10Dialogue04,거북 스토리 04,Fish 10 Story 04
+QuestFish10Dialogue05,거북 스토리 05,Fish 10 Story 05
+QuestFish10Dialogue06,거북 스토리 06,Fish 10 Story 06
+QuestFish10Dialogue07,거북 스토리 07,Fish 10 Story 07
+QuestFish10Dialogue08,거북 스토리 08,Fish 10 Story 08
+QuestFish10Dialogue09,거북 스토리 09,Fish 10 Story 09
+QuestFish10Dialogue10,거북 스토리 10,Fish 10 Story 10
+QuestFish11Dialogue01,챠로미스 스토리 01,Fish 11 Story 01
+QuestFish11Dialogue02,챠로미스 스토리 02,Fish 11 Story 02
+QuestFish11Dialogue03,챠로미스 스토리 03,Fish 11 Story 03
+QuestFish11Dialogue04,챠로미스 스토리 04,Fish 11 Story 04
+QuestFish11Dialogue05,챠로미스 스토리 05,Fish 11 Story 05
+QuestFish11Dialogue06,챠로미스 스토리 06,Fish 11 Story 06
+QuestFish11Dialogue07,챠로미스 스토리 07,Fish 11 Story 07
+QuestFish11Dialogue08,챠로미스 스토리 08,Fish 11 Story 08
+QuestFish11Dialogue09,챠로미스 스토리 09,Fish 11 Story 09
+QuestFish11Dialogue10,챠로미스 스토리 10,Fish 11 Story 10
+QuestFish12Dialogue01,나비 스토리 01,Fish 12 Story 01
+QuestFish12Dialogue02,나비 스토리 02,Fish 12 Story 02
+QuestFish12Dialogue03,나비 스토리 03,Fish 12 Story 03
+QuestFish12Dialogue04,나비 스토리 04,Fish 12 Story 04
+QuestFish12Dialogue05,나비 스토리 05,Fish 12 Story 05
+QuestFish12Dialogue06,나비 스토리 06,Fish 12 Story 06
+QuestFish12Dialogue07,나비 스토리 07,Fish 12 Story 07
+QuestFish12Dialogue08,나비 스토리 08,Fish 12 Story 08
+QuestFish12Dialogue09,나비 스토리 09,Fish 12 Story 09
+QuestFish12Dialogue10,나비 스토리 10,Fish 12 Story 10
+QuestFish13Dialogue01,패럿피쉬 스토리 01,Fish 13 Story 01
+QuestFish13Dialogue02,패럿피쉬 스토리 02,Fish 13 Story 02
+QuestFish13Dialogue03,패럿피쉬 스토리 03,Fish 13 Story 03
+QuestFish13Dialogue04,패럿피쉬 스토리 04,Fish 13 Story 04
+QuestFish13Dialogue05,패럿피쉬 스토리 05,Fish 13 Story 05
+QuestFish13Dialogue06,패럿피쉬 스토리 06,Fish 13 Story 06
+QuestFish13Dialogue07,패럿피쉬 스토리 07,Fish 13 Story 07
+QuestFish13Dialogue08,패럿피쉬 스토리 08,Fish 13 Story 08
+QuestFish13Dialogue09,패럿피쉬 스토리 09,Fish 13 Story 09
+QuestFish13Dialogue10,패럿피쉬 스토리 10,Fish 13 Story 10
+QuestFish14Dialogue01,엔젤피쉬 스토리 01,Fish 14 Story 01
+QuestFish14Dialogue02,엔젤피쉬 스토리 02,Fish 14 Story 02
+QuestFish14Dialogue03,엔젤피쉬 스토리 03,Fish 14 Story 03
+QuestFish14Dialogue04,엔젤피쉬 스토리 04,Fish 14 Story 04
+QuestFish14Dialogue05,엔젤피쉬 스토리 05,Fish 14 Story 05
+QuestFish14Dialogue06,엔젤피쉬 스토리 06,Fish 14 Story 06
+QuestFish14Dialogue07,엔젤피쉬 스토리 07,Fish 14 Story 07
+QuestFish14Dialogue08,엔젤피쉬 스토리 08,Fish 14 Story 08
+QuestFish14Dialogue09,엔젤피쉬 스토리 09,Fish 14 Story 09
+QuestFish14Dialogue10,엔젤피쉬 스토리 10,Fish 14 Story 10
+QuestFish15Dialogue01,카우피쉬 스토리 01,Fish 15 Story 01
+QuestFish15Dialogue02,카우피쉬 스토리 02,Fish 15 Story 02
+QuestFish15Dialogue03,카우피쉬 스토리 03,Fish 15 Story 03
+QuestFish15Dialogue04,카우피쉬 스토리 04,Fish 15 Story 04
+QuestFish15Dialogue05,카우피쉬 스토리 05,Fish 15 Story 05
+QuestFish15Dialogue06,카우피쉬 스토리 06,Fish 15 Story 06
+QuestFish15Dialogue07,카우피쉬 스토리 07,Fish 15 Story 07
+QuestFish15Dialogue08,카우피쉬 스토리 08,Fish 15 Story 08
+QuestFish15Dialogue09,카우피쉬 스토리 09,Fish 15 Story 09
+QuestFish15Dialogue10,카우피쉬 스토리 10,Fish 15 Story 10
+QuestFish16Dialogue01,박스파쉬 스토리 01,Fish 16 Story 01
+QuestFish16Dialogue02,박스파쉬 스토리 02,Fish 16 Story 02
+QuestFish16Dialogue03,박스파쉬 스토리 03,Fish 16 Story 03
+QuestFish16Dialogue04,박스파쉬 스토리 04,Fish 16 Story 04
+QuestFish16Dialogue05,박스파쉬 스토리 05,Fish 16 Story 05
+QuestFish16Dialogue06,박스파쉬 스토리 06,Fish 16 Story 06
+QuestFish16Dialogue07,박스파쉬 스토리 07,Fish 16 Story 07
+QuestFish16Dialogue08,박스파쉬 스토리 08,Fish 16 Story 08
+QuestFish16Dialogue09,박스파쉬 스토리 09,Fish 16 Story 09
+QuestFish16Dialogue10,박스파쉬 스토리 10,Fish 16 Story 10
+QuestFish17Dialogue01,담셀 스토리 01,Fish 17 Story 01
+QuestFish17Dialogue02,담셀 스토리 02,Fish 17 Story 02
+QuestFish17Dialogue03,담셀 스토리 03,Fish 17 Story 03
+QuestFish17Dialogue04,담셀 스토리 04,Fish 17 Story 04
+QuestFish17Dialogue05,담셀 스토리 05,Fish 17 Story 05
+QuestFish17Dialogue06,담셀 스토리 06,Fish 17 Story 06
+QuestFish17Dialogue07,담셀 스토리 07,Fish 17 Story 07
+QuestFish17Dialogue08,담셀 스토리 08,Fish 17 Story 08
+QuestFish17Dialogue09,담셀 스토리 09,Fish 17 Story 09
+QuestFish17Dialogue10,담셀 스토리 10,Fish 17 Story 10
+QuestFish18Dialogue01,도티백 스토리 01,Fish 18 Story 01
+QuestFish18Dialogue02,도티백 스토리 02,Fish 18 Story 02
+QuestFish18Dialogue03,도티백 스토리 03,Fish 18 Story 03
+QuestFish18Dialogue04,도티백 스토리 04,Fish 18 Story 04
+QuestFish18Dialogue05,도티백 스토리 05,Fish 18 Story 05
+QuestFish18Dialogue06,도티백 스토리 06,Fish 18 Story 06
+QuestFish18Dialogue07,도티백 스토리 07,Fish 18 Story 07
+QuestFish18Dialogue08,도티백 스토리 08,Fish 18 Story 08
+QuestFish18Dialogue09,도티백 스토리 09,Fish 18 Story 09
+QuestFish18Dialogue10,도티백 스토리 10,Fish 18 Story 10
+QuestFish19Dialogue01,해마 스토리 01,Fish 19 Story 01
+QuestFish19Dialogue02,해마 스토리 02,Fish 19 Story 02
+QuestFish19Dialogue03,해마 스토리 03,Fish 19 Story 03
+QuestFish19Dialogue04,해마 스토리 04,Fish 19 Story 04
+QuestFish19Dialogue05,해마 스토리 05,Fish 19 Story 05
+QuestFish19Dialogue06,해마 스토리 06,Fish 19 Story 06
+QuestFish19Dialogue07,해마 스토리 07,Fish 19 Story 07
+QuestFish19Dialogue08,해마 스토리 08,Fish 19 Story 08
+QuestFish19Dialogue09,해마 스토리 09,Fish 19 Story 09
+QuestFish19Dialogue10,해마 스토리 10,Fish 19 Story 10
+QuestFish20Dialogue01,해룡 스토리 01,Fish 20 Story 01
+QuestFish20Dialogue02,해룡 스토리 02,Fish 20 Story 02
+QuestFish20Dialogue03,해룡 스토리 03,Fish 20 Story 03
+QuestFish20Dialogue04,해룡 스토리 04,Fish 20 Story 04
+QuestFish20Dialogue05,해룡 스토리 05,Fish 20 Story 05
+QuestFish20Dialogue06,해룡 스토리 06,Fish 20 Story 06
+QuestFish20Dialogue07,해룡 스토리 07,Fish 20 Story 07
+QuestFish20Dialogue08,해룡 스토리 08,Fish 20 Story 08
+QuestFish20Dialogue09,해룡 스토리 09,Fish 20 Story 09
+QuestFish20Dialogue10,해룡 스토리 10,Fish 20 Story 10
+QuestFish21Dialogue01,해파리 스토리 01,Fish 21 Story 01
+QuestFish21Dialogue02,해파리 스토리 02,Fish 21 Story 02
+QuestFish21Dialogue03,해파리 스토리 03,Fish 21 Story 03
+QuestFish21Dialogue04,해파리 스토리 04,Fish 21 Story 04
+QuestFish21Dialogue05,해파리 스토리 05,Fish 21 Story 05
+QuestFish21Dialogue06,해파리 스토리 06,Fish 21 Story 06
+QuestFish21Dialogue07,해파리 스토리 07,Fish 21 Story 07
+QuestFish21Dialogue08,해파리 스토리 08,Fish 21 Story 08
+QuestFish21Dialogue09,해파리 스토리 09,Fish 21 Story 09
+QuestFish21Dialogue10,해파리 스토리 10,Fish 21 Story 10
+QuestFish22Dialogue01,소형 상어 스토리 01,Fish 22 Story 01
+QuestFish22Dialogue02,소형 상어 스토리 02,Fish 22 Story 02
+QuestFish22Dialogue03,소형 상어 스토리 03,Fish 22 Story 03
+QuestFish22Dialogue04,소형 상어 스토리 04,Fish 22 Story 04
+QuestFish22Dialogue05,소형 상어 스토리 05,Fish 22 Story 05
+QuestFish22Dialogue06,소형 상어 스토리 06,Fish 22 Story 06
+QuestFish22Dialogue07,소형 상어 스토리 07,Fish 22 Story 07
+QuestFish22Dialogue08,소형 상어 스토리 08,Fish 22 Story 08
+QuestFish22Dialogue09,소형 상어 스토리 09,Fish 22 Story 09
+QuestFish22Dialogue10,소형 상어 스토리 10,Fish 22 Story 10
+QuestFish23Dialogue01,대형 상어 스토리 01,Fish 23 Story 01
+QuestFish23Dialogue02,대형 상어 스토리 02,Fish 23 Story 02
+QuestFish23Dialogue03,대형 상어 스토리 03,Fish 23 Story 03
+QuestFish23Dialogue04,대형 상어 스토리 04,Fish 23 Story 04
+QuestFish23Dialogue05,대형 상어 스토리 05,Fish 23 Story 05
+QuestFish23Dialogue06,대형 상어 스토리 06,Fish 23 Story 06
+QuestFish23Dialogue07,대형 상어 스토리 07,Fish 23 Story 07
+QuestFish23Dialogue08,대형 상어 스토리 08,Fish 23 Story 08
+QuestFish23Dialogue09,대형 상어 스토리 09,Fish 23 Story 09
+QuestFish23Dialogue10,대형 상어 스토리 10,Fish 23 Story 10
+QuestFish24Dialogue01,돌고래 스토리 01,Fish 24 Story 01
+QuestFish24Dialogue02,돌고래 스토리 02,Fish 24 Story 02
+QuestFish24Dialogue03,돌고래 스토리 03,Fish 24 Story 03
+QuestFish24Dialogue04,돌고래 스토리 04,Fish 24 Story 04
+QuestFish24Dialogue05,돌고래 스토리 05,Fish 24 Story 05
+QuestFish24Dialogue06,돌고래 스토리 06,Fish 24 Story 06
+QuestFish24Dialogue07,돌고래 스토리 07,Fish 24 Story 07
+QuestFish24Dialogue08,돌고래 스토리 08,Fish 24 Story 08
+QuestFish24Dialogue09,돌고래 스토리 09,Fish 24 Story 09
+QuestFish24Dialogue10,돌고래 스토리 10,Fish 24 Story 10
+QuestFish25Dialogue01,고래 스토리 01,Fish 25 Story 01
+QuestFish25Dialogue02,고래 스토리 02,Fish 25 Story 02
+QuestFish25Dialogue03,고래 스토리 03,Fish 25 Story 03
+QuestFish25Dialogue04,고래 스토리 04,Fish 25 Story 04
+QuestFish25Dialogue05,고래 스토리 05,Fish 25 Story 05
+QuestFish25Dialogue06,고래 스토리 06,Fish 25 Story 06
+QuestFish25Dialogue07,고래 스토리 07,Fish 25 Story 07
+QuestFish25Dialogue08,고래 스토리 08,Fish 25 Story 08
+QuestFish25Dialogue09,고래 스토리 09,Fish 25 Story 09
+QuestFish25Dialogue10,고래 스토리 10,Fish 25 Story 10

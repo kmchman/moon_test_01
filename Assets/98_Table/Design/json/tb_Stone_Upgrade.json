@@ -1,0 +1,22 @@
+﻿[
+    {
+        "ID": 1,
+        "Unlock_Level": 1
+    },
+    {
+        "ID": 2,
+        "Unlock_Level": 5
+    },
+    {
+        "ID": 3,
+        "Unlock_Level": 26
+    },
+    {
+        "ID": 4,
+        "Unlock_Level": 36
+    },
+    {
+        "ID": 5,
+        "Unlock_Level": 46
+    }
+]

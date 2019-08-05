@@ -1,0 +1,602 @@
+﻿[
+    {
+        "ID": 1,
+        "Storage_Capacity": 570,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "1,1,1"
+    },
+    {
+        "ID": 2,
+        "Storage_Capacity": 590,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "2,2,2"
+    },
+    {
+        "ID": 3,
+        "Storage_Capacity": 610,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "3,3,3"
+    },
+    {
+        "ID": 4,
+        "Storage_Capacity": 635,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "4,4,4"
+    },
+    {
+        "ID": 5,
+        "Storage_Capacity": 660,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "5,5,5"
+    },
+    {
+        "ID": 6,
+        "Storage_Capacity": 685,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "6,6,6"
+    },
+    {
+        "ID": 7,
+        "Storage_Capacity": 710,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "7,7,7"
+    },
+    {
+        "ID": 8,
+        "Storage_Capacity": 735,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "8,8,8"
+    },
+    {
+        "ID": 9,
+        "Storage_Capacity": 760,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "9,9,9"
+    },
+    {
+        "ID": 10,
+        "Storage_Capacity": 785,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "10,10,10"
+    },
+    {
+        "ID": 11,
+        "Storage_Capacity": 810,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "11,11,11"
+    },
+    {
+        "ID": 12,
+        "Storage_Capacity": 835,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "12,12,12"
+    },
+    {
+        "ID": 13,
+        "Storage_Capacity": 860,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "13,13,13"
+    },
+    {
+        "ID": 14,
+        "Storage_Capacity": 885,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "14,14,14"
+    },
+    {
+        "ID": 15,
+        "Storage_Capacity": 910,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "15,15,15"
+    },
+    {
+        "ID": 16,
+        "Storage_Capacity": 935,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "16,16,16"
+    },
+    {
+        "ID": 17,
+        "Storage_Capacity": 960,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "17,17,17"
+    },
+    {
+        "ID": 18,
+        "Storage_Capacity": 985,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "18,18,18"
+    },
+    {
+        "ID": 19,
+        "Storage_Capacity": 1010,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "19,19,19"
+    },
+    {
+        "ID": 20,
+        "Storage_Capacity": 1035,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "20,20,20"
+    },
+    {
+        "ID": 21,
+        "Storage_Capacity": 1060,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "21,21,21"
+    },
+    {
+        "ID": 22,
+        "Storage_Capacity": 1085,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "22,22,22"
+    },
+    {
+        "ID": 23,
+        "Storage_Capacity": 1110,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "23,23,23"
+    },
+    {
+        "ID": 24,
+        "Storage_Capacity": 1135,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "24,24,24"
+    },
+    {
+        "ID": 25,
+        "Storage_Capacity": 1160,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "25,25,25"
+    },
+    {
+        "ID": 26,
+        "Storage_Capacity": 1185,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "26,26,26"
+    },
+    {
+        "ID": 27,
+        "Storage_Capacity": 1210,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "27,27,27"
+    },
+    {
+        "ID": 28,
+        "Storage_Capacity": 1235,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "28,28,28"
+    },
+    {
+        "ID": 29,
+        "Storage_Capacity": 1260,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "29,29,29"
+    },
+    {
+        "ID": 30,
+        "Storage_Capacity": 1285,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "30,30,30"
+    },
+    {
+        "ID": 31,
+        "Storage_Capacity": 1310,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "31,31,31"
+    },
+    {
+        "ID": 32,
+        "Storage_Capacity": 1335,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "32,32,32"
+    },
+    {
+        "ID": 33,
+        "Storage_Capacity": 1360,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "33,33,33"
+    },
+    {
+        "ID": 34,
+        "Storage_Capacity": 1385,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "34,34,34"
+    },
+    {
+        "ID": 35,
+        "Storage_Capacity": 1410,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "35,35,35"
+    },
+    {
+        "ID": 36,
+        "Storage_Capacity": 1435,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "36,36,36"
+    },
+    {
+        "ID": 37,
+        "Storage_Capacity": 1460,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "37,37,37"
+    },
+    {
+        "ID": 38,
+        "Storage_Capacity": 1485,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "38,38,38"
+    },
+    {
+        "ID": 39,
+        "Storage_Capacity": 1510,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "39,39,39"
+    },
+    {
+        "ID": 40,
+        "Storage_Capacity": 1560,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "40,40,40"
+    },
+    {
+        "ID": 41,
+        "Storage_Capacity": 1610,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "41,41,41"
+    },
+    {
+        "ID": 42,
+        "Storage_Capacity": 1660,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "42,42,42"
+    },
+    {
+        "ID": 43,
+        "Storage_Capacity": 1710,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "43,43,43"
+    },
+    {
+        "ID": 44,
+        "Storage_Capacity": 1760,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "44,44,44"
+    },
+    {
+        "ID": 45,
+        "Storage_Capacity": 1810,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "45,45,45"
+    },
+    {
+        "ID": 46,
+        "Storage_Capacity": 1860,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "46,46,46"
+    },
+    {
+        "ID": 47,
+        "Storage_Capacity": 1910,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "47,47,47"
+    },
+    {
+        "ID": 48,
+        "Storage_Capacity": 1960,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "48,48,48"
+    },
+    {
+        "ID": 49,
+        "Storage_Capacity": 2010,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "49,49,49"
+    },
+    {
+        "ID": 50,
+        "Storage_Capacity": 2060,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "50,50,50"
+    },
+    {
+        "ID": 51,
+        "Storage_Capacity": 2110,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "51,51,51"
+    },
+    {
+        "ID": 52,
+        "Storage_Capacity": 2160,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "52,52,52"
+    },
+    {
+        "ID": 53,
+        "Storage_Capacity": 2210,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "53,53,53"
+    },
+    {
+        "ID": 54,
+        "Storage_Capacity": 2260,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "54,54,54"
+    },
+    {
+        "ID": 55,
+        "Storage_Capacity": 2310,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "55,55,55"
+    },
+    {
+        "ID": 56,
+        "Storage_Capacity": 2360,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "56,56,56"
+    },
+    {
+        "ID": 57,
+        "Storage_Capacity": 2410,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "57,57,57"
+    },
+    {
+        "ID": 58,
+        "Storage_Capacity": 2460,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "58,58,58"
+    },
+    {
+        "ID": 59,
+        "Storage_Capacity": 2510,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "59,59,59"
+    },
+    {
+        "ID": 60,
+        "Storage_Capacity": 2585,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "60,60,60"
+    },
+    {
+        "ID": 61,
+        "Storage_Capacity": 2660,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "61,61,61"
+    },
+    {
+        "ID": 62,
+        "Storage_Capacity": 2735,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "62,62,62"
+    },
+    {
+        "ID": 63,
+        "Storage_Capacity": 2810,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "63,63,63"
+    },
+    {
+        "ID": 64,
+        "Storage_Capacity": 2885,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "64,64,64"
+    },
+    {
+        "ID": 65,
+        "Storage_Capacity": 2960,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "65,65,65"
+    },
+    {
+        "ID": 66,
+        "Storage_Capacity": 3035,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "66,66,66"
+    },
+    {
+        "ID": 67,
+        "Storage_Capacity": 3110,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "67,67,67"
+    },
+    {
+        "ID": 68,
+        "Storage_Capacity": 3185,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "68,68,68"
+    },
+    {
+        "ID": 69,
+        "Storage_Capacity": 3260,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "69,69,69"
+    },
+    {
+        "ID": 70,
+        "Storage_Capacity": 3335,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "70,70,70"
+    },
+    {
+        "ID": 71,
+        "Storage_Capacity": 3410,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "71,71,71"
+    },
+    {
+        "ID": 72,
+        "Storage_Capacity": 3485,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "72,72,72"
+    },
+    {
+        "ID": 73,
+        "Storage_Capacity": 3560,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "73,73,73"
+    },
+    {
+        "ID": 74,
+        "Storage_Capacity": 3635,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "74,74,74"
+    },
+    {
+        "ID": 75,
+        "Storage_Capacity": 3710,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "75,75,75"
+    },
+    {
+        "ID": 76,
+        "Storage_Capacity": 3785,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "76,76,76"
+    },
+    {
+        "ID": 77,
+        "Storage_Capacity": 3860,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "77,77,77"
+    },
+    {
+        "ID": 78,
+        "Storage_Capacity": 3935,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "78,78,78"
+    },
+    {
+        "ID": 79,
+        "Storage_Capacity": 4010,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "79,79,79"
+    },
+    {
+        "ID": 80,
+        "Storage_Capacity": 4085,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "80,80,80"
+    },
+    {
+        "ID": 81,
+        "Storage_Capacity": 4160,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "81,81,81"
+    },
+    {
+        "ID": 82,
+        "Storage_Capacity": 4235,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "82,82,82"
+    },
+    {
+        "ID": 83,
+        "Storage_Capacity": 4310,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "83,83,83"
+    },
+    {
+        "ID": 84,
+        "Storage_Capacity": 4385,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "84,84,84"
+    },
+    {
+        "ID": 85,
+        "Storage_Capacity": 4460,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "85,85,85"
+    },
+    {
+        "ID": 86,
+        "Storage_Capacity": 4535,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "86,86,86"
+    },
+    {
+        "ID": 87,
+        "Storage_Capacity": 4610,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "87,87,87"
+    },
+    {
+        "ID": 88,
+        "Storage_Capacity": 4685,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "88,88,88"
+    },
+    {
+        "ID": 89,
+        "Storage_Capacity": 4760,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "89,89,89"
+    },
+    {
+        "ID": 90,
+        "Storage_Capacity": 4835,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "90,90,90"
+    },
+    {
+        "ID": 91,
+        "Storage_Capacity": 4910,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "91,91,91"
+    },
+    {
+        "ID": 92,
+        "Storage_Capacity": 4985,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "92,92,92"
+    },
+    {
+        "ID": 93,
+        "Storage_Capacity": 5060,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "93,93,93"
+    },
+    {
+        "ID": 94,
+        "Storage_Capacity": 5135,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "94,94,94"
+    },
+    {
+        "ID": 95,
+        "Storage_Capacity": 5210,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "95,95,95"
+    },
+    {
+        "ID": 96,
+        "Storage_Capacity": 5285,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "96,96,96"
+    },
+    {
+        "ID": 97,
+        "Storage_Capacity": 5360,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "97,97,97"
+    },
+    {
+        "ID": 98,
+        "Storage_Capacity": 5435,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "98,98,98"
+    },
+    {
+        "ID": 99,
+        "Storage_Capacity": 5510,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "99,99,99"
+    },
+    {
+        "ID": 100,
+        "Storage_Capacity": 5585,
+        "Extend_Input_ItemIDs": "114,115,116",
+        "Extend_Input_Counts": "100,100,100"
+    }
+]

@@ -53,11 +53,14 @@ public class MainPanel : MonoBehaviour
 
     public void OnClickBtnCreate()
     {
-        string csvPath = Application.streamingAssetsPath + "/csvTest1.csv";
-        string jsonPath = Application.streamingAssetsPath + "/csvTest1.json";
-        string json = Giant.Util.ConvertCsvFileToJsonObject(csvPath);
-        Debug.Log("ConvertCsvFileToJsonObject" + json);
-        System.IO.File.WriteAllText(jsonPath, json);
+        Table.tb_Building_Base.LoadFromJsonFile(Application.streamingAssetsPath + "/tb_Building_Base.json");
+        Debug.Log("Table.tb_Building_Base.map.Count" + Table.tb_Building_Base.map.Count);
+
+        //string csvPath = Application.streamingAssetsPath + "/csvTest1.csv";
+        //string jsonPath = Application.streamingAssetsPath + "/csvTest1.json";
+        //string json = Giant.Util.ConvertCsvFileToJsonObject(csvPath);
+        //Debug.Log("ConvertCsvFileToJsonObject" + json);
+        //System.IO.File.WriteAllText(jsonPath, json);
 
         //MoonGlobalPopupManager.Inst.ShowPopup(testPopup02Prefab, null);
         //Debug.Log("LoadAssetBundles.Inst.LoadTest();");

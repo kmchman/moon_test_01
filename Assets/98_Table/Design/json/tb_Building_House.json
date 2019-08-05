@@ -1,0 +1,14 @@
+﻿[
+    {
+        "ID": 9001,
+        "Add_Max_Population": 5
+    },
+    {
+        "ID": 9002,
+        "Add_Max_Population": 10
+    },
+    {
+        "ID": 9003,
+        "Add_Max_Population": 20
+    }
+]

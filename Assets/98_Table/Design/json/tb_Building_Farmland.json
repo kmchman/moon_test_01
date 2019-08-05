@@ -1,0 +1,38 @@
+﻿[
+    {
+        "ID": 1001,
+        "QueSlot_Default": 1,
+        "QueSlot_Max": 1,
+        "QueSlot_Cost": "0",
+        "MultiQueSlot": 1,
+        "HoldSlot_Default": 0,
+        "HoldSlot_Max": 0
+    },
+    {
+        "ID": 1002,
+        "QueSlot_Default": 1,
+        "QueSlot_Max": 1,
+        "QueSlot_Cost": "0",
+        "MultiQueSlot": 1,
+        "HoldSlot_Default": 0,
+        "HoldSlot_Max": 0
+    },
+    {
+        "ID": 1003,
+        "QueSlot_Default": 1,
+        "QueSlot_Max": 1,
+        "QueSlot_Cost": "0",
+        "MultiQueSlot": 1,
+        "HoldSlot_Default": 0,
+        "HoldSlot_Max": 0
+    },
+    {
+        "ID": 1004,
+        "QueSlot_Default": 1,
+        "QueSlot_Max": 1,
+        "QueSlot_Cost": "0",
+        "MultiQueSlot": 1,
+        "HoldSlot_Default": 0,
+        "HoldSlot_Max": 0
+    }
+]

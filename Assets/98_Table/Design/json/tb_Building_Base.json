@@ -1,0 +1,506 @@
+﻿[
+    {
+        "ID": 101,
+        "Name": "산호석",
+        "Local_String": "NameBuildingStone",
+        "Open_Level": 1,
+        "SizeX": 6,
+        "SizeY": 6,
+        "BuildingType": "Stone"
+    },
+    {
+        "ID": 201,
+        "Name": "교배",
+        "Local_String": "NameBuildingBreed",
+        "Open_Level": 2,
+        "SizeX": 4,
+        "SizeY": 4,
+        "BuildingType": "Breed"
+    },
+    {
+        "ID": 202,
+        "Name": "저장소",
+        "Local_String": "NameBuildingStorage",
+        "Open_Level": 1,
+        "SizeX": 3,
+        "SizeY": 3,
+        "BuildingType": "Storage"
+    },
+    {
+        "ID": 301,
+        "Name": "퀘스트 건물01",
+        "Local_String": "NameBuildingQuest01",
+        "Open_Level": 1,
+        "SizeX": 4,
+        "SizeY": 4,
+        "BuildingType": "Quest"
+    },
+    {
+        "ID": 302,
+        "Name": "퀘스트 건물02",
+        "Local_String": "NameBuildingQuest02",
+        "Open_Level": 2,
+        "SizeX": 4,
+        "SizeY": 4,
+        "BuildingType": "Quest"
+    },
+    {
+        "ID": 303,
+        "Name": "퀘스트 건물03",
+        "Local_String": "NameBuildingQuest03",
+        "Open_Level": 3,
+        "SizeX": 4,
+        "SizeY": 4,
+        "BuildingType": "Quest"
+    },
+    {
+        "ID": 1001,
+        "Name": "채집01",
+        "Local_String": "NameBuildingFarmland01",
+        "Open_Level": 1,
+        "SizeX": 2,
+        "SizeY": 2,
+        "BuildingType": "Farmland"
+    },
+    {
+        "ID": 1002,
+        "Name": "채집02",
+        "Local_String": "NameBuildingFarmland02",
+        "Open_Level": 1,
+        "SizeX": 2,
+        "SizeY": 2,
+        "BuildingType": "Farmland"
+    },
+    {
+        "ID": 1003,
+        "Name": "채집03",
+        "Local_String": "NameBuildingFarmland03",
+        "Open_Level": 1,
+        "SizeX": 2,
+        "SizeY": 2,
+        "BuildingType": "Farmland"
+    },
+    {
+        "ID": 1004,
+        "Name": "채집04",
+        "Local_String": "NameBuildingFarmland04",
+        "Open_Level": 1,
+        "SizeX": 2,
+        "SizeY": 2,
+        "BuildingType": "Farmland"
+    },
+    {
+        "ID": 1901,
+        "Name": "동굴",
+        "Local_String": "NameBuildingFarm01",
+        "Open_Level": 1,
+        "SizeX": 3,
+        "SizeY": 3,
+        "BuildingType": "Farm"
+    },
+    {
+        "ID": 1902,
+        "Name": "열수구",
+        "Local_String": "NameBuildingFarm02",
+        "Open_Level": 1,
+        "SizeX": 3,
+        "SizeY": 3,
+        "BuildingType": "Farm"
+    },
+    {
+        "ID": 1903,
+        "Name": "크레이터",
+        "Local_String": "NameBuildingFarm03",
+        "Open_Level": 1,
+        "SizeX": 3,
+        "SizeY": 3,
+        "BuildingType": "Farm"
+    },
+    {
+        "ID": 1904,
+        "Name": "고래언덕",
+        "Local_String": "NameBuildingFarm04",
+        "Open_Level": 1,
+        "SizeX": 3,
+        "SizeY": 3,
+        "BuildingType": "Farm"
+    },
+    {
+        "ID": 2001,
+        "Name": "압착기",
+        "Local_String": "NameBuildingFactory01",
+        "Open_Level": 1,
+        "SizeX": 3,
+        "SizeY": 3,
+        "BuildingType": "Factory"
+    },
+    {
+        "ID": 2002,
+        "Name": "분쇄기",
+        "Local_String": "NameBuildingFactory02",
+        "Open_Level": 1,
+        "SizeX": 3,
+        "SizeY": 3,
+        "BuildingType": "Factory"
+    },
+    {
+        "ID": 2003,
+        "Name": "추출기",
+        "Local_String": "NameBuildingFactory03",
+        "Open_Level": 1,
+        "SizeX": 3,
+        "SizeY": 3,
+        "BuildingType": "Factory"
+    },
+    {
+        "ID": 2004,
+        "Name": "반죽기",
+        "Local_String": "NameBuildingFactory04",
+        "Open_Level": 1,
+        "SizeX": 3,
+        "SizeY": 3,
+        "BuildingType": "Factory"
+    },
+    {
+        "ID": 2005,
+        "Name": "발효기",
+        "Local_String": "NameBuildingFactory05",
+        "Open_Level": 1,
+        "SizeX": 3,
+        "SizeY": 3,
+        "BuildingType": "Factory"
+    },
+    {
+        "ID": 2006,
+        "Name": "연구소",
+        "Local_String": "NameBuildingFactory06",
+        "Open_Level": 1,
+        "SizeX": 3,
+        "SizeY": 3,
+        "BuildingType": "Factory"
+    },
+    {
+        "ID": 2007,
+        "Name": "수질",
+        "Local_String": "NameBuildingFactory07",
+        "Open_Level": 1,
+        "SizeX": 3,
+        "SizeY": 3,
+        "BuildingType": "Factory"
+    },
+    {
+        "ID": 9001,
+        "Name": "보금자리01",
+        "Local_String": "NameBuildingHouse01",
+        "Open_Level": 1,
+        "SizeX": 2,
+        "SizeY": 2,
+        "BuildingType": "House"
+    },
+    {
+        "ID": 9002,
+        "Name": "보금자리02",
+        "Local_String": "NameBuildingHouse02",
+        "Open_Level": 1,
+        "SizeX": 2,
+        "SizeY": 2,
+        "BuildingType": "House"
+    },
+    {
+        "ID": 9003,
+        "Name": "보금자리03",
+        "Local_String": "NameBuildingHouse03",
+        "Open_Level": 1,
+        "SizeX": 2,
+        "SizeY": 2,
+        "BuildingType": "House"
+    },
+    {
+        "ID": 19001,
+        "Name": "해초01",
+        "Local_String": "NameBuildingDeco01",
+        "Open_Level": 1,
+        "SizeX": 1,
+        "SizeY": 1,
+        "BuildingType": "Deco"
+    },
+    {
+        "ID": 19002,
+        "Name": "해초02",
+        "Local_String": "NameBuildingDeco02",
+        "Open_Level": 1,
+        "SizeX": 1,
+        "SizeY": 1,
+        "BuildingType": "Deco"
+    },
+    {
+        "ID": 19003,
+        "Name": "해초03",
+        "Local_String": "NameBuildingDeco03",
+        "Open_Level": 1,
+        "SizeX": 1,
+        "SizeY": 1,
+        "BuildingType": "Deco"
+    },
+    {
+        "ID": 19004,
+        "Name": "해초04",
+        "Local_String": "NameBuildingDeco04",
+        "Open_Level": 1,
+        "SizeX": 1,
+        "SizeY": 1,
+        "BuildingType": "Deco"
+    },
+    {
+        "ID": 19005,
+        "Name": "분화구01",
+        "Local_String": "NameBuildingDeco05",
+        "Open_Level": 1,
+        "SizeX": 1,
+        "SizeY": 1,
+        "BuildingType": "Deco"
+    },
+    {
+        "ID": 19006,
+        "Name": "분화구02",
+        "Local_String": "NameBuildingDeco06",
+        "Open_Level": 1,
+        "SizeX": 2,
+        "SizeY": 2,
+        "BuildingType": "Deco"
+    },
+    {
+        "ID": 19007,
+        "Name": "울타리용 작은 바위",
+        "Local_String": "NameBuildingDeco07",
+        "Open_Level": 1,
+        "SizeX": 1,
+        "SizeY": 1,
+        "BuildingType": "Deco"
+    },
+    {
+        "ID": 19008,
+        "Name": "작은 바위01",
+        "Local_String": "NameBuildingDeco08",
+        "Open_Level": 1,
+        "SizeX": 1,
+        "SizeY": 1,
+        "BuildingType": "Deco"
+    },
+    {
+        "ID": 19009,
+        "Name": "작은 바위02",
+        "Local_String": "NameBuildingDeco09",
+        "Open_Level": 1,
+        "SizeX": 1,
+        "SizeY": 1,
+        "BuildingType": "Deco"
+    },
+    {
+        "ID": 19010,
+        "Name": "작은 바위03",
+        "Local_String": "NameBuildingDeco10",
+        "Open_Level": 1,
+        "SizeX": 1,
+        "SizeY": 1,
+        "BuildingType": "Deco"
+    },
+    {
+        "ID": 19011,
+        "Name": "돌기둥01",
+        "Local_String": "NameBuildingDeco11",
+        "Open_Level": 1,
+        "SizeX": 1,
+        "SizeY": 1,
+        "BuildingType": "Deco"
+    },
+    {
+        "ID": 19012,
+        "Name": "돌기둥02",
+        "Local_String": "NameBuildingDeco12",
+        "Open_Level": 1,
+        "SizeX": 2,
+        "SizeY": 2,
+        "BuildingType": "Deco"
+    },
+    {
+        "ID": 19013,
+        "Name": "돌기둥03",
+        "Local_String": "NameBuildingDeco13",
+        "Open_Level": 1,
+        "SizeX": 3,
+        "SizeY": 3,
+        "BuildingType": "Deco"
+    },
+    {
+        "ID": 19014,
+        "Name": "계단바위",
+        "Local_String": "NameBuildingDeco14",
+        "Open_Level": 1,
+        "SizeX": 3,
+        "SizeY": 3,
+        "BuildingType": "Deco"
+    },
+    {
+        "ID": 19015,
+        "Name": "산호초01",
+        "Local_String": "NameBuildingDeco15",
+        "Open_Level": 1,
+        "SizeX": 1,
+        "SizeY": 1,
+        "BuildingType": "Deco"
+    },
+    {
+        "ID": 19016,
+        "Name": "산호초02",
+        "Local_String": "NameBuildingDeco16",
+        "Open_Level": 1,
+        "SizeX": 1,
+        "SizeY": 2,
+        "BuildingType": "Deco"
+    },
+    {
+        "ID": 19017,
+        "Name": "산호초03",
+        "Local_String": "NameBuildingDeco17",
+        "Open_Level": 1,
+        "SizeX": 2,
+        "SizeY": 2,
+        "BuildingType": "Deco"
+    },
+    {
+        "ID": 19018,
+        "Name": "산호초04",
+        "Local_String": "NameBuildingDeco18",
+        "Open_Level": 1,
+        "SizeX": 2,
+        "SizeY": 2,
+        "BuildingType": "Deco"
+    },
+    {
+        "ID": 19019,
+        "Name": "산호초05",
+        "Local_String": "NameBuildingDeco19",
+        "Open_Level": 1,
+        "SizeX": 2,
+        "SizeY": 2,
+        "BuildingType": "Deco"
+    },
+    {
+        "ID": 19020,
+        "Name": "산호초06",
+        "Local_String": "NameBuildingDeco20",
+        "Open_Level": 1,
+        "SizeX": 2,
+        "SizeY": 2,
+        "BuildingType": "Deco"
+    },
+    {
+        "ID": 19021,
+        "Name": "산호초07",
+        "Local_String": "NameBuildingDeco21",
+        "Open_Level": 1,
+        "SizeX": 2,
+        "SizeY": 2,
+        "BuildingType": "Deco"
+    },
+    {
+        "ID": 19022,
+        "Name": "산호초08",
+        "Local_String": "NameBuildingDeco22",
+        "Open_Level": 1,
+        "SizeX": 2,
+        "SizeY": 2,
+        "BuildingType": "Deco"
+    },
+    {
+        "ID": 19023,
+        "Name": "산호초09",
+        "Local_String": "NameBuildingDeco23",
+        "Open_Level": 1,
+        "SizeX": 2,
+        "SizeY": 2,
+        "BuildingType": "Deco"
+    },
+    {
+        "ID": 19024,
+        "Name": "산호초10",
+        "Local_String": "NameBuildingDeco24",
+        "Open_Level": 1,
+        "SizeX": 2,
+        "SizeY": 2,
+        "BuildingType": "Deco"
+    },
+    {
+        "ID": 19025,
+        "Name": "산호초11",
+        "Local_String": "NameBuildingDeco25",
+        "Open_Level": 1,
+        "SizeX": 2,
+        "SizeY": 2,
+        "BuildingType": "Deco"
+    },
+    {
+        "ID": 19026,
+        "Name": "산호초12",
+        "Local_String": "NameBuildingDeco26",
+        "Open_Level": 1,
+        "SizeX": 2,
+        "SizeY": 2,
+        "BuildingType": "Deco"
+    },
+    {
+        "ID": 19027,
+        "Name": "바위01",
+        "Local_String": "NameBuildingDeco27",
+        "Open_Level": 1,
+        "SizeX": 1,
+        "SizeY": 1,
+        "BuildingType": "Deco"
+    },
+    {
+        "ID": 19028,
+        "Name": "바위02",
+        "Local_String": "NameBuildingDeco28",
+        "Open_Level": 1,
+        "SizeX": 1,
+        "SizeY": 1,
+        "BuildingType": "Deco"
+    },
+    {
+        "ID": 19029,
+        "Name": "바위03",
+        "Local_String": "NameBuildingDeco29",
+        "Open_Level": 1,
+        "SizeX": 1,
+        "SizeY": 2,
+        "BuildingType": "Deco"
+    },
+    {
+        "ID": 19030,
+        "Name": "바위04",
+        "Local_String": "NameBuildingDeco30",
+        "Open_Level": 1,
+        "SizeX": 2,
+        "SizeY": 1,
+        "BuildingType": "Deco"
+    },
+    {
+        "ID": 19031,
+        "Name": "바위05",
+        "Local_String": "NameBuildingDeco31",
+        "Open_Level": 1,
+        "SizeX": 1,
+        "SizeY": 2,
+        "BuildingType": "Deco"
+    },
+    {
+        "ID": 19032,
+        "Name": "바위06",
+        "Local_String": "NameBuildingDeco32",
+        "Open_Level": 1,
+        "SizeX": 1,
+        "SizeY": 2,
+        "BuildingType": "Deco"
+    }
+]

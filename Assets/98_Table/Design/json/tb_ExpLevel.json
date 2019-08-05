@@ -1,0 +1,1334 @@
+﻿[
+    {
+        "Level": 1,
+        "Xp": 12,
+        "GiftRatio": "100",
+        "Reward_Cash": "100",
+        "Reward_Life": "1000",
+        "Reward_ItemIDs": "117",
+        "Reward_Counts": "2"
+    },
+    {
+        "Level": 2,
+        "Xp": 27,
+        "GiftRatio": "100",
+        "Reward_Cash": "100",
+        "Reward_Life": "1000",
+        "Reward_ItemIDs": "118",
+        "Reward_Counts": "2"
+    },
+    {
+        "Level": 3,
+        "Xp": 38,
+        "GiftRatio": "100",
+        "Reward_Cash": "100",
+        "Reward_Life": "1000",
+        "Reward_ItemIDs": "119",
+        "Reward_Counts": "2"
+    },
+    {
+        "Level": 4,
+        "Xp": 52,
+        "GiftRatio": "100",
+        "Reward_Cash": "100",
+        "Reward_Life": "1000",
+        "Reward_ItemIDs": "117",
+        "Reward_Counts": "2"
+    },
+    {
+        "Level": 5,
+        "Xp": 84,
+        "GiftRatio": "100",
+        "Reward_Cash": "100",
+        "Reward_Life": "1000",
+        "Reward_ItemIDs": "118",
+        "Reward_Counts": "2"
+    },
+    {
+        "Level": 6,
+        "Xp": 138,
+        "GiftRatio": "100",
+        "Reward_Cash": "100",
+        "Reward_Life": "1000",
+        "Reward_ItemIDs": "119",
+        "Reward_Counts": "2"
+    },
+    {
+        "Level": 7,
+        "Xp": 198,
+        "GiftRatio": "100",
+        "Reward_Cash": "100",
+        "Reward_Life": "1000",
+        "Reward_ItemIDs": "117",
+        "Reward_Counts": "2"
+    },
+    {
+        "Level": 8,
+        "Xp": 255,
+        "GiftRatio": "100",
+        "Reward_Cash": "100",
+        "Reward_Life": "1000",
+        "Reward_ItemIDs": "118",
+        "Reward_Counts": "2"
+    },
+    {
+        "Level": 9,
+        "Xp": 485,
+        "GiftRatio": "100",
+        "Reward_Cash": "100",
+        "Reward_Life": "1000",
+        "Reward_ItemIDs": "119",
+        "Reward_Counts": "2"
+    },
+    {
+        "Level": 10,
+        "Xp": 554,
+        "GiftRatio": "100",
+        "Reward_Cash": "100",
+        "Reward_Life": "1000",
+        "Reward_ItemIDs": "117",
+        "Reward_Counts": "2"
+    },
+    {
+        "Level": 11,
+        "Xp": 553,
+        "GiftRatio": "50,100",
+        "Reward_Cash": "50,100",
+        "Reward_Life": "250,1050",
+        "Reward_ItemIDs": "117,118",
+        "Reward_Counts": "2,2"
+    },
+    {
+        "Level": 12,
+        "Xp": 605,
+        "GiftRatio": "50,100",
+        "Reward_Cash": "50,100",
+        "Reward_Life": "250,1050",
+        "Reward_ItemIDs": "117,118",
+        "Reward_Counts": "2,2"
+    },
+    {
+        "Level": 13,
+        "Xp": 758,
+        "GiftRatio": "50,100",
+        "Reward_Cash": "50,100",
+        "Reward_Life": "250,1050",
+        "Reward_ItemIDs": "117,118",
+        "Reward_Counts": "2,2"
+    },
+    {
+        "Level": 14,
+        "Xp": 1093,
+        "GiftRatio": "50,100",
+        "Reward_Cash": "50,100",
+        "Reward_Life": "250,1050",
+        "Reward_ItemIDs": "117,118",
+        "Reward_Counts": "2,2"
+    },
+    {
+        "Level": 15,
+        "Xp": 1287,
+        "GiftRatio": "50,100",
+        "Reward_Cash": "50,100",
+        "Reward_Life": "250,1050",
+        "Reward_ItemIDs": "118,119",
+        "Reward_Counts": "2,2"
+    },
+    {
+        "Level": 16,
+        "Xp": 1507,
+        "GiftRatio": "50,100",
+        "Reward_Cash": "50,100",
+        "Reward_Life": "250,1050",
+        "Reward_ItemIDs": "118,119",
+        "Reward_Counts": "2,2"
+    },
+    {
+        "Level": 17,
+        "Xp": 1709,
+        "GiftRatio": "50,100",
+        "Reward_Cash": "50,100",
+        "Reward_Life": "250,1050",
+        "Reward_ItemIDs": "118,119",
+        "Reward_Counts": "2,2"
+    },
+    {
+        "Level": 18,
+        "Xp": 1966,
+        "GiftRatio": "50,100",
+        "Reward_Cash": "50,100",
+        "Reward_Life": "250,1050",
+        "Reward_ItemIDs": "118,119",
+        "Reward_Counts": "2,2"
+    },
+    {
+        "Level": 19,
+        "Xp": 2973,
+        "GiftRatio": "50,100",
+        "Reward_Cash": "50,100",
+        "Reward_Life": "250,1050",
+        "Reward_ItemIDs": "117,119",
+        "Reward_Counts": "2,2"
+    },
+    {
+        "Level": 20,
+        "Xp": 3391,
+        "GiftRatio": "50,100",
+        "Reward_Cash": "50,100",
+        "Reward_Life": "250,1050",
+        "Reward_ItemIDs": "117,119",
+        "Reward_Counts": "2,2"
+    },
+    {
+        "Level": 21,
+        "Xp": 3635,
+        "GiftRatio": "35,70,100",
+        "Reward_Cash": "50,50,100",
+        "Reward_Life": "350,550,2050",
+        "Reward_ItemIDs": "117,118,119",
+        "Reward_Counts": "4,4,4"
+    },
+    {
+        "Level": 22,
+        "Xp": 4147,
+        "GiftRatio": "35,70,100",
+        "Reward_Cash": "50,50,100",
+        "Reward_Life": "350,550,2050",
+        "Reward_ItemIDs": "117,118,119",
+        "Reward_Counts": "4,4,4"
+    },
+    {
+        "Level": 23,
+        "Xp": 4659,
+        "GiftRatio": "35,70,100",
+        "Reward_Cash": "50,50,100",
+        "Reward_Life": "350,550,2050",
+        "Reward_ItemIDs": "117,118,119",
+        "Reward_Counts": "4,4,4"
+    },
+    {
+        "Level": 24,
+        "Xp": 6035,
+        "GiftRatio": "35,70,100",
+        "Reward_Cash": "50,50,100",
+        "Reward_Life": "350,550,2050",
+        "Reward_ItemIDs": "117,118,119",
+        "Reward_Counts": "4,4,4"
+    },
+    {
+        "Level": 25,
+        "Xp": 7062,
+        "GiftRatio": "35,70,100",
+        "Reward_Cash": "50,50,100",
+        "Reward_Life": "350,550,2050",
+        "Reward_ItemIDs": "117,118,119",
+        "Reward_Counts": "4,4,4"
+    },
+    {
+        "Level": 26,
+        "Xp": 8168,
+        "GiftRatio": "35,70,100",
+        "Reward_Cash": "50,50,100",
+        "Reward_Life": "350,550,2050",
+        "Reward_ItemIDs": "117,118,119",
+        "Reward_Counts": "4,4,4"
+    },
+    {
+        "Level": 27,
+        "Xp": 9446,
+        "GiftRatio": "35,70,100",
+        "Reward_Cash": "50,50,100",
+        "Reward_Life": "350,550,2050",
+        "Reward_ItemIDs": "117,118,119",
+        "Reward_Counts": "4,4,4"
+    },
+    {
+        "Level": 28,
+        "Xp": 10880,
+        "GiftRatio": "35,70,100",
+        "Reward_Cash": "50,50,100",
+        "Reward_Life": "350,550,2050",
+        "Reward_ItemIDs": "117,118,119",
+        "Reward_Counts": "4,4,4"
+    },
+    {
+        "Level": 29,
+        "Xp": 14438,
+        "GiftRatio": "35,70,100",
+        "Reward_Cash": "50,50,100",
+        "Reward_Life": "350,550,2050",
+        "Reward_ItemIDs": "117,118,119",
+        "Reward_Counts": "4,4,4"
+    },
+    {
+        "Level": 30,
+        "Xp": 16293,
+        "GiftRatio": "35,70,100",
+        "Reward_Cash": "50,50,100",
+        "Reward_Life": "350,550,2050",
+        "Reward_ItemIDs": "117,118,119",
+        "Reward_Counts": "4,4,4"
+    },
+    {
+        "Level": 31,
+        "Xp": 18574,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 32,
+        "Xp": 20798,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 33,
+        "Xp": 23473,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 34,
+        "Xp": 27739,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 35,
+        "Xp": 30954,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 36,
+        "Xp": 36647,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 37,
+        "Xp": 40015,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 38,
+        "Xp": 43713,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 39,
+        "Xp": 54806,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 40,
+        "Xp": 59923,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 41,
+        "Xp": 64789,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 42,
+        "Xp": 69482,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 43,
+        "Xp": 75309,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 44,
+        "Xp": 86799,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 45,
+        "Xp": 92339,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 46,
+        "Xp": 111585,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 47,
+        "Xp": 118232,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 48,
+        "Xp": 128370,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 49,
+        "Xp": 135541,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 50,
+        "Xp": 142713,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 51,
+        "Xp": 109320,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 52,
+        "Xp": 116820,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 53,
+        "Xp": 124320,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 54,
+        "Xp": 131820,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 55,
+        "Xp": 139320,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 56,
+        "Xp": 146820,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 57,
+        "Xp": 154320,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 58,
+        "Xp": 161820,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 59,
+        "Xp": 169320,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 60,
+        "Xp": 176820,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 61,
+        "Xp": 184320,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 62,
+        "Xp": 191820,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 63,
+        "Xp": 199320,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 64,
+        "Xp": 206820,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 65,
+        "Xp": 214320,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 66,
+        "Xp": 221820,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 67,
+        "Xp": 229320,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 68,
+        "Xp": 236820,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 69,
+        "Xp": 244320,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 70,
+        "Xp": 251820,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 71,
+        "Xp": 259320,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 72,
+        "Xp": 266820,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 73,
+        "Xp": 274320,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 74,
+        "Xp": 281820,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 75,
+        "Xp": 289320,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 76,
+        "Xp": 296820,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 77,
+        "Xp": 304320,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 78,
+        "Xp": 311820,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 79,
+        "Xp": 319320,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 80,
+        "Xp": 326820,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 81,
+        "Xp": 334320,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 82,
+        "Xp": 341820,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 83,
+        "Xp": 349320,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 84,
+        "Xp": 356820,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 85,
+        "Xp": 364320,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 86,
+        "Xp": 371820,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 87,
+        "Xp": 379320,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 88,
+        "Xp": 386820,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 89,
+        "Xp": 394320,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 90,
+        "Xp": 401820,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 91,
+        "Xp": 409320,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 92,
+        "Xp": 416820,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 93,
+        "Xp": 424320,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 94,
+        "Xp": 431820,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 95,
+        "Xp": 439320,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 96,
+        "Xp": 446820,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 97,
+        "Xp": 454320,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 98,
+        "Xp": 461820,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 99,
+        "Xp": 469320,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 100,
+        "Xp": 476820,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 101,
+        "Xp": 484320,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 102,
+        "Xp": 491820,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 103,
+        "Xp": 499320,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 104,
+        "Xp": 506820,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 105,
+        "Xp": 514320,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 106,
+        "Xp": 521820,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 107,
+        "Xp": 529320,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 108,
+        "Xp": 536820,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 109,
+        "Xp": 544320,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 110,
+        "Xp": 551820,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 111,
+        "Xp": 559320,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 112,
+        "Xp": 566820,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 113,
+        "Xp": 574320,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 114,
+        "Xp": 581820,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 115,
+        "Xp": 589320,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 116,
+        "Xp": 596820,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 117,
+        "Xp": 604320,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 118,
+        "Xp": 611820,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 119,
+        "Xp": 619320,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 120,
+        "Xp": 626820,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 121,
+        "Xp": 634320,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 122,
+        "Xp": 641820,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 123,
+        "Xp": 649320,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 124,
+        "Xp": 656820,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 125,
+        "Xp": 664320,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 126,
+        "Xp": 671820,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 127,
+        "Xp": 679320,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 128,
+        "Xp": 686820,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 129,
+        "Xp": 694320,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 130,
+        "Xp": 701820,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 131,
+        "Xp": 709320,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 132,
+        "Xp": 716820,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 133,
+        "Xp": 724320,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 134,
+        "Xp": 731820,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 135,
+        "Xp": 739320,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 136,
+        "Xp": 746820,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 137,
+        "Xp": 754320,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 138,
+        "Xp": 761820,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 139,
+        "Xp": 769320,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 140,
+        "Xp": 776820,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 141,
+        "Xp": 784320,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 142,
+        "Xp": 791820,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 143,
+        "Xp": 799320,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 144,
+        "Xp": 806820,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 145,
+        "Xp": 814320,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 146,
+        "Xp": 821820,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 147,
+        "Xp": 829320,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    },
+    {
+        "Level": 148,
+        "Xp": 836820,
+        "GiftRatio": "25,50,75,100",
+        "Reward_Cash": "50,50,50,100",
+        "Reward_Life": "150,350,550,2050",
+        "Reward_ItemIDs": "112,117,118,119",
+        "Reward_Counts": "2,4,4,4"
+    }
+]

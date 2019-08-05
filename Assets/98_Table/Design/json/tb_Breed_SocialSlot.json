@@ -1,0 +1,52 @@
+﻿[
+    {
+        "ID": 1,
+        "Purchase_Able": 0,
+        "InputCash_Count": 0
+    },
+    {
+        "ID": 2,
+        "Purchase_Able": 0,
+        "InputCash_Count": 0
+    },
+    {
+        "ID": 3,
+        "Purchase_Able": 1,
+        "InputCash_Count": 100
+    },
+    {
+        "ID": 4,
+        "Purchase_Able": 1,
+        "InputCash_Count": 200
+    },
+    {
+        "ID": 5,
+        "Purchase_Able": 1,
+        "InputCash_Count": 300
+    },
+    {
+        "ID": 6,
+        "Purchase_Able": 1,
+        "InputCash_Count": 400
+    },
+    {
+        "ID": 7,
+        "Purchase_Able": 1,
+        "InputCash_Count": 500
+    },
+    {
+        "ID": 8,
+        "Purchase_Able": 1,
+        "InputCash_Count": 600
+    },
+    {
+        "ID": 9,
+        "Purchase_Able": 1,
+        "InputCash_Count": 700
+    },
+    {
+        "ID": 10,
+        "Purchase_Able": 1,
+        "InputCash_Count": 800
+    }
+]

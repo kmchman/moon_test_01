@@ -1,0 +1,776 @@
+﻿[
+    {
+        "ID": 1,
+        "ProfileType": "SNS_FACEBOOK",
+        "Unlock_Fish": 0,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 2,
+        "ProfileType": "SNS_TWITTER",
+        "Unlock_Fish": 0,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 101,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 900101,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 102,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 900102,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 103,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 900103,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 104,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 900104,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 105,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 900105,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 201,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 900201,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 202,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 900202,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 203,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 900203,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 204,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 900204,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 205,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 900205,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 301,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 900301,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 302,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 900302,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 303,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 900303,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 304,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 900304,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 305,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 900305,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 401,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 900401,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 402,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 900402,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 403,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 900403,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 404,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 900404,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 405,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 900405,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 501,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 900501,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 502,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 900502,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 503,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 900503,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 504,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 900504,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 505,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 900505,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 601,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 900601,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 602,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 900602,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 603,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 900603,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 604,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 900604,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 605,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 900605,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 701,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 900701,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 702,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 900702,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 703,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 900703,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 704,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 900704,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 705,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 900705,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 801,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 900801,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 802,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 900802,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 803,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 900803,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 804,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 900804,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 805,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 900805,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 901,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 900901,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 902,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 900902,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 903,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 900903,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 904,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 900904,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 905,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 900905,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 1001,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 901001,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 1002,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 901002,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 1003,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 901003,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 1004,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 901004,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 1005,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 901005,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 1101,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 901101,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 1102,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 901102,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 1103,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 901103,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 1104,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 901104,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 1105,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 901105,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 1201,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 901201,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 1202,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 901202,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 1203,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 901203,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 1204,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 901204,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 1205,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 901205,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 1301,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 901301,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 1302,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 901302,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 1303,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 901303,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 1304,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 901304,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 1305,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 901305,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 1401,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 901401,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 1402,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 901402,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 1403,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 901403,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 1404,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 901404,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 1405,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 901405,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 1501,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 901501,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 1502,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 901502,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 1503,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 901503,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 1504,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 901504,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 1505,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 901505,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 1601,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 901601,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 1602,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 901602,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 1603,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 901603,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 1604,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 901604,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 1605,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 901605,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 1701,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 901701,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 1702,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 901702,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 1703,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 901703,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 1704,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 901704,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 1705,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 901705,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 1801,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 901801,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 1802,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 901802,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 1803,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 901803,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 1804,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 901804,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 1805,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 901805,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 1901,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 901901,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 1902,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 901902,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 1903,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 901903,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 1904,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 901904,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 1905,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 901905,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 2001,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 902001,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 2002,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 902002,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 2003,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 902003,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 2004,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 902004,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 2005,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 902005,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 2101,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 902101,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 2102,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 902102,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 2103,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 902103,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 2104,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 902104,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 2105,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 902105,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 2201,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 902201,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 2202,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 902202,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 2203,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 902203,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 2204,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 902204,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 2205,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 902205,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 2301,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 902301,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 2302,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 902302,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 2303,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 902303,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 2304,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 902304,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 2305,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 902305,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 2401,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 902401,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 2402,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 902402,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 2403,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 902403,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 2404,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 902404,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 2405,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 902405,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 2501,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 902501,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 2502,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 902502,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 2503,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 902503,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 2504,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 902504,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 2505,
+        "ProfileType": "Fish",
+        "Unlock_Fish": 902505,
+        "Unlock_CostumeSet": 0
+    },
+    {
+        "ID": 20010,
+        "ProfileType": "CostumeSet",
+        "Unlock_Fish": 0,
+        "Unlock_CostumeSet": 1
+    },
+    {
+        "ID": 20020,
+        "ProfileType": "CostumeSet",
+        "Unlock_Fish": 0,
+        "Unlock_CostumeSet": 2
+    }
+]

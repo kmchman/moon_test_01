@@ -1,0 +1,2378 @@
+﻿[
+    {
+        "ID": 1,
+        "Index_X": 1,
+        "Index_Y": 1,
+        "Position_X": 0,
+        "Position_Y": 0,
+        "Starting_Open": 1,
+        "Stone_Open": 1
+    },
+    {
+        "ID": 2,
+        "Index_X": 1,
+        "Index_Y": -1,
+        "Position_X": 0,
+        "Position_Y": -3,
+        "Starting_Open": 1,
+        "Stone_Open": 1
+    },
+    {
+        "ID": 3,
+        "Index_X": -1,
+        "Index_Y": -1,
+        "Position_X": -4,
+        "Position_Y": -3,
+        "Starting_Open": 1,
+        "Stone_Open": 1
+    },
+    {
+        "ID": 4,
+        "Index_X": -1,
+        "Index_Y": 1,
+        "Position_X": -4,
+        "Position_Y": 0,
+        "Starting_Open": 1,
+        "Stone_Open": 1
+    },
+    {
+        "ID": 5,
+        "Index_X": -1,
+        "Index_Y": 2,
+        "Position_X": -4,
+        "Position_Y": 3,
+        "Starting_Open": 1,
+        "Stone_Open": 1
+    },
+    {
+        "ID": 6,
+        "Index_X": 1,
+        "Index_Y": 2,
+        "Position_X": 0,
+        "Position_Y": 3,
+        "Starting_Open": 1,
+        "Stone_Open": 1
+    },
+    {
+        "ID": 7,
+        "Index_X": 2,
+        "Index_Y": 2,
+        "Position_X": 4,
+        "Position_Y": 3,
+        "Starting_Open": 1,
+        "Stone_Open": 1
+    },
+    {
+        "ID": 8,
+        "Index_X": 2,
+        "Index_Y": 1,
+        "Position_X": 4,
+        "Position_Y": 0,
+        "Starting_Open": 1,
+        "Stone_Open": 1
+    },
+    {
+        "ID": 9,
+        "Index_X": 2,
+        "Index_Y": -1,
+        "Position_X": 4,
+        "Position_Y": -3,
+        "Starting_Open": 1,
+        "Stone_Open": 1
+    },
+    {
+        "ID": 10,
+        "Index_X": 2,
+        "Index_Y": -2,
+        "Position_X": 4,
+        "Position_Y": -6,
+        "Starting_Open": 1,
+        "Stone_Open": 1
+    },
+    {
+        "ID": 11,
+        "Index_X": 1,
+        "Index_Y": -2,
+        "Position_X": 0,
+        "Position_Y": -6,
+        "Starting_Open": 1,
+        "Stone_Open": 1
+    },
+    {
+        "ID": 12,
+        "Index_X": -1,
+        "Index_Y": -2,
+        "Position_X": -4,
+        "Position_Y": -6,
+        "Starting_Open": 1,
+        "Stone_Open": 1
+    },
+    {
+        "ID": 13,
+        "Index_X": -2,
+        "Index_Y": -2,
+        "Position_X": -8,
+        "Position_Y": -6,
+        "Starting_Open": 1,
+        "Stone_Open": 1
+    },
+    {
+        "ID": 14,
+        "Index_X": -2,
+        "Index_Y": -1,
+        "Position_X": -8,
+        "Position_Y": -3,
+        "Starting_Open": 1,
+        "Stone_Open": 1
+    },
+    {
+        "ID": 15,
+        "Index_X": -2,
+        "Index_Y": 1,
+        "Position_X": -8,
+        "Position_Y": 0,
+        "Starting_Open": 1,
+        "Stone_Open": 1
+    },
+    {
+        "ID": 16,
+        "Index_X": -2,
+        "Index_Y": 2,
+        "Position_X": -8,
+        "Position_Y": 3,
+        "Starting_Open": 1,
+        "Stone_Open": 1
+    },
+    {
+        "ID": 17,
+        "Index_X": -2,
+        "Index_Y": 3,
+        "Position_X": -8,
+        "Position_Y": 6,
+        "Starting_Open": 1,
+        "Stone_Open": 1
+    },
+    {
+        "ID": 18,
+        "Index_X": -1,
+        "Index_Y": 3,
+        "Position_X": -4,
+        "Position_Y": 6,
+        "Starting_Open": 1,
+        "Stone_Open": 1
+    },
+    {
+        "ID": 19,
+        "Index_X": 1,
+        "Index_Y": 3,
+        "Position_X": 0,
+        "Position_Y": 6,
+        "Starting_Open": 1,
+        "Stone_Open": 1
+    },
+    {
+        "ID": 20,
+        "Index_X": 2,
+        "Index_Y": 3,
+        "Position_X": 4,
+        "Position_Y": 6,
+        "Starting_Open": 1,
+        "Stone_Open": 1
+    },
+    {
+        "ID": 21,
+        "Index_X": 3,
+        "Index_Y": 3,
+        "Position_X": 8,
+        "Position_Y": 6,
+        "Starting_Open": 0,
+        "Stone_Open": 2
+    },
+    {
+        "ID": 22,
+        "Index_X": 3,
+        "Index_Y": 2,
+        "Position_X": 8,
+        "Position_Y": 3,
+        "Starting_Open": 0,
+        "Stone_Open": 2
+    },
+    {
+        "ID": 23,
+        "Index_X": 3,
+        "Index_Y": 1,
+        "Position_X": 8,
+        "Position_Y": 0,
+        "Starting_Open": 1,
+        "Stone_Open": 1
+    },
+    {
+        "ID": 24,
+        "Index_X": 3,
+        "Index_Y": -1,
+        "Position_X": 8,
+        "Position_Y": -3,
+        "Starting_Open": 1,
+        "Stone_Open": 1
+    },
+    {
+        "ID": 25,
+        "Index_X": 3,
+        "Index_Y": -2,
+        "Position_X": 8,
+        "Position_Y": -6,
+        "Starting_Open": 1,
+        "Stone_Open": 1
+    },
+    {
+        "ID": 26,
+        "Index_X": 3,
+        "Index_Y": -3,
+        "Position_X": 8,
+        "Position_Y": -9,
+        "Starting_Open": 0,
+        "Stone_Open": 2
+    },
+    {
+        "ID": 27,
+        "Index_X": 2,
+        "Index_Y": -3,
+        "Position_X": 4,
+        "Position_Y": -9,
+        "Starting_Open": 1,
+        "Stone_Open": 1
+    },
+    {
+        "ID": 28,
+        "Index_X": 1,
+        "Index_Y": -3,
+        "Position_X": 0,
+        "Position_Y": -9,
+        "Starting_Open": 1,
+        "Stone_Open": 1
+    },
+    {
+        "ID": 29,
+        "Index_X": -1,
+        "Index_Y": -3,
+        "Position_X": -4,
+        "Position_Y": -9,
+        "Starting_Open": 1,
+        "Stone_Open": 1
+    },
+    {
+        "ID": 30,
+        "Index_X": -2,
+        "Index_Y": -3,
+        "Position_X": -8,
+        "Position_Y": -9,
+        "Starting_Open": 1,
+        "Stone_Open": 1
+    },
+    {
+        "ID": 31,
+        "Index_X": -3,
+        "Index_Y": -3,
+        "Position_X": -12,
+        "Position_Y": -9,
+        "Starting_Open": 0,
+        "Stone_Open": 2
+    },
+    {
+        "ID": 32,
+        "Index_X": -3,
+        "Index_Y": -2,
+        "Position_X": -12,
+        "Position_Y": -6,
+        "Starting_Open": 0,
+        "Stone_Open": 2
+    },
+    {
+        "ID": 33,
+        "Index_X": -3,
+        "Index_Y": -1,
+        "Position_X": -12,
+        "Position_Y": -3,
+        "Starting_Open": 1,
+        "Stone_Open": 1
+    },
+    {
+        "ID": 34,
+        "Index_X": -3,
+        "Index_Y": 1,
+        "Position_X": -12,
+        "Position_Y": 0,
+        "Starting_Open": 1,
+        "Stone_Open": 1
+    },
+    {
+        "ID": 35,
+        "Index_X": -3,
+        "Index_Y": 2,
+        "Position_X": -12,
+        "Position_Y": 3,
+        "Starting_Open": 1,
+        "Stone_Open": 1
+    },
+    {
+        "ID": 36,
+        "Index_X": -3,
+        "Index_Y": 3,
+        "Position_X": -12,
+        "Position_Y": 6,
+        "Starting_Open": 0,
+        "Stone_Open": 2
+    },
+    {
+        "ID": 37,
+        "Index_X": -3,
+        "Index_Y": 4,
+        "Position_X": -12,
+        "Position_Y": 9,
+        "Starting_Open": 0,
+        "Stone_Open": 2
+    },
+    {
+        "ID": 38,
+        "Index_X": -2,
+        "Index_Y": 4,
+        "Position_X": -8,
+        "Position_Y": 9,
+        "Starting_Open": 0,
+        "Stone_Open": 2
+    },
+    {
+        "ID": 39,
+        "Index_X": -1,
+        "Index_Y": 4,
+        "Position_X": -4,
+        "Position_Y": 9,
+        "Starting_Open": 0,
+        "Stone_Open": 2
+    },
+    {
+        "ID": 40,
+        "Index_X": 1,
+        "Index_Y": 4,
+        "Position_X": 0,
+        "Position_Y": 9,
+        "Starting_Open": 0,
+        "Stone_Open": 2
+    },
+    {
+        "ID": 41,
+        "Index_X": 2,
+        "Index_Y": 4,
+        "Position_X": 4,
+        "Position_Y": 9,
+        "Starting_Open": 0,
+        "Stone_Open": 2
+    },
+    {
+        "ID": 42,
+        "Index_X": 3,
+        "Index_Y": 4,
+        "Position_X": 8,
+        "Position_Y": 9,
+        "Starting_Open": 0,
+        "Stone_Open": 2
+    },
+    {
+        "ID": 43,
+        "Index_X": 4,
+        "Index_Y": 4,
+        "Position_X": 12,
+        "Position_Y": 9,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 44,
+        "Index_X": 4,
+        "Index_Y": 3,
+        "Position_X": 12,
+        "Position_Y": 6,
+        "Starting_Open": 0,
+        "Stone_Open": 2
+    },
+    {
+        "ID": 45,
+        "Index_X": 4,
+        "Index_Y": 2,
+        "Position_X": 12,
+        "Position_Y": 3,
+        "Starting_Open": 0,
+        "Stone_Open": 2
+    },
+    {
+        "ID": 46,
+        "Index_X": 4,
+        "Index_Y": 1,
+        "Position_X": 12,
+        "Position_Y": 0,
+        "Starting_Open": 0,
+        "Stone_Open": 2
+    },
+    {
+        "ID": 47,
+        "Index_X": 4,
+        "Index_Y": -1,
+        "Position_X": 12,
+        "Position_Y": -3,
+        "Starting_Open": 0,
+        "Stone_Open": 2
+    },
+    {
+        "ID": 48,
+        "Index_X": 4,
+        "Index_Y": -2,
+        "Position_X": 12,
+        "Position_Y": -6,
+        "Starting_Open": 0,
+        "Stone_Open": 2
+    },
+    {
+        "ID": 49,
+        "Index_X": 4,
+        "Index_Y": -3,
+        "Position_X": 12,
+        "Position_Y": -9,
+        "Starting_Open": 0,
+        "Stone_Open": 2
+    },
+    {
+        "ID": 50,
+        "Index_X": 4,
+        "Index_Y": -4,
+        "Position_X": 12,
+        "Position_Y": -12,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 51,
+        "Index_X": 3,
+        "Index_Y": -4,
+        "Position_X": 8,
+        "Position_Y": -12,
+        "Starting_Open": 0,
+        "Stone_Open": 2
+    },
+    {
+        "ID": 52,
+        "Index_X": 2,
+        "Index_Y": -4,
+        "Position_X": 4,
+        "Position_Y": -12,
+        "Starting_Open": 0,
+        "Stone_Open": 2
+    },
+    {
+        "ID": 53,
+        "Index_X": 1,
+        "Index_Y": -4,
+        "Position_X": 0,
+        "Position_Y": -12,
+        "Starting_Open": 0,
+        "Stone_Open": 2
+    },
+    {
+        "ID": 54,
+        "Index_X": -1,
+        "Index_Y": -4,
+        "Position_X": -4,
+        "Position_Y": -12,
+        "Starting_Open": 0,
+        "Stone_Open": 2
+    },
+    {
+        "ID": 55,
+        "Index_X": -2,
+        "Index_Y": -4,
+        "Position_X": -8,
+        "Position_Y": -12,
+        "Starting_Open": 0,
+        "Stone_Open": 2
+    },
+    {
+        "ID": 56,
+        "Index_X": -3,
+        "Index_Y": -4,
+        "Position_X": -12,
+        "Position_Y": -12,
+        "Starting_Open": 0,
+        "Stone_Open": 2
+    },
+    {
+        "ID": 57,
+        "Index_X": -4,
+        "Index_Y": -4,
+        "Position_X": -16,
+        "Position_Y": -12,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 58,
+        "Index_X": -4,
+        "Index_Y": -3,
+        "Position_X": -16,
+        "Position_Y": -9,
+        "Starting_Open": 0,
+        "Stone_Open": 2
+    },
+    {
+        "ID": 59,
+        "Index_X": -4,
+        "Index_Y": -2,
+        "Position_X": -16,
+        "Position_Y": -6,
+        "Starting_Open": 0,
+        "Stone_Open": 2
+    },
+    {
+        "ID": 60,
+        "Index_X": -4,
+        "Index_Y": -1,
+        "Position_X": -16,
+        "Position_Y": -3,
+        "Starting_Open": 0,
+        "Stone_Open": 2
+    },
+    {
+        "ID": 61,
+        "Index_X": -4,
+        "Index_Y": 1,
+        "Position_X": -16,
+        "Position_Y": 0,
+        "Starting_Open": 0,
+        "Stone_Open": 2
+    },
+    {
+        "ID": 62,
+        "Index_X": -4,
+        "Index_Y": 2,
+        "Position_X": -16,
+        "Position_Y": 3,
+        "Starting_Open": 0,
+        "Stone_Open": 2
+    },
+    {
+        "ID": 63,
+        "Index_X": -4,
+        "Index_Y": 3,
+        "Position_X": -16,
+        "Position_Y": 6,
+        "Starting_Open": 0,
+        "Stone_Open": 2
+    },
+    {
+        "ID": 64,
+        "Index_X": -4,
+        "Index_Y": 4,
+        "Position_X": -16,
+        "Position_Y": 9,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 65,
+        "Index_X": -4,
+        "Index_Y": 5,
+        "Position_X": -16,
+        "Position_Y": 12,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 66,
+        "Index_X": -3,
+        "Index_Y": 5,
+        "Position_X": -12,
+        "Position_Y": 12,
+        "Starting_Open": 0,
+        "Stone_Open": 2
+    },
+    {
+        "ID": 67,
+        "Index_X": -2,
+        "Index_Y": 5,
+        "Position_X": -8,
+        "Position_Y": 12,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 68,
+        "Index_X": -1,
+        "Index_Y": 5,
+        "Position_X": -4,
+        "Position_Y": 12,
+        "Starting_Open": 0,
+        "Stone_Open": 2
+    },
+    {
+        "ID": 69,
+        "Index_X": 1,
+        "Index_Y": 5,
+        "Position_X": 0,
+        "Position_Y": 12,
+        "Starting_Open": 0,
+        "Stone_Open": 2
+    },
+    {
+        "ID": 70,
+        "Index_X": 2,
+        "Index_Y": 5,
+        "Position_X": 4,
+        "Position_Y": 12,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 71,
+        "Index_X": 3,
+        "Index_Y": 5,
+        "Position_X": 8,
+        "Position_Y": 12,
+        "Starting_Open": 0,
+        "Stone_Open": 2
+    },
+    {
+        "ID": 72,
+        "Index_X": 4,
+        "Index_Y": 5,
+        "Position_X": 12,
+        "Position_Y": 12,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 73,
+        "Index_X": 5,
+        "Index_Y": 5,
+        "Position_X": 16,
+        "Position_Y": 12,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 74,
+        "Index_X": 5,
+        "Index_Y": 4,
+        "Position_X": 16,
+        "Position_Y": 9,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 75,
+        "Index_X": 5,
+        "Index_Y": 3,
+        "Position_X": 16,
+        "Position_Y": 6,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 76,
+        "Index_X": 5,
+        "Index_Y": 2,
+        "Position_X": 16,
+        "Position_Y": 3,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 77,
+        "Index_X": 5,
+        "Index_Y": 1,
+        "Position_X": 16,
+        "Position_Y": 0,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 78,
+        "Index_X": 5,
+        "Index_Y": -1,
+        "Position_X": 16,
+        "Position_Y": -3,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 79,
+        "Index_X": 5,
+        "Index_Y": -2,
+        "Position_X": 16,
+        "Position_Y": -6,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 80,
+        "Index_X": 5,
+        "Index_Y": -3,
+        "Position_X": 16,
+        "Position_Y": -9,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 81,
+        "Index_X": 5,
+        "Index_Y": -4,
+        "Position_X": 16,
+        "Position_Y": -12,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 82,
+        "Index_X": 5,
+        "Index_Y": -5,
+        "Position_X": 16,
+        "Position_Y": -15,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 83,
+        "Index_X": 4,
+        "Index_Y": -5,
+        "Position_X": 12,
+        "Position_Y": -15,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 84,
+        "Index_X": 3,
+        "Index_Y": -5,
+        "Position_X": 8,
+        "Position_Y": -15,
+        "Starting_Open": 0,
+        "Stone_Open": 2
+    },
+    {
+        "ID": 85,
+        "Index_X": 2,
+        "Index_Y": -5,
+        "Position_X": 4,
+        "Position_Y": -15,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 86,
+        "Index_X": 1,
+        "Index_Y": -5,
+        "Position_X": 0,
+        "Position_Y": -15,
+        "Starting_Open": 0,
+        "Stone_Open": 2
+    },
+    {
+        "ID": 87,
+        "Index_X": -1,
+        "Index_Y": -5,
+        "Position_X": -4,
+        "Position_Y": -15,
+        "Starting_Open": 0,
+        "Stone_Open": 2
+    },
+    {
+        "ID": 88,
+        "Index_X": -2,
+        "Index_Y": -5,
+        "Position_X": -8,
+        "Position_Y": -15,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 89,
+        "Index_X": -3,
+        "Index_Y": -5,
+        "Position_X": -12,
+        "Position_Y": -15,
+        "Starting_Open": 0,
+        "Stone_Open": 2
+    },
+    {
+        "ID": 90,
+        "Index_X": -4,
+        "Index_Y": -5,
+        "Position_X": -16,
+        "Position_Y": -15,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 91,
+        "Index_X": -5,
+        "Index_Y": -5,
+        "Position_X": -20,
+        "Position_Y": -15,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 92,
+        "Index_X": -5,
+        "Index_Y": -4,
+        "Position_X": -20,
+        "Position_Y": -12,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 93,
+        "Index_X": -5,
+        "Index_Y": -3,
+        "Position_X": -20,
+        "Position_Y": -9,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 94,
+        "Index_X": -5,
+        "Index_Y": -2,
+        "Position_X": -20,
+        "Position_Y": -6,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 95,
+        "Index_X": -5,
+        "Index_Y": -1,
+        "Position_X": -20,
+        "Position_Y": -3,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 96,
+        "Index_X": -5,
+        "Index_Y": 1,
+        "Position_X": -20,
+        "Position_Y": 0,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 97,
+        "Index_X": -5,
+        "Index_Y": 2,
+        "Position_X": -20,
+        "Position_Y": 3,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 98,
+        "Index_X": -5,
+        "Index_Y": 3,
+        "Position_X": -20,
+        "Position_Y": 6,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 99,
+        "Index_X": -5,
+        "Index_Y": 4,
+        "Position_X": -20,
+        "Position_Y": 9,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 100,
+        "Index_X": -5,
+        "Index_Y": 5,
+        "Position_X": -20,
+        "Position_Y": 12,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 101,
+        "Index_X": -5,
+        "Index_Y": 6,
+        "Position_X": -20,
+        "Position_Y": 15,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 102,
+        "Index_X": -4,
+        "Index_Y": 6,
+        "Position_X": -16,
+        "Position_Y": 15,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 103,
+        "Index_X": -3,
+        "Index_Y": 6,
+        "Position_X": -12,
+        "Position_Y": 15,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 104,
+        "Index_X": -2,
+        "Index_Y": 6,
+        "Position_X": -8,
+        "Position_Y": 15,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 105,
+        "Index_X": -1,
+        "Index_Y": 6,
+        "Position_X": -4,
+        "Position_Y": 15,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 106,
+        "Index_X": 1,
+        "Index_Y": 6,
+        "Position_X": 0,
+        "Position_Y": 15,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 107,
+        "Index_X": 2,
+        "Index_Y": 6,
+        "Position_X": 4,
+        "Position_Y": 15,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 108,
+        "Index_X": 3,
+        "Index_Y": 6,
+        "Position_X": 8,
+        "Position_Y": 15,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 109,
+        "Index_X": 4,
+        "Index_Y": 6,
+        "Position_X": 12,
+        "Position_Y": 15,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 110,
+        "Index_X": 5,
+        "Index_Y": 6,
+        "Position_X": 16,
+        "Position_Y": 15,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 111,
+        "Index_X": 6,
+        "Index_Y": 6,
+        "Position_X": 20,
+        "Position_Y": 15,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 112,
+        "Index_X": 6,
+        "Index_Y": 5,
+        "Position_X": 20,
+        "Position_Y": 12,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 113,
+        "Index_X": 6,
+        "Index_Y": 4,
+        "Position_X": 20,
+        "Position_Y": 9,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 114,
+        "Index_X": 6,
+        "Index_Y": 3,
+        "Position_X": 20,
+        "Position_Y": 6,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 115,
+        "Index_X": 6,
+        "Index_Y": 2,
+        "Position_X": 20,
+        "Position_Y": 3,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 116,
+        "Index_X": 6,
+        "Index_Y": 1,
+        "Position_X": 20,
+        "Position_Y": 0,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 117,
+        "Index_X": 6,
+        "Index_Y": -1,
+        "Position_X": 20,
+        "Position_Y": -3,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 118,
+        "Index_X": 6,
+        "Index_Y": -2,
+        "Position_X": 20,
+        "Position_Y": -6,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 119,
+        "Index_X": 6,
+        "Index_Y": -3,
+        "Position_X": 20,
+        "Position_Y": -9,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 120,
+        "Index_X": 6,
+        "Index_Y": -4,
+        "Position_X": 20,
+        "Position_Y": -12,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 121,
+        "Index_X": 6,
+        "Index_Y": -5,
+        "Position_X": 20,
+        "Position_Y": -15,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 122,
+        "Index_X": 6,
+        "Index_Y": -6,
+        "Position_X": 20,
+        "Position_Y": -18,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 123,
+        "Index_X": 5,
+        "Index_Y": -6,
+        "Position_X": 16,
+        "Position_Y": -18,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 124,
+        "Index_X": 4,
+        "Index_Y": -6,
+        "Position_X": 12,
+        "Position_Y": -18,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 125,
+        "Index_X": 3,
+        "Index_Y": -6,
+        "Position_X": 8,
+        "Position_Y": -18,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 126,
+        "Index_X": 2,
+        "Index_Y": -6,
+        "Position_X": 4,
+        "Position_Y": -18,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 127,
+        "Index_X": 1,
+        "Index_Y": -6,
+        "Position_X": 0,
+        "Position_Y": -18,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 128,
+        "Index_X": -1,
+        "Index_Y": -6,
+        "Position_X": -4,
+        "Position_Y": -18,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 129,
+        "Index_X": -2,
+        "Index_Y": -6,
+        "Position_X": -8,
+        "Position_Y": -18,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 130,
+        "Index_X": -3,
+        "Index_Y": -6,
+        "Position_X": -12,
+        "Position_Y": -18,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 131,
+        "Index_X": -4,
+        "Index_Y": -6,
+        "Position_X": -16,
+        "Position_Y": -18,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 132,
+        "Index_X": -5,
+        "Index_Y": -6,
+        "Position_X": -20,
+        "Position_Y": -18,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 133,
+        "Index_X": -6,
+        "Index_Y": -6,
+        "Position_X": -24,
+        "Position_Y": -18,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 134,
+        "Index_X": -6,
+        "Index_Y": -5,
+        "Position_X": -24,
+        "Position_Y": -15,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 135,
+        "Index_X": -6,
+        "Index_Y": -4,
+        "Position_X": -24,
+        "Position_Y": -12,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 136,
+        "Index_X": -6,
+        "Index_Y": -3,
+        "Position_X": -24,
+        "Position_Y": -9,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 137,
+        "Index_X": -6,
+        "Index_Y": -2,
+        "Position_X": -24,
+        "Position_Y": -6,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 138,
+        "Index_X": -6,
+        "Index_Y": -1,
+        "Position_X": -24,
+        "Position_Y": -3,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 139,
+        "Index_X": -6,
+        "Index_Y": 1,
+        "Position_X": -24,
+        "Position_Y": 0,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 140,
+        "Index_X": -6,
+        "Index_Y": 2,
+        "Position_X": -24,
+        "Position_Y": 3,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 141,
+        "Index_X": -6,
+        "Index_Y": 3,
+        "Position_X": -24,
+        "Position_Y": 6,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 142,
+        "Index_X": -6,
+        "Index_Y": 4,
+        "Position_X": -24,
+        "Position_Y": 9,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 143,
+        "Index_X": -6,
+        "Index_Y": 5,
+        "Position_X": -24,
+        "Position_Y": 12,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 144,
+        "Index_X": -6,
+        "Index_Y": 6,
+        "Position_X": -24,
+        "Position_Y": 15,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 145,
+        "Index_X": -6,
+        "Index_Y": 7,
+        "Position_X": -24,
+        "Position_Y": 18,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 146,
+        "Index_X": -5,
+        "Index_Y": 7,
+        "Position_X": -20,
+        "Position_Y": 18,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 147,
+        "Index_X": -4,
+        "Index_Y": 7,
+        "Position_X": -16,
+        "Position_Y": 18,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 148,
+        "Index_X": -3,
+        "Index_Y": 7,
+        "Position_X": -12,
+        "Position_Y": 18,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 149,
+        "Index_X": -2,
+        "Index_Y": 7,
+        "Position_X": -8,
+        "Position_Y": 18,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 150,
+        "Index_X": -1,
+        "Index_Y": 7,
+        "Position_X": -4,
+        "Position_Y": 18,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 151,
+        "Index_X": 1,
+        "Index_Y": 7,
+        "Position_X": 0,
+        "Position_Y": 18,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 152,
+        "Index_X": 2,
+        "Index_Y": 7,
+        "Position_X": 4,
+        "Position_Y": 18,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 153,
+        "Index_X": 3,
+        "Index_Y": 7,
+        "Position_X": 8,
+        "Position_Y": 18,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 154,
+        "Index_X": 4,
+        "Index_Y": 7,
+        "Position_X": 12,
+        "Position_Y": 18,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 155,
+        "Index_X": 5,
+        "Index_Y": 7,
+        "Position_X": 16,
+        "Position_Y": 18,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 156,
+        "Index_X": 6,
+        "Index_Y": 7,
+        "Position_X": 20,
+        "Position_Y": 18,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 158,
+        "Index_X": 7,
+        "Index_Y": 6,
+        "Position_X": 24,
+        "Position_Y": 15,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 159,
+        "Index_X": 7,
+        "Index_Y": 5,
+        "Position_X": 24,
+        "Position_Y": 12,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 160,
+        "Index_X": 7,
+        "Index_Y": 4,
+        "Position_X": 24,
+        "Position_Y": 9,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 161,
+        "Index_X": 7,
+        "Index_Y": 3,
+        "Position_X": 24,
+        "Position_Y": 6,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 162,
+        "Index_X": 7,
+        "Index_Y": 2,
+        "Position_X": 24,
+        "Position_Y": 3,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 163,
+        "Index_X": 7,
+        "Index_Y": 1,
+        "Position_X": 24,
+        "Position_Y": 0,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 164,
+        "Index_X": 7,
+        "Index_Y": -1,
+        "Position_X": 24,
+        "Position_Y": -3,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 165,
+        "Index_X": 7,
+        "Index_Y": -2,
+        "Position_X": 24,
+        "Position_Y": -6,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 166,
+        "Index_X": 7,
+        "Index_Y": -3,
+        "Position_X": 24,
+        "Position_Y": -9,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 167,
+        "Index_X": 7,
+        "Index_Y": -4,
+        "Position_X": 24,
+        "Position_Y": -12,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 168,
+        "Index_X": 7,
+        "Index_Y": -5,
+        "Position_X": 24,
+        "Position_Y": -15,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 169,
+        "Index_X": 7,
+        "Index_Y": -6,
+        "Position_X": 24,
+        "Position_Y": -18,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 171,
+        "Index_X": 6,
+        "Index_Y": -7,
+        "Position_X": 20,
+        "Position_Y": -21,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 172,
+        "Index_X": 5,
+        "Index_Y": -7,
+        "Position_X": 16,
+        "Position_Y": -21,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 173,
+        "Index_X": 4,
+        "Index_Y": -7,
+        "Position_X": 12,
+        "Position_Y": -21,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 174,
+        "Index_X": 3,
+        "Index_Y": -7,
+        "Position_X": 8,
+        "Position_Y": -21,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 175,
+        "Index_X": 2,
+        "Index_Y": -7,
+        "Position_X": 4,
+        "Position_Y": -21,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 176,
+        "Index_X": 1,
+        "Index_Y": -7,
+        "Position_X": 0,
+        "Position_Y": -21,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 177,
+        "Index_X": -1,
+        "Index_Y": -7,
+        "Position_X": -4,
+        "Position_Y": -21,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 178,
+        "Index_X": -2,
+        "Index_Y": -7,
+        "Position_X": -8,
+        "Position_Y": -21,
+        "Starting_Open": 0,
+        "Stone_Open": 3
+    },
+    {
+        "ID": 179,
+        "Index_X": -3,
+        "Index_Y": -7,
+        "Position_X": -12,
+        "Position_Y": -21,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 180,
+        "Index_X": -4,
+        "Index_Y": -7,
+        "Position_X": -16,
+        "Position_Y": -21,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 181,
+        "Index_X": -5,
+        "Index_Y": -7,
+        "Position_X": -20,
+        "Position_Y": -21,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 182,
+        "Index_X": -6,
+        "Index_Y": -7,
+        "Position_X": -24,
+        "Position_Y": -21,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 184,
+        "Index_X": -7,
+        "Index_Y": -6,
+        "Position_X": -28,
+        "Position_Y": -18,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 185,
+        "Index_X": -7,
+        "Index_Y": -5,
+        "Position_X": -28,
+        "Position_Y": -15,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 186,
+        "Index_X": -7,
+        "Index_Y": -4,
+        "Position_X": -28,
+        "Position_Y": -12,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 187,
+        "Index_X": -7,
+        "Index_Y": -3,
+        "Position_X": -28,
+        "Position_Y": -9,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 188,
+        "Index_X": -7,
+        "Index_Y": -2,
+        "Position_X": -28,
+        "Position_Y": -6,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 189,
+        "Index_X": -7,
+        "Index_Y": -1,
+        "Position_X": -28,
+        "Position_Y": -3,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 190,
+        "Index_X": -7,
+        "Index_Y": 1,
+        "Position_X": -28,
+        "Position_Y": 0,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 191,
+        "Index_X": -7,
+        "Index_Y": 2,
+        "Position_X": -28,
+        "Position_Y": 3,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 192,
+        "Index_X": -7,
+        "Index_Y": 3,
+        "Position_X": -28,
+        "Position_Y": 6,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 193,
+        "Index_X": -7,
+        "Index_Y": 4,
+        "Position_X": -28,
+        "Position_Y": 9,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 194,
+        "Index_X": -7,
+        "Index_Y": 5,
+        "Position_X": -28,
+        "Position_Y": 12,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 195,
+        "Index_X": -7,
+        "Index_Y": 6,
+        "Position_X": -28,
+        "Position_Y": 15,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 198,
+        "Index_X": -6,
+        "Index_Y": 8,
+        "Position_X": -24,
+        "Position_Y": 21,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 199,
+        "Index_X": -5,
+        "Index_Y": 8,
+        "Position_X": -20,
+        "Position_Y": 21,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 200,
+        "Index_X": -4,
+        "Index_Y": 8,
+        "Position_X": -16,
+        "Position_Y": 21,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 201,
+        "Index_X": -3,
+        "Index_Y": 8,
+        "Position_X": -12,
+        "Position_Y": 21,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 202,
+        "Index_X": -2,
+        "Index_Y": 8,
+        "Position_X": -8,
+        "Position_Y": 21,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 203,
+        "Index_X": -1,
+        "Index_Y": 8,
+        "Position_X": -4,
+        "Position_Y": 21,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 204,
+        "Index_X": 1,
+        "Index_Y": 8,
+        "Position_X": 0,
+        "Position_Y": 21,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 205,
+        "Index_X": 2,
+        "Index_Y": 8,
+        "Position_X": 4,
+        "Position_Y": 21,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 206,
+        "Index_X": 3,
+        "Index_Y": 8,
+        "Position_X": 8,
+        "Position_Y": 21,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 207,
+        "Index_X": 4,
+        "Index_Y": 8,
+        "Position_X": 12,
+        "Position_Y": 21,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 208,
+        "Index_X": 5,
+        "Index_Y": 8,
+        "Position_X": 16,
+        "Position_Y": 21,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 209,
+        "Index_X": 6,
+        "Index_Y": 8,
+        "Position_X": 20,
+        "Position_Y": 21,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 215,
+        "Index_X": 8,
+        "Index_Y": 4,
+        "Position_X": 28,
+        "Position_Y": 9,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 216,
+        "Index_X": 8,
+        "Index_Y": 3,
+        "Position_X": 28,
+        "Position_Y": 6,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 217,
+        "Index_X": 8,
+        "Index_Y": 2,
+        "Position_X": 28,
+        "Position_Y": 3,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 218,
+        "Index_X": 8,
+        "Index_Y": 1,
+        "Position_X": 28,
+        "Position_Y": 0,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 219,
+        "Index_X": 8,
+        "Index_Y": -1,
+        "Position_X": 28,
+        "Position_Y": -3,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 220,
+        "Index_X": 8,
+        "Index_Y": -2,
+        "Position_X": 28,
+        "Position_Y": -6,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 221,
+        "Index_X": 8,
+        "Index_Y": -3,
+        "Position_X": 28,
+        "Position_Y": -9,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 222,
+        "Index_X": 8,
+        "Index_Y": -4,
+        "Position_X": 28,
+        "Position_Y": -12,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 228,
+        "Index_X": 6,
+        "Index_Y": -8,
+        "Position_X": 20,
+        "Position_Y": -24,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 229,
+        "Index_X": 5,
+        "Index_Y": -8,
+        "Position_X": 16,
+        "Position_Y": -24,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 230,
+        "Index_X": 4,
+        "Index_Y": -8,
+        "Position_X": 12,
+        "Position_Y": -24,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 231,
+        "Index_X": 3,
+        "Index_Y": -8,
+        "Position_X": 8,
+        "Position_Y": -24,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 232,
+        "Index_X": 2,
+        "Index_Y": -8,
+        "Position_X": 4,
+        "Position_Y": -24,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 233,
+        "Index_X": 1,
+        "Index_Y": -8,
+        "Position_X": 0,
+        "Position_Y": -24,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 234,
+        "Index_X": -1,
+        "Index_Y": -8,
+        "Position_X": -4,
+        "Position_Y": -24,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 235,
+        "Index_X": -2,
+        "Index_Y": -8,
+        "Position_X": -8,
+        "Position_Y": -24,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 236,
+        "Index_X": -3,
+        "Index_Y": -8,
+        "Position_X": -12,
+        "Position_Y": -24,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 237,
+        "Index_X": -4,
+        "Index_Y": -8,
+        "Position_X": -16,
+        "Position_Y": -24,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 238,
+        "Index_X": -5,
+        "Index_Y": -8,
+        "Position_X": -20,
+        "Position_Y": -24,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 239,
+        "Index_X": -6,
+        "Index_Y": -8,
+        "Position_X": -24,
+        "Position_Y": -24,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 245,
+        "Index_X": -8,
+        "Index_Y": -4,
+        "Position_X": -32,
+        "Position_Y": -12,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 246,
+        "Index_X": -8,
+        "Index_Y": -3,
+        "Position_X": -32,
+        "Position_Y": -9,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 247,
+        "Index_X": -8,
+        "Index_Y": -2,
+        "Position_X": -32,
+        "Position_Y": -6,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 248,
+        "Index_X": -8,
+        "Index_Y": -1,
+        "Position_X": -32,
+        "Position_Y": -3,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 249,
+        "Index_X": -8,
+        "Index_Y": 1,
+        "Position_X": -32,
+        "Position_Y": 0,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 250,
+        "Index_X": -8,
+        "Index_Y": 2,
+        "Position_X": -32,
+        "Position_Y": 3,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 251,
+        "Index_X": -8,
+        "Index_Y": 3,
+        "Position_X": -32,
+        "Position_Y": 6,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 252,
+        "Index_X": -8,
+        "Index_Y": 4,
+        "Position_X": -32,
+        "Position_Y": 9,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 260,
+        "Index_X": -5,
+        "Index_Y": 9,
+        "Position_X": -20,
+        "Position_Y": 24,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 261,
+        "Index_X": -4,
+        "Index_Y": 9,
+        "Position_X": -16,
+        "Position_Y": 24,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 262,
+        "Index_X": -3,
+        "Index_Y": 9,
+        "Position_X": -12,
+        "Position_Y": 24,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 263,
+        "Index_X": -2,
+        "Index_Y": 9,
+        "Position_X": -8,
+        "Position_Y": 24,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 264,
+        "Index_X": -1,
+        "Index_Y": 9,
+        "Position_X": -4,
+        "Position_Y": 24,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 265,
+        "Index_X": 1,
+        "Index_Y": 9,
+        "Position_X": 0,
+        "Position_Y": 24,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 266,
+        "Index_X": 2,
+        "Index_Y": 9,
+        "Position_X": 4,
+        "Position_Y": 24,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 267,
+        "Index_X": 3,
+        "Index_Y": 9,
+        "Position_X": 8,
+        "Position_Y": 24,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 268,
+        "Index_X": 4,
+        "Index_Y": 9,
+        "Position_X": 12,
+        "Position_Y": 24,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 269,
+        "Index_X": 5,
+        "Index_Y": 9,
+        "Position_X": 16,
+        "Position_Y": 24,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 294,
+        "Index_X": 5,
+        "Index_Y": -9,
+        "Position_X": 16,
+        "Position_Y": -27,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 295,
+        "Index_X": 4,
+        "Index_Y": -9,
+        "Position_X": 12,
+        "Position_Y": -27,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 296,
+        "Index_X": 3,
+        "Index_Y": -9,
+        "Position_X": 8,
+        "Position_Y": -27,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 297,
+        "Index_X": 2,
+        "Index_Y": -9,
+        "Position_X": 4,
+        "Position_Y": -27,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 298,
+        "Index_X": 1,
+        "Index_Y": -9,
+        "Position_X": 0,
+        "Position_Y": -27,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 299,
+        "Index_X": -1,
+        "Index_Y": -9,
+        "Position_X": -4,
+        "Position_Y": -27,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 300,
+        "Index_X": -2,
+        "Index_Y": -9,
+        "Position_X": -8,
+        "Position_Y": -27,
+        "Starting_Open": 0,
+        "Stone_Open": 4
+    },
+    {
+        "ID": 301,
+        "Index_X": -3,
+        "Index_Y": -9,
+        "Position_X": -12,
+        "Position_Y": -27,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 302,
+        "Index_X": -4,
+        "Index_Y": -9,
+        "Position_X": -16,
+        "Position_Y": -27,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 303,
+        "Index_X": -5,
+        "Index_Y": -9,
+        "Position_X": -20,
+        "Position_Y": -27,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 331,
+        "Index_X": -3,
+        "Index_Y": 10,
+        "Position_X": -12,
+        "Position_Y": 27,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 332,
+        "Index_X": -2,
+        "Index_Y": 10,
+        "Position_X": -8,
+        "Position_Y": 27,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 333,
+        "Index_X": -1,
+        "Index_Y": 10,
+        "Position_X": -4,
+        "Position_Y": 27,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 334,
+        "Index_X": 1,
+        "Index_Y": 10,
+        "Position_X": 0,
+        "Position_Y": 27,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 335,
+        "Index_X": 2,
+        "Index_Y": 10,
+        "Position_X": 4,
+        "Position_Y": 27,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 336,
+        "Index_X": 3,
+        "Index_Y": 10,
+        "Position_X": 8,
+        "Position_Y": 27,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 369,
+        "Index_X": 3,
+        "Index_Y": -10,
+        "Position_X": 8,
+        "Position_Y": -30,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 370,
+        "Index_X": 2,
+        "Index_Y": -10,
+        "Position_X": 4,
+        "Position_Y": -30,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 371,
+        "Index_X": 1,
+        "Index_Y": -10,
+        "Position_X": 0,
+        "Position_Y": -30,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 372,
+        "Index_X": -1,
+        "Index_Y": -10,
+        "Position_X": -4,
+        "Position_Y": -30,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 373,
+        "Index_X": -2,
+        "Index_Y": -10,
+        "Position_X": -8,
+        "Position_Y": -30,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    },
+    {
+        "ID": 374,
+        "Index_X": -3,
+        "Index_Y": -10,
+        "Position_X": -12,
+        "Position_Y": -30,
+        "Starting_Open": 0,
+        "Stone_Open": 5
+    }
+]

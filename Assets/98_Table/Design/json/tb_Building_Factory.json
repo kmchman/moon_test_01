@@ -1,0 +1,65 @@
+﻿[
+    {
+        "ID": 2001,
+        "QueSlot_Default": 2,
+        "QueSlot_Max": 6,
+        "QueSlot_Cost": "2,4,6,8",
+        "MultiQueSlot": 1,
+        "HoldSlot_Default": 6,
+        "HoldSlot_Max": 8
+    },
+    {
+        "ID": 2002,
+        "QueSlot_Default": 2,
+        "QueSlot_Max": 6,
+        "QueSlot_Cost": "2,4,6,8",
+        "MultiQueSlot": 1,
+        "HoldSlot_Default": 6,
+        "HoldSlot_Max": 8
+    },
+    {
+        "ID": 2003,
+        "QueSlot_Default": 2,
+        "QueSlot_Max": 6,
+        "QueSlot_Cost": "2,4,6,8",
+        "MultiQueSlot": 1,
+        "HoldSlot_Default": 6,
+        "HoldSlot_Max": 8
+    },
+    {
+        "ID": 2004,
+        "QueSlot_Default": 2,
+        "QueSlot_Max": 6,
+        "QueSlot_Cost": "2,4,6,8",
+        "MultiQueSlot": 1,
+        "HoldSlot_Default": 6,
+        "HoldSlot_Max": 8
+    },
+    {
+        "ID": 2005,
+        "QueSlot_Default": 2,
+        "QueSlot_Max": 6,
+        "QueSlot_Cost": "2,4,6,8",
+        "MultiQueSlot": 1,
+        "HoldSlot_Default": 6,
+        "HoldSlot_Max": 8
+    },
+    {
+        "ID": 2006,
+        "QueSlot_Default": 2,
+        "QueSlot_Max": 6,
+        "QueSlot_Cost": "2,4,6,8",
+        "MultiQueSlot": 1,
+        "HoldSlot_Default": 6,
+        "HoldSlot_Max": 8
+    },
+    {
+        "ID": 2007,
+        "QueSlot_Default": 2,
+        "QueSlot_Max": 6,
+        "QueSlot_Cost": "2,4,6,8",
+        "MultiQueSlot": 1,
+        "HoldSlot_Default": 6,
+        "HoldSlot_Max": 8
+    }
+]
