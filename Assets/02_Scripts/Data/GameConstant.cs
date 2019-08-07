@@ -10,5 +10,7 @@ public class Constant
 {
     public const string TestAssetRoot = @"C:\Dev\assetBundle\";
     public const string PopupRootPath = "Popup/";
+
+    public const string TablePath = "98_Table/Design/json";
 }
 

@@ -53,7 +53,7 @@ public class MainPanel : MonoBehaviour
 
     public void OnClickBtnCreate()
     {
-        Table.tb_Building_Base.LoadFromJsonFile(Application.streamingAssetsPath + "/tb_Building_Base.json");
+        Table.tb_Building_Base.LoadFromJsonFile(string.Format("{0}/{1}/{2}", Application.dataPath, Constant.TablePath,"tb_Building_Base.json"));
         Debug.Log("Table.tb_Building_Base.map.Count" + Table.tb_Building_Base.map.Count);
 
         //string csvPath = Application.streamingAssetsPath + "/csvTest1.csv";
