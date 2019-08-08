@@ -8,6 +8,12 @@ public class UIItemBuilding : STScrollRectItem
     public int TID;
     public Image image_Icon;
 
+    public void SetData(int itemID)
+    {
+
+        //var sp = Resources.Load(_path) as Sprite;
+    }
+
     public void SetData(int tid, int iconID)
     {
         //TID = tid;
