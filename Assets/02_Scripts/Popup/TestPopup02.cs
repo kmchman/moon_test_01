@@ -2,10 +2,14 @@
 using System.Collections;
 
 public class TestPopup02 : MoonPopupUI {
-
-    protected override void _OnInitialize(params object[] values)
+    
+    protected override void Open(params object[] values)
     {
-        base._OnInitialize(values);
-
+        var enumertor = Table.tb_Building_Base.map.GetEnumerator();
+        while (enumertor.MoveNext())
+        {
+            Debug.Log("enumertor.Current.Value.Name : " + enumertor.Current.Value.Name);
+            
+        }
     }
 }

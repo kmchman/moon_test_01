@@ -1,6 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Reflection;
+using System;
+using Table;
 
 public class MainPanel : MonoBehaviour
 {
@@ -51,10 +54,32 @@ public class MainPanel : MonoBehaviour
         LoadAssetBundles.Inst.StartCoroutine("AssetLoad");
     }
 
+    private void LoadTable()
+    {
+        string tableFolerPath = string.Format("{0}/{1}", Application.dataPath, Constant.TablePath);
+        System.IO.DirectoryInfo di = new System.IO.DirectoryInfo(tableFolerPath);
+
+        foreach (System.IO.FileInfo file in di.GetFiles())
+        {
+            string onlyFileName = file.Name.Substring(0, file.Name.Length - 5);
+
+            if (file.Extension.ToLower().CompareTo(".json") == 0)
+            {
+                Debug.Log("fileName : " + file.Name);
+
+                Type tableClass = Type.GetType("Table." + onlyFileName);
+                MethodInfo loadMethod = tableClass.GetMethod("LoadFromJsonFile");
+                loadMethod.Invoke(null, new object[] { string.Format("{0}/{1}/{2}", Application.dataPath, Constant.TablePath, file.Name) });
+                //Table.tb_Building_Base.LoadFromJsonFile(string.Format("{0}/{1}/{2}", Application.dataPath, Constant.TablePath, "tb_Building_Base.json"));
+            }
+        }
+    }
+
     public void OnClickBtnCreate()
     {
-        Table.tb_Building_Base.LoadFromJsonFile(string.Format("{0}/{1}/{2}", Application.dataPath, Constant.TablePath,"tb_Building_Base.json"));
-        Debug.Log("Table.tb_Building_Base.map.Count" + Table.tb_Building_Base.map.Count);
+        LoadTable();
+        //Table.tb_Building_Base.LoadFromJsonFile(string.Format("{0}/{1}/{2}", Application.dataPath, Constant.TablePath,"tb_Building_Base.json"));
+        //Debug.Log("Table.tb_Building_Base.map.Count" + Table.tb_Building_Base.map.Count);
 
         //string csvPath = Application.streamingAssetsPath + "/csvTest1.csv";
         //string jsonPath = Application.streamingAssetsPath + "/csvTest1.json";
