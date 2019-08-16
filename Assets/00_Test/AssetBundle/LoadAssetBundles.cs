@@ -54,7 +54,7 @@ public class LoadAssetBundles : MonoBehaviour
         string root = Application.persistentDataPath + "/AssetBundles/";
         //AssetBundle bundle = AssetBundle.LoadFromFile(Constant.TestAssetRoot + strAssetBundle[0]);
         //AssetBundle bundle = AssetBundle.LoadFromFile(Application.streamingAssetsPath + "/" + strAssetBundle[0]);
-
+        
         UnityWebRequest request = UnityWebRequestAssetBundle.GetAssetBundle(Application.streamingAssetsPath + "/" + strAssetBundle[0], 0);
         yield return request.SendWebRequest();
         AssetBundle bundle = DownloadHandlerAssetBundle.GetContent(request);
