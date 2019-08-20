@@ -14,6 +14,7 @@ public class MainController : MonoBehaviour
 
     public void CreateBaseMap()
     {
+#if UNITY_EDITOR
         string path = "Assets/00_Test/MapTest/Abyss_Main_01_new_map.prefab";
 
         GameObject obj = UnityEditor.AssetDatabase.LoadAssetAtPath(path, typeof(GameObject)) as GameObject;
@@ -27,5 +28,6 @@ public class MainController : MonoBehaviour
             go.transform.localScale = Vector3.one;
             go.transform.localPosition = originPos;
         }
+#endif
     }
 }

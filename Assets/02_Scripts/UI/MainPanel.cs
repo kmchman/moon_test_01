@@ -1,13 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using System.Reflection;
 using System;
+using UnityEngine.Networking;
 using Table;
 
 public class MainPanel : MonoBehaviour
 {
     [SerializeField] private TestPopup02 testPopup02Prefab;
+    [SerializeField] private Text titleMessage;
+
+    private string url;
+
     class BuildingData
     {
         public int x;
@@ -43,8 +49,10 @@ public class MainPanel : MonoBehaviour
         buildingObj.transform.position = new Vector3(x, y, z);
         buildingList.Add(buildingObj);
     }
+
     public void CreateBuildingRand()
     {
+        
     }
 
     public void RemoveObject()
@@ -75,9 +83,31 @@ public class MainPanel : MonoBehaviour
         }
     }
 
+    private IEnumerator StartDownload()
+    {
+        
+        var uwr = UnityWebRequest.Get(url);
+        yield return uwr.SendWebRequest();
+        Debug.Log("StartDownload : " + url);
+        if (!uwr.isNetworkError && !uwr.isHttpError)
+        {
+            titleMessage.text = "sccess";
+        }
+        else
+        {
+            titleMessage.text = "fail url : " + url;
+            Debug.Log(uwr.isNetworkError);
+        }
+
+    }
+
     public void OnClickBtnCreate()
     {
-        LoadTable();
+        url = string.Format("http://abyssworld-cdn.flerogamessvc.com/Internal/Internal{0}", "_AOS.json");
+        
+        StopCoroutine("StartDownload");
+        StartCoroutine("StartDownload");
+        //LoadTable();
         //Table.tb_Building_Base.LoadFromJsonFile(string.Format("{0}/{1}/{2}", Application.dataPath, Constant.TablePath,"tb_Building_Base.json"));
         //Debug.Log("Table.tb_Building_Base.map.Count" + Table.tb_Building_Base.map.Count);
 
@@ -122,16 +152,24 @@ public class MainPanel : MonoBehaviour
 
     public void OnClickBtnRemove()
     {
+        url = string.Format("https://abyssworld-cdn.flerogamessvc.com/Internal/Internal{0}", "_AOS.json");
+
+        StopCoroutine("StartDownload");
+        StartCoroutine("StartDownload");
         //RemoveObject();
-        MoonGlobalPopupManager.Inst.ShowPopup("Popup_Test02");
+        //MoonGlobalPopupManager.Inst.ShowPopup("Popup_Test02");
     }
 
     public void OnClickBtnChange()
     {
-        RemoveObject();
-        for (int i = 0; i < 10; i++)
-        {
-            CreateBuildingRand();
-        }
+        url = string.Format("http://abyssworld-cdn.flerogamessvc.com/Internal/Internal{0}", "_AOS.json");
+
+        StopCoroutine("StartDownload");
+        StartCoroutine("StartDownload");
+        //RemoveObject();
+        //for (int i = 0; i < 10; i++)
+        //{
+        //    CreateBuildingRand();
+        //}
     }
 }
