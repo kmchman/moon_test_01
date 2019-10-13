@@ -27,31 +27,32 @@ public class TowerActionBuild : TowerAction
     /// <summary>
     /// Awake this instance.
     /// </summary>
-    void Awake()
+    /// 
+    private void Start()
     {
         priceText = GetComponentInChildren<Text>();
-		levelManager = FindObjectOfType<LevelManager>();
-		uiManager = FindObjectOfType<UiManager>();
-		UnityEngine.Debug.Assert(priceText && towerPrefab && enabledIcon && disabledIcon && levelManager && uiManager, "Wrong initial parameters");
+        levelManager = FindObjectOfType<LevelManager>();
+        uiManager = FindObjectOfType<UiManager>();
+        UnityEngine.Debug.Assert(priceText && towerPrefab && enabledIcon && disabledIcon && levelManager && uiManager, "Wrong initial parameters");
         // Display tower price
-		price = towerPrefab.GetComponent<Price>().price;
-		priceText.text = price.ToString();
-		if (levelManager.allowedTowers.Contains(towerPrefab) == true)
-		{
-			enabledIcon.SetActive(true);
-			disabledIcon.SetActive(false);
-		}
-		else
-		{
-			enabledIcon.SetActive(false);
-			disabledIcon.SetActive(true);
-		}
+        price = towerPrefab.GetComponent<Price>().price;
+        priceText.text = price.ToString();
+        if (levelManager.allowedTowers.Contains(towerPrefab) == true)
+        {
+            enabledIcon.SetActive(true);
+            disabledIcon.SetActive(false);
+        }
+        else
+        {
+            enabledIcon.SetActive(false);
+            disabledIcon.SetActive(true);
+        }
     }
 
-	/// <summary>
-	/// Update this instance.
-	/// </summary>
-	void Update()
+    /// <summary>
+    /// Update this instance.
+    /// </summary>
+    void Update()
 	{
 		// Mask build icon wich blocking icon if player has not anough gold
 		if (enabledIcon == true && blockedIcon != null)

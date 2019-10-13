@@ -1,10 +1,9 @@
 fileFormatVersion: 2
-guid: bcdb3db1e3dfb9c45a0d55a34c04f62a
-labels:
-- l:Tower
+guid: 41eda84908ad26e45b13943c4cd0e5d4
 folderAsset: yes
+timeCreated: 1495625362
+licenseType: Store
 DefaultImporter:
-  externalObjects: {}
   userData: 
   assetBundleName: 
   assetBundleVariant: 

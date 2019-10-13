@@ -1,9 +1,8 @@
 fileFormatVersion: 2
-guid: bcdb3db1e3dfb9c45a0d55a34c04f62a
+guid: 15fc98ff0586f8d48b52536cc925b86f
 labels:
 - l:Tower
-folderAsset: yes
-DefaultImporter:
+PrefabImporter:
   externalObjects: {}
   userData: 
   assetBundleName: 

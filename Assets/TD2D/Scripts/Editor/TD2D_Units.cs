@@ -951,9 +951,9 @@ public class TD2D_Units : EditorWindow
 			{
 				GUILayout.Space(guiSpace);
 
-				// Apply changes button
-				if (unitData.gameObject != null && PrefabUtility.GetPrefabType(unitData.gameObject) != PrefabType.None)
-				{
+                // Apply changes button
+                if (unitData.gameObject != null && PrefabUtility.GetPrefabType(unitData.gameObject) != PrefabType.None)
+                {
 					if (GUILayout.Button(contents.applyChangesButton) == true)
 					{
 						if (unitData.towerActions != null)

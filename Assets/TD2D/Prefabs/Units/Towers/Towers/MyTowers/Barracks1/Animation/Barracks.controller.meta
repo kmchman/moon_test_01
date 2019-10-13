@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: bcdb3db1e3dfb9c45a0d55a34c04f62a
+guid: 458c6e9946e28a044bda0336094c6d4f
 labels:
 - l:Tower
-folderAsset: yes
-DefaultImporter:
+NativeFormatImporter:
   externalObjects: {}
+  mainObjectFileID: 9100000
   userData: 
   assetBundleName: 
   assetBundleVariant: 
