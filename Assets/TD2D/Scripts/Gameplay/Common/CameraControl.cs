@@ -38,11 +38,15 @@ public class CameraControl : MonoBehaviour
 	// Origin camera aspect ratio
 	private float originAspect;
 
-	/// <summary>
-	/// Start this instance.
-	/// </summary>
-	void Start()
+    private Transform target;
+    public Transform Target { set { target = value; } }
+    private Vector3 velocity = Vector3.zero;
+    /// <summary>
+    /// Start this instance.
+    /// </summary>
+    void Start()
 	{
+        target = null;
 		cam = GetComponent<Camera>();
 		UnityEngine.Debug.Assert(focusObjectRenderer && cam, "Wrong initial settings");
 		originAspect = cam.aspect;
@@ -59,6 +63,23 @@ public class CameraControl : MonoBehaviour
 	/// </summary>
     void LateUpdate()
     {
+        //if (target != null)
+        //{
+        //    Vector3 point = cam.WorldToViewportPoint(target.position);
+        //    Vector3 delta = target.position - cam.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, point.z)); //(new Vector3(0.5, 0.5, point.z));
+        //    Vector3 destination = transform.position + delta;
+        //    if (Vector3.Distance(transform.position, destination) > 0.1f)
+        //    {
+        //        transform.position = Vector3.SmoothDamp(transform.position, destination, ref velocity, 0.15f);
+        //    }
+        //    else
+        //    {
+        //        transform.position = destination;
+        //        target = null;
+        //    }
+        //    return;
+        //}
+
 		// Camera aspect ratio is changed
 		if (originAspect != cam.aspect)
 		{

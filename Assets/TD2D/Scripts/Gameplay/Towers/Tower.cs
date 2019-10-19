@@ -144,6 +144,7 @@ public class Tower : MonoBehaviour
                 // Open building tree if it is not
                 OpenActions();
             }
+            uiManager.SetCamTarget(transform);
         }
         else // Other click
         {
@@ -151,6 +152,7 @@ public class Tower : MonoBehaviour
 			ShowRange(false);
             // Close active building tree
             CloseActions();
+            //uiManager.SetCamTarget(null);
         }
     }
 

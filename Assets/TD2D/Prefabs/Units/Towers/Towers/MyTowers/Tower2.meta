@@ -1,6 +1,9 @@
 fileFormatVersion: 2
-guid: 14b7637b0d779034c88b11f5194f40eb
-timeCreated: 1495005451
+guid: 71cbf682818a66f4b89129e0ac04cbca
+labels:
+- l:Tower
+folderAsset: yes
+timeCreated: 1487190065
 licenseType: Store
 DefaultImporter:
   userData: 

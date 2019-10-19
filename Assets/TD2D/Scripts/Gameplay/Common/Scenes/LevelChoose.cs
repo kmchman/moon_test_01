@@ -107,7 +107,8 @@ public class LevelChoose : MonoBehaviour
 				Debug.LogError("Have no levels prefabs!");
 			}
 		}
-		if (maxActiveLevelIdx >= 0)
+
+        if (maxActiveLevelIdx >= 0)
 		{
 			DisplayToggles();
 			DisplayLevel(maxActiveLevelIdx);

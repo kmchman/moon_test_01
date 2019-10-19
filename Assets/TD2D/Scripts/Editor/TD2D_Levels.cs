@@ -346,7 +346,7 @@ public class TD2D_Levels : EditorWindow
 			{
 				CameraFocus(levelMap);
 			}
-				
+            
 			// Update level manager lists from specified folders
 			inspectors.levelManager.enemiesList.Clear();
 			prefabs = AssetDatabase.FindAssets("t:prefab", new string[] {"Assets/TD2D/Prefabs/Units/Enemies/Units"});

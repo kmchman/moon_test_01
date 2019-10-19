@@ -10,6 +10,8 @@ using UnityEngine.SceneManagement;
 /// </summary>
 public class UiManager : MonoBehaviour
 {
+    public static UiManager instance;
+
     // This scene will loaded after whis level exit
     public string exitSceneName;
 	// Start screen canvas
@@ -43,9 +45,31 @@ public class UiManager : MonoBehaviour
 	/// </summary>
 	void Awake()
 	{
-		cameraControl = FindObjectOfType<CameraControl>();
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else if (instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        cameraControl = FindObjectOfType<CameraControl>();
 		UnityEngine.Debug.Assert(cameraControl && startScreen && pauseMenu && defeatMenu && victoryMenu && levelUI && defeatAttempts && goldAmount, "Wrong initial parameters");
 	}
+
+    /// <summary>
+    /// Raises the destroy event.
+    /// </summary>
+    void OnDestroy()
+    {
+        if (instance == this)
+        {
+            instance = null;
+        }
+        StopAllCoroutines();
+    }
+
 
     /// <summary>
     /// Raises the enable event.
@@ -157,6 +181,10 @@ public class UiManager : MonoBehaviour
         }
     }
 
+    public void SetCamTarget(Transform _transform)
+    {
+        cameraControl.Target = _transform;
+    }
     /// <summary>
     /// Stop current scene and load new scene
     /// </summary>
@@ -203,7 +231,7 @@ public class UiManager : MonoBehaviour
     {
         paused = pause;
         // Stop the time on pause
-        Time.timeScale = pause ? 0f : 1f;
+        Time.timeScale = pause ? 0f : 2f;
 		EventManager.TriggerEvent("GamePaused", null, pause.ToString());
     }
 
@@ -397,8 +425,4 @@ public class UiManager : MonoBehaviour
 	/// <summary>
 	/// Raises the destroy event.
 	/// </summary>
-	void OnDestroy()
-	{
-		StopAllCoroutines();
-	}
 }
