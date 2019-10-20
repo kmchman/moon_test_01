@@ -18,6 +18,7 @@ public class SpawnPoint : MonoBehaviour
 		public float delayBeforeWave;
 		// List of enemies in this wave
 		public List<GameObject> enemies = new List<GameObject>();
+        //public int enemyCount = 5;
 	}
 
 	// Enemies will have different speed in specified interval
