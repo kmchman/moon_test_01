@@ -1,0 +1,184 @@
+fileFormatVersion: 2
+guid: 5ca31df725bd38c4cb30a8810f4b214d
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Model_Map_Epi01_BG_stones_01
+    100004: Model_Map_Epi01_BG_stones_02
+    100006: Model_Map_Epi01_BG_stones_03
+    100008: Model_Map_Epi01_BG_stones_04
+    100010: Model_Map_Epi01_BG_stones_05
+    100012: Model_Map_Epi01_BG_stones_06
+    100014: Model_Map_Epi01_BG_stones_07
+    100016: Model_Map_Epi01_BG_stones_08
+    100018: Model_Map_Epi01_BG_stones_09
+    100020: Model_Map_Epi01_BG_stones_10
+    100022: Model_Map_Epi01_BG_stones_11
+    100024: Model_Map_Epi01_BG_stones_12
+    100026: Model_Map_Epi01_BG_stones_13
+    100028: Model_Map_Epi01_BG_stones_14
+    100030: Model_Map_Epi01_BG_stones_15
+    100032: Model_Map_Epi01_BG_stones_16
+    100034: Model_Map_Epi01_BG_stones_17
+    100036: Model_Map_Epi01_BG_stones_18
+    400000: //RootNode
+    400002: Model_Map_Epi01_BG_stones_01
+    400004: Model_Map_Epi01_BG_stones_02
+    400006: Model_Map_Epi01_BG_stones_03
+    400008: Model_Map_Epi01_BG_stones_04
+    400010: Model_Map_Epi01_BG_stones_05
+    400012: Model_Map_Epi01_BG_stones_06
+    400014: Model_Map_Epi01_BG_stones_07
+    400016: Model_Map_Epi01_BG_stones_08
+    400018: Model_Map_Epi01_BG_stones_09
+    400020: Model_Map_Epi01_BG_stones_10
+    400022: Model_Map_Epi01_BG_stones_11
+    400024: Model_Map_Epi01_BG_stones_12
+    400026: Model_Map_Epi01_BG_stones_13
+    400028: Model_Map_Epi01_BG_stones_14
+    400030: Model_Map_Epi01_BG_stones_15
+    400032: Model_Map_Epi01_BG_stones_16
+    400034: Model_Map_Epi01_BG_stones_17
+    400036: Model_Map_Epi01_BG_stones_18
+    2100000: 13 - Default
+    2300000: Model_Map_Epi01_BG_stones_01
+    2300002: Model_Map_Epi01_BG_stones_02
+    2300004: Model_Map_Epi01_BG_stones_03
+    2300006: Model_Map_Epi01_BG_stones_04
+    2300008: Model_Map_Epi01_BG_stones_05
+    2300010: Model_Map_Epi01_BG_stones_06
+    2300012: Model_Map_Epi01_BG_stones_07
+    2300014: Model_Map_Epi01_BG_stones_08
+    2300016: Model_Map_Epi01_BG_stones_09
+    2300018: Model_Map_Epi01_BG_stones_10
+    2300020: Model_Map_Epi01_BG_stones_11
+    2300022: Model_Map_Epi01_BG_stones_12
+    2300024: Model_Map_Epi01_BG_stones_13
+    2300026: Model_Map_Epi01_BG_stones_14
+    2300028: Model_Map_Epi01_BG_stones_15
+    2300030: Model_Map_Epi01_BG_stones_16
+    2300032: Model_Map_Epi01_BG_stones_17
+    2300034: Model_Map_Epi01_BG_stones_18
+    3300000: Model_Map_Epi01_BG_stones_01
+    3300002: Model_Map_Epi01_BG_stones_02
+    3300004: Model_Map_Epi01_BG_stones_03
+    3300006: Model_Map_Epi01_BG_stones_04
+    3300008: Model_Map_Epi01_BG_stones_05
+    3300010: Model_Map_Epi01_BG_stones_06
+    3300012: Model_Map_Epi01_BG_stones_07
+    3300014: Model_Map_Epi01_BG_stones_08
+    3300016: Model_Map_Epi01_BG_stones_09
+    3300018: Model_Map_Epi01_BG_stones_10
+    3300020: Model_Map_Epi01_BG_stones_11
+    3300022: Model_Map_Epi01_BG_stones_12
+    3300024: Model_Map_Epi01_BG_stones_13
+    3300026: Model_Map_Epi01_BG_stones_14
+    3300028: Model_Map_Epi01_BG_stones_15
+    3300030: Model_Map_Epi01_BG_stones_16
+    3300032: Model_Map_Epi01_BG_stones_17
+    3300034: Model_Map_Epi01_BG_stones_18
+    4300000: Model_Map_Epi01_BG_stones_13
+    4300002: Model_Map_Epi01_BG_stones_05
+    4300004: Model_Map_Epi01_BG_stones_12
+    4300006: Model_Map_Epi01_BG_stones_07
+    4300008: Model_Map_Epi01_BG_stones_08
+    4300010: Model_Map_Epi01_BG_stones_11
+    4300012: Model_Map_Epi01_BG_stones_10
+    4300014: Model_Map_Epi01_BG_stones_09
+    4300016: Model_Map_Epi01_BG_stones_17
+    4300018: Model_Map_Epi01_BG_stones_16
+    4300020: Model_Map_Epi01_BG_stones_18
+    4300022: Model_Map_Epi01_BG_stones_15
+    4300024: Model_Map_Epi01_BG_stones_14
+    4300026: Model_Map_Epi01_BG_stones_04
+    4300028: Model_Map_Epi01_BG_stones_06
+    4300030: Model_Map_Epi01_BG_stones_03
+    4300032: Model_Map_Epi01_BG_stones_02
+    4300034: Model_Map_Epi01_BG_stones_01
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
