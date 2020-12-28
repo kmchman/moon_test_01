@@ -471,7 +471,7 @@ namespace Kirnu
 				if (parent.transform && parent.transform.parent && parent.transform.parent.gameObject) {
 					go.transform.parent = parent.transform.parent;
 				}
-				GameObjectUtility.SetStaticEditorFlags (go, StaticEditorFlags.LightmapStatic);
+				GameObjectUtility.SetStaticEditorFlags (go, StaticEditorFlags.ContributeGI);
 
 				MeshRenderer renderer = go.AddComponent<MeshRenderer> ();
 				if (materials [currentMaterial] != null) {
