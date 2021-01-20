@@ -1,0 +1,8 @@
+C:\Dev\CsvExporter\CsvExporter\CsvExporter\bin\Debug\CsvExporter.exe.config
+C:\Dev\CsvExporter\CsvExporter\CsvExporter\bin\Debug\CsvExporter.exe
+C:\Dev\CsvExporter\CsvExporter\CsvExporter\bin\Debug\CsvExporter.pdb
+C:\Dev\CsvExporter\CsvExporter\CsvExporter\obj\Debug\CsvExporter.csprojAssemblyReference.cache
+C:\Dev\CsvExporter\CsvExporter\CsvExporter\obj\Debug\CsvExporter.csproj.CoreCompileInputs.cache
+C:\Dev\CsvExporter\CsvExporter\CsvExporter\obj\Debug\CsvExporter.exe
+C:\Dev\CsvExporter\CsvExporter\CsvExporter\obj\Debug\CsvExporter.pdb
+C:\Dev\CSVExporter\csvExporter\CsvExporter\obj\Debug\CsvExporter.csproj.ResolveComReference.cache
